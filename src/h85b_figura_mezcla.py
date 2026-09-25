@@ -85,8 +85,7 @@ def main():
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.20), frameon=False, fontsize=ef.FS_MIN)
     ef.panel_label(ax, "b")
 
-    ef.message_title(fig, "The two populations exist in the data, but they are not what the "
-                          "official label says")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG25_mezcla_poblaciones")
     plt.close(fig)
 

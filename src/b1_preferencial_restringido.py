@@ -64,7 +64,7 @@ def main():
     ax.set_xlabel(r"$\delta$ (loading parameter, preferential sampling)")
     ax.set_ylim(-0.7, len(dplot) - 0.3)
     ef.soft_grid(ax, axis="x")
-    ef.message_title(ax, "The sign of δ holds after removing the extrapolated zone")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG31_preferencial_restringido")
     plt.close(fig)
 

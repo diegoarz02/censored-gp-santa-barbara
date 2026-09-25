@@ -23,7 +23,7 @@ F4-20260923,FIG18_Hg_exceedance,140.0,179.2,False,True,True
 F4-20260923,FIG18_Pb_exceedance,140.0,179.2,False,True,True
 F4-20260923,FIG19_substitution_bias,140.0,86.8,False,True,True
 F4-20260923,FIG1_sampling_design_and_mercury,140.0,147.0,False,False,True
-F4-20260923,FIG20_decision_thresholds,190.0,79.8,False,False,True
+F4-20260923,FIG20_decision_thresholds,190.0,79.8,False,True,True
 F4-20260923,FIG21_prior_sensitivity,190.0,76.0,False,True,True
 F4-20260923,FIG22_exceedance_grid,190.0,133.0,False,True,True
 F4-20260923,FIG23_red_bayesiana,190.0,98.8,False,True,True

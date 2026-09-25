@@ -118,8 +118,7 @@ def main():
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.18), frameon=False, ncol=2,
               fontsize=ef.FS_MIN)
     # The title states only what this panel shows (coverage): identical bars, both metals. CRPS
-    # and convergence are a separate finding, reported in the text, not folded into this title.
-    ef.message_title(fig, "Coverage is identical whether the model is anisotropic or isotropic")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG36_anisotropy_check")
     plt.close(fig)
 

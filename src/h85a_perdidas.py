@@ -92,8 +92,7 @@ if __name__ == "__main__":
                    ncol=2, columnspacing=1.0, handlelength=1.4)
     ef.panel_label(axes[0], "a")
     ef.panel_label(axes[1], "b")
-    ef.message_title(fig, "Cutting the exceedance map at 0.5 assumes a false alarm costs as much "
-                          "as a missed exposure")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG20_decision_thresholds")
     plt.close(fig)
 

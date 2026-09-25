@@ -92,9 +92,7 @@ if __name__ == "__main__":
     # Censoring truncates the lower tail, so the surviving training data are the high values and
     # every method over-predicts. What separates the methods is how fast that grows.
     n_sig = int(slopes["grows"].sum())
-    ef.message_title(ax, "Every method over-predicts under censoring, but the substitution's bias "
-                         "grows fastest" if n_sig else
-                         "Bias stays near zero for every method at every censoring level")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG19_substitution_bias")
     plt.close(fig)
 
