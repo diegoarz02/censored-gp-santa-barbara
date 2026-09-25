@@ -105,8 +105,7 @@ def main():
         ef.utm_km_ticks(ax)
     ef.panel_label(ax, "b")
 
-    ef.message_title(fig, f"k={best_k} components maximises elpd_loo for cadmium with censoring "
-                          f"built in")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG33_mezcla_censurada_componentes")
     plt.close(fig)
 

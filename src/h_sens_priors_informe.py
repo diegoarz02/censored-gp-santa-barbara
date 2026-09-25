@@ -61,8 +61,7 @@ if __name__ == "__main__":
     ef.panel_label(axes[0], "a")
     ef.panel_label(axes[1], "b")
     axes[0].legend(loc="upper center", bbox_to_anchor=(0.5, -0.20), frameon=False, ncol=3)
-    ef.message_title(fig, "The prior matters little where there is data, and a lot where there "
-                          "is none")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG21_prior_sensitivity")
     plt.close(fig)
 

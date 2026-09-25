@@ -154,8 +154,7 @@ def main():
     ef.soft_grid(ax)
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.16), frameon=False, ncol=2,
              fontsize=ef.FS_MIN)
-    ef.message_title(fig, "Real censoring reproduces the degradation measured with imposed "
-                          "censoring")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG26_gradiente_real_vs_impuesto")
     plt.close(fig)
 

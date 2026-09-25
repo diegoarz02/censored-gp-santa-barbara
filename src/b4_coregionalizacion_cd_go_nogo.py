@@ -140,8 +140,7 @@ def main():
     ef.utm_km_ticks(ax)
     ef.panel_label(ax, "b")
 
-    ef.message_title(fig, f"Coregionalised cadmium {'beats' if gana else 'does NOT beat'} the "
-                          f"univariate model by PSIS-LOO")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG34_cd_coregionalizado_gonogo")
     plt.close(fig)
 

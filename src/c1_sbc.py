@@ -184,8 +184,8 @@ def main():
         ax.set_xlabel(f"normalised rank, {p}")
         ax.set_ylabel("replicates")
         ef.soft_grid(ax)
-    ef.message_title(fig, f"SBC ranks over {len(ok_rows)} replicates — "
-                          f"{'compatible with uniform' if chi2_df['uniforme'].all() else 'SOME parameters deviate from uniform'}")
+    # No message_title: this is a body-of-article figure, the message (and the uniform/deviates
+    # verdict) goes in the LaTeX caption and in outputs/C1_sbc.md, not printed on the image.
     ef.save_fig(fig, "FIG35_sbc_ranks")
     plt.close(fig)
 

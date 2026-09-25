@@ -127,8 +127,7 @@ def main():
     picp_diff = (piv[("picp95", True)] - piv[("picp95", False)]).abs().max()
     gana = speedup > 1.2  # umbral fijado antes de mirar: 20% mas de ESS/s para contar como mejora
 
-    ef.message_title(fig, "HSGP improves sampling efficiency without moving coverage" if gana
-                     else "HSGP does not improve sampling efficiency on this problem")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG32_hsgp_test")
     plt.close(fig)
 

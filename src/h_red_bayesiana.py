@@ -137,8 +137,7 @@ def main():
     ]
     ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5, -0.02),
               frameon=False, ncol=3, fontsize=8)
-    ef.message_title(fig, "The non-detection indicator is a child of concentration, not a datum: "
-                          "that edge is the model")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG23_red_bayesiana")
     plt.close(fig)
 
