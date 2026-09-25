@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{Convergence diagnostics of the main models, computed without the two-decimal rounding of \texttt{az.summary}. BFMI is the Bayesian fraction of missing information from the energy transitions.}
+\label{tab:conv}
+\footnotesize
+\begin{tabular}{llrrrrrr}
+\toprule
+model & rhat\_max & ess\_bulk\_min & ess\_tail\_min & divergences & bfmi\_min & n\_draws & passes \\
+\midrule
+main Hg & 1.010 & 330.793 & 460.323 & 0 & 0.904 & 4000 & False \\
+main Pb & 1.007 & 751.572 & 1272.341 & 0 & 0.843 & 4000 & True \\
+main As & 1.006 & 913.198 & 1204.577 & 0 & 0.875 & 4000 & True \\
+main Ba & 1.004 & 1025.767 & 1322.731 & 0 & 0.864 & 4000 & True \\
+main Cd & 1.002 & 841.732 & 1382.896 & 0 & 0.899 & 4000 & True \\
+simulation, censored & 1.004 & 640.396 & 1059.623 & 0 & 0.824 & 4000 & True \\
+simulation, L/2 & 1.011 & 370.877 & 527.568 & 0 & 0.742 & 4000 & False \\
+\bottomrule
+\end{tabular}
+\end{table}

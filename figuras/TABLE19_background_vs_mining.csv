@@ -1,0 +1,6 @@
+analyte,b_background_log,ci95_low,ci95_high,mining_factor,factor_ci_low,factor_ci_high,excludes_zero,median_background,median_interest,observed_ratio,pct_bg_above_eca,pct_pi_above_eca
+Hg,-0.4265,-1.1403,0.3032,1.5319,0.7384,3.1277,False,30.945,105.3,3.4028,70.0,90.0
+Pb,-0.305,-0.9941,0.364,1.3566,0.6949,2.7023,False,60.5,646.5,10.686,40.0,92.5
+As,-0.3573,-0.9739,0.2477,1.4295,0.7806,2.6483,False,40.85,158.65,3.8837,30.0,83.75
+Ba,-0.5197,-1.0853,0.0785,1.6814,0.9245,2.9603,False,128.75,293.3,2.2781,0.0,27.5
+Cd,-0.3699,-1.2475,0.4994,1.4476,0.6069,3.4815,False,,7.0,,,100.0

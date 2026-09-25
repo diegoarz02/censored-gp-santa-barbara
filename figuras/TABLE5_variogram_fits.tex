@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Empirical variogram fits on the log-concentration of the four uncensored analytes. The nugget ratio is the proportion of variance not spatially structured.}
+\label{tab:vario}
+\footnotesize
+\begin{tabular}{llrrrrr}
+\toprule
+analyte & model & nugget & sill & effective\_range\_km & nugget\_ratio & rmse \\
+\midrule
+Hg & exponential & 0.000 & 3.907 & 2.684 & 0.000 & 1.208 \\
+Hg & spherical & 0.581 & 3.343 & 2.684 & 0.174 & 1.166 \\
+Hg & matern & 1.062 & 2.886 & 2.684 & 0.368 & 1.183 \\
+Pb & exponential & 0.000 & 3.799 & 1.749 & 0.000 & 1.435 \\
+Pb & spherical & 0.025 & 3.791 & 1.656 & 0.007 & 1.369 \\
+Pb & matern & 0.600 & 3.187 & 1.590 & 0.188 & 1.397 \\
+As & exponential & 0.000 & 1.271 & 0.856 & 0.000 & 0.413 \\
+As & spherical & 0.000 & 1.268 & 0.758 & 0.000 & 0.394 \\
+As & matern & 0.000 & 1.273 & 0.714 & 0.000 & 0.394 \\
+Ba & exponential & 0.000 & 1.892 & 1.277 & 0.000 & 0.919 \\
+Ba & spherical & 0.037 & 1.910 & 1.433 & 0.019 & 0.897 \\
+Ba & matern & 0.014 & 1.883 & 1.095 & 0.007 & 0.901 \\
+\bottomrule
+\end{tabular}
+\end{table}

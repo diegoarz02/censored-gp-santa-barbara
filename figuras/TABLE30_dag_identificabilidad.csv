@@ -1,0 +1,5 @@
+run_id,predictores_del_estrato,R2,variacion_residual_pct
+F3-20260908,posición (lineal),0.5141,48.59043
+F3-20260908,posición (polinomio grado 3),0.77984,22.01594
+F3-20260908,covariables,0.49254,50.74551
+F3-20260908,posición + covariables,0.83946,16.05403

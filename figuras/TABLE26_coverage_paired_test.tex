@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\caption{Paired comparison of the coverage error $|\mathrm{PICP}_{95}-0.95|$ between the censored GP and each baseline, replicate by replicate on identical masks. A positive gain means the censored GP is closer to nominal coverage. $p=0.002$ is the smallest value the signed-rank test can return with ten pairs.}
+\label{tab:covtest}
+\footnotesize
+\begin{tabular}{llrrrrr}
+\toprule
+metal & level & baseline & mean\_coverage\_gain & replicates\_won & n & p\_wilcoxon \\
+\midrule
+Hg & 0.200 & ordinary kriging L/2 & 0.056 & 4 & 10 & 0.125 \\
+Hg & 0.200 & GP with L/2 & 0.000 & 2 & 10 & 1.000 \\
+Pb & 0.200 & ordinary kriging L/2 & 0.031 & 2 & 10 & 0.500 \\
+Pb & 0.200 & GP with L/2 & 0.000 & 4 & 10 & 1.000 \\
+As & 0.200 & ordinary kriging L/2 & 0.003 & 1 & 10 & 1.000 \\
+As & 0.200 & GP with L/2 & -0.011 & 0 & 10 & 0.125 \\
+Hg & 0.400 & ordinary kriging L/2 & 0.098 & 4 & 10 & 0.125 \\
+Hg & 0.400 & GP with L/2 & 0.030 & 2 & 10 & 0.750 \\
+Pb & 0.400 & ordinary kriging L/2 & 0.143 & 4 & 10 & 0.125 \\
+Pb & 0.400 & GP with L/2 & 0.065 & 3 & 10 & 0.250 \\
+As & 0.400 & ordinary kriging L/2 & 0.004 & 1 & 10 & 1.000 \\
+As & 0.400 & GP with L/2 & -0.004 & 1 & 10 & 1.000 \\
+Hg & 0.600 & ordinary kriging L/2 & 0.134 & 5 & 10 & 0.250 \\
+Hg & 0.600 & GP with L/2 & 0.057 & 5 & 10 & 0.094 \\
+Pb & 0.600 & ordinary kriging L/2 & 0.193 & 7 & 10 & 0.019 \\
+Pb & 0.600 & GP with L/2 & 0.114 & 6 & 10 & 0.055 \\
+As & 0.600 & ordinary kriging L/2 & 0.106 & 4 & 10 & 0.156 \\
+As & 0.600 & GP with L/2 & 0.023 & 3 & 10 & 0.250 \\
+Hg & 0.800 & ordinary kriging L/2 & 0.301 & 10 & 10 & 0.002 \\
+Hg & 0.800 & GP with L/2 & 0.306 & 10 & 10 & 0.002 \\
+Pb & 0.800 & ordinary kriging L/2 & 0.384 & 10 & 10 & 0.002 \\
+Pb & 0.800 & GP with L/2 & 0.396 & 10 & 10 & 0.002 \\
+As & 0.800 & ordinary kriging L/2 & 0.389 & 10 & 10 & 0.002 \\
+As & 0.800 & GP with L/2 & 0.253 & 10 & 10 & 0.002 \\
+\bottomrule
+\end{tabular}
+\end{table}
