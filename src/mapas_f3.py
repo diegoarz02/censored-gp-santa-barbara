@@ -259,7 +259,7 @@ def site_map_offline(D):
     # points under it, so any in-axes corner sits on top of real data.
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.045), frameon=False, ncol=2,
               fontsize=ef.FS_MIN, columnspacing=1.0)
-    ef.message_title(ax, "Every sampled point lies within 7 km of Huancavelica")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     # Diego removed the Peru locator from this figure on review (2026-09-24): it does not belong
     # on the manuscript's main site map. `peru_inset_drawer` stays in the module in case a
     # different figure wants a country locator later; it is simply not called here any more.
@@ -317,7 +317,7 @@ def site_map_basemap(D, provider="OpenTopoMap"):
                 # B). The attribution line goes below that, not fighting it for the same corner.
                 ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.045), frameon=False, ncol=2,
                           fontsize=ef.FS_MIN, columnspacing=1.0)
-                ef.message_title(ax, "The survey follows the valley below the old mine workings")
+                # No message_title: body-of-article figure, message goes in the LaTeX caption.
                 ax.text(0.5, -0.145, attribution[name], transform=ax.transAxes,
                         fontsize=ef.FS_MIN, ha="center", va="top", color=ef.C_REF)
                 info = ef.save_fig(fig, "FIG16_site_map_versionA_basemap")
@@ -392,8 +392,7 @@ def mean_and_uncertainty(D, analyte):
     # overlapping ('km' x 'domain)') on all five analytes.
     axes[1].legend(handles=[hatch], loc="upper right", frameon=True, framealpha=0.92,
                    edgecolor="#cfccc7", fontsize=ef.FS_MIN)
-    ef.message_title(fig, f"{analyte}: the surveyed corridor is contaminated throughout, and "
-                          f"uncertainty grows only at its edges")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     info = ef.save_fig(fig, f"FIG17_{analyte}_mean_and_uncertainty")
     plt.close(fig)
     return {**info, "extrap_frac": frac}
@@ -428,9 +427,7 @@ def exceedance(D, analyte, land_use="agricultural"):
     ef.mark_half_on_colorbar(cb)
 
     above = 100 * (p > 0.5).mean()
-    ef.message_title(ax, f"{analyte} exceeds the {land_use} standard almost everywhere"
-                     if above > 80 else
-                     f"{analyte} exceeds the {land_use} standard over {above:.0f} % of the domain")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     # No summary box and no locator inset here. Both covered the surface the figure exists
     # to show, and both said what a caption says better. A figure earns every object drawn
     # on top of its data.

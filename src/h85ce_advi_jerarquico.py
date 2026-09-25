@@ -208,10 +208,7 @@ if __name__ == "__main__":
         ef.soft_grid(ax)
         ax.legend(loc="upper left", frameon=True, framealpha=0.88, edgecolor="#cfccc7")
         ef.panel_label(ax, "b")
-        under = float((A["razon_sd"] < 0.9).mean())
-        ef.message_title(fig, "ADVI recupera los centros pero estrecha la incertidumbre"
-                              if under > 0.5 else
-                              "ADVI y NUTS coinciden en centro y en dispersión")
+        # Sin message_title: mensaje va en el caption, no impreso dentro de la figura.
         ef.save_fig(fig, "FIG24_advi_vs_nuts")
         plt.close(fig)
 

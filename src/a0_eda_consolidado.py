@@ -146,12 +146,12 @@ def main():
     colors = [ef.C_CENSORED, ef.C_REF] * len(CENSORED_METALS)
     for patch, c in zip(bp["boxes"], colors):
         patch.set_facecolor(c); patch.set_alpha(0.55); patch.set_edgecolor("k")
-    ax.set_xticks(positions); ax.set_xticklabels(labels_x, fontsize=ef.FS_MIN - 1)
+    ax.set_xticks(positions); ax.set_xticklabels(labels_x, fontsize=ef.FS_MIN)
     ax.set_ylabel("distance to mining feature (m)")
     ef.soft_grid(ax)
     ef.panel_label(ax, "b")
 
-    ef.message_title(fig, "Cd, Sb and Ag censoring is not random: it concentrates far from the mine")
+    # No message_title: this is a body-of-article figure, the message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG27_censura_espacial")
     plt.close(fig)
 

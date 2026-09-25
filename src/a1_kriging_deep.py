@@ -124,8 +124,7 @@ def main():
     ax.set_ylabel("95% interval coverage")
     ax.set_xticks([20, 40, 60, 80])
     ef.soft_grid(ax)
-    ef.message_title(ax, "The classical baseline also collapses under censoring — only the "
-                         "censored model does not")
+    # No message_title: this is a body-of-article figure, the message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG28_coverage_three_models")
     plt.close(fig)
 

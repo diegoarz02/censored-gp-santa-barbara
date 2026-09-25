@@ -112,8 +112,7 @@ def main():
     # message_title (fig.suptitle) does not wrap text — the original sentence ran past the right
     # edge of the page (the audit caught "not", "fix", "it" clipped outside it). Same claim, short
     # enough to fit at W2 (190 mm) in bold 8 pt.
-    ef.message_title(fig, "The baseline fails to converge from its own geometry, not compute — "
-                          "more tune and target_accept do not fix it")
+    # No message_title: body-of-article figure, message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG29_trazas_no_convergencia")
     plt.close(fig)
 

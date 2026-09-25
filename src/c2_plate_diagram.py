@@ -115,8 +115,7 @@ def main():
 
     ax.set_xlim(0.2, 6.8); ax.set_ylim(0.7, 6.0)
     ax.set_aspect("equal"); ax.axis("off")
-    ef.message_title(fig, "Plate diagram: six shared parameters, eight variables per each of the "
-                          "114 locations")
+    # No message_title: this is a body-of-article figure, the message goes in the LaTeX caption.
     ef.save_fig(fig, "FIG30_plate_diagram")
     plt.close(fig)
 
