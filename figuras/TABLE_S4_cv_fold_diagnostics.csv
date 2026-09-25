@@ -1,0 +1,41 @@
+metal,block,model,rhat_max,ess_min,divergences
+Hg,0,censored GP,1.0053,869.76,0.0
+Hg,0,GP with L/2,1.0061,947.8666,0.0
+Hg,1,censored GP,1.0067,806.7686,0.0
+Hg,1,GP with L/2,1.0046,786.9114,0.0
+Hg,2,censored GP,1.0064,383.2667,0.0
+Hg,2,GP with L/2,1.0046,373.1143,0.0
+Hg,3,censored GP,1.0123,400.6992,0.0
+Hg,3,GP with L/2,1.015,380.2116,0.0
+Hg,4,censored GP,1.0058,596.235,0.0
+Hg,4,GP with L/2,1.0075,609.0002,0.0
+Pb,0,censored GP,1.0057,869.3469,0.0
+Pb,0,GP with L/2,1.0049,868.5792,0.0
+Pb,1,censored GP,1.0046,720.5608,0.0
+Pb,1,GP with L/2,1.0041,859.3581,0.0
+Pb,2,censored GP,1.0038,897.8499,0.0
+Pb,2,GP with L/2,1.0017,1253.6304,0.0
+Pb,3,censored GP,1.005,946.0945,0.0
+Pb,3,GP with L/2,1.0035,958.3725,0.0
+Pb,4,censored GP,1.0072,940.753,0.0
+Pb,4,GP with L/2,1.0122,731.2133,0.0
+As,0,censored GP,1.0046,878.8234,0.0
+As,0,GP with L/2,1.0059,796.0943,0.0
+As,1,censored GP,1.011,551.9451,0.0
+As,1,GP with L/2,1.0065,517.6572,0.0
+As,2,censored GP,1.0041,814.6069,0.0
+As,2,GP with L/2,1.0031,900.404,0.0
+As,3,censored GP,1.0099,667.2326,0.0
+As,3,GP with L/2,1.0074,637.4442,0.0
+As,4,censored GP,1.0056,1031.8726,0.0
+As,4,GP with L/2,1.0043,825.7461,0.0
+Cd,0,censored GP,1.0024,1338.5592,0.0
+Cd,0,GP with L/2,1.0123,693.7472,0.0
+Cd,1,censored GP,1.0024,1270.834,0.0
+Cd,1,GP with L/2,1.0104,592.8429,0.0
+Cd,2,censored GP,1.0025,1293.5349,0.0
+Cd,2,GP with L/2,1.0097,437.5139,0.0
+Cd,3,censored GP,1.0036,798.8815,0.0
+Cd,3,GP with L/2,1.0077,362.4209,0.0
+Cd,4,censored GP,1.0055,977.9987,0.0
+Cd,4,GP with L/2,1.0166,366.0246,0.0

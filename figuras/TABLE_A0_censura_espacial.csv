@@ -1,0 +1,4 @@
+run_id,metal,pct_censored,n_censored,n_detected,dist_median_censored_m,dist_median_detected_m,mannwhitney_u,p_value_one_sided
+F4-20260923,Cd,79.8,91,23,150.2,71.5,1544.0,0.0002
+F4-20260923,Sb,76.3,87,27,160.4,76.3,1641.5,0.0009
+F4-20260923,Ag,78.1,89,25,158.9,73.8,1597.5,0.0005

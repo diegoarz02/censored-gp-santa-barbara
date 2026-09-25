@@ -1,0 +1,21 @@
+run_id,metal,model,weighted_by_n_test,simple_mean_of_folds,difference
+F3-20260908,Hg,censored GP,-1.9749,-1.9944,0.0195
+F3-20260908,Hg,GP with L/2,-1.9938,-1.9994,0.0056
+F3-20260908,Pb,censored GP,-2.1729,-2.1243,-0.0486
+F3-20260908,Pb,GP with L/2,-2.1999,-2.1536,-0.0462
+F3-20260908,As,censored GP,-1.6787,-1.6133,-0.0654
+F3-20260908,As,GP with L/2,-1.6684,-1.6014,-0.067
+F3-20260908,Cd,censored GP,-1.833,-1.7484,-0.0846
+F3-20260908,Cd,GP with L/2,-1.5005,-1.6452,0.1447
+F3-20260908,Hg,ordinary kriging L/2,-2.2415,-2.1432,-0.0983
+F3-20260908,Hg,intercept (detections),-2.5243,-2.3778,-0.1465
+F3-20260908,Hg,global mean with L/2,-2.5243,-2.3778,-0.1465
+F3-20260908,Pb,ordinary kriging L/2,-2.3965,-2.2723,-0.1242
+F3-20260908,Pb,intercept (detections),-2.34,-2.2689,-0.0711
+F3-20260908,Pb,global mean with L/2,-2.34,-2.2689,-0.0711
+F3-20260908,As,ordinary kriging L/2,-1.7116,-1.6239,-0.0876
+F3-20260908,As,intercept (detections),-1.6695,-1.6007,-0.0688
+F3-20260908,As,global mean with L/2,-1.6695,-1.6007,-0.0688
+F3-20260908,Cd,ordinary kriging L/2,-1.6107,-1.6925,0.0819
+F3-20260908,Cd,intercept (detections),-10.643,-9.9951,-0.6479
+F3-20260908,Cd,global mean with L/2,-1.3709,-1.5695,0.1986

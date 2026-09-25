@@ -1,0 +1,25 @@
+model,parameter,true,posterior_mean,ci95_low,ci95_high,covers,rel_bias_pct
+censored,beta0,4.0,4.8158,3.9691,5.7366,True,20.3953
+censored,b_background,-0.9,-0.7624,-1.2924,-0.1613,True,15.2943
+censored,ell[0],0.65,0.9177,0.4071,1.9189,True,41.1796
+censored,ell[1],1.55,0.9294,0.4003,1.7444,True,-40.0361
+censored,eta,0.9,1.0383,0.665,1.5759,True,15.363
+censored,sigma_n,0.45,0.4041,0.3099,0.5318,True,-10.1948
+censored,sigma_tot,1.0062,1.1181,0.7696,1.6304,True,11.1202
+censored,rho,0.8,0.8547,0.7083,0.9451,True,6.8368
+censored,beta[0],0.3,0.3167,-0.3604,0.996,True,5.5734
+censored,beta[1],-0.2,-0.1925,-0.4021,-0.0016,True,3.7328
+censored,beta[2],-0.5,-0.6157,-0.8629,-0.383,True,-23.1319
+censored,beta[3],0.1,0.0053,-0.735,0.7223,True,-94.6765
+L/2 substitution,beta0,4.0,4.7249,4.0573,5.4816,False,18.1216
+L/2 substitution,b_background,-0.9,-0.5742,-1.2668,0.1556,True,36.2023
+L/2 substitution,ell[0],0.65,0.6929,0.3504,1.3128,True,6.599
+L/2 substitution,ell[1],1.55,0.6377,0.2951,1.4808,False,-58.8565
+L/2 substitution,eta,0.9,0.9802,0.6681,1.4138,True,8.9106
+L/2 substitution,sigma_n,0.45,0.3623,0.3034,0.4338,False,-19.4812
+L/2 substitution,sigma_tot,1.0062,1.0476,0.7555,1.4636,True,4.1132
+L/2 substitution,rho,0.8,0.869,0.7552,0.9433,True,8.6269
+L/2 substitution,beta[0],0.3,0.1951,-0.428,0.8328,True,-34.9771
+L/2 substitution,beta[1],-0.2,-0.105,-0.2275,0.0164,True,47.5202
+L/2 substitution,beta[2],-0.5,-0.592,-0.8122,-0.3711,True,-18.4029
+L/2 substitution,beta[3],0.1,-0.1539,-0.8213,0.5455,True,-253.941

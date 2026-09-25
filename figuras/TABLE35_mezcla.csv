@@ -1,0 +1,2 @@
+run_id,separacion_log,sep_ci_low,sep_ci_high,factor_concentracion,acuerdo_pct,n_coinciden,n_mezcla_afectado_oefa_fondo,n_mezcla_fondo_oefa_interes,rhat_max,divergences
+F4-20260923,3.0585,2.4848,3.5487,21.2949,69.2982,79,17,18,1.002,0

@@ -1,0 +1,51 @@
+# Allowlist: everything in the repo root is ignored by default, and only the paths this project
+# explicitly decided to publish are un-ignored below. This is deliberately the safer direction for
+# a public repo with a real .env file sitting next to it -- a new file dropped in the root (a
+# report, a scratch notebook, an export) is excluded by default instead of silently going public.
+
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/requirements.txt
+!/notebooks/
+!/src/
+!/data/
+!/figuras/
+
+# --- notebooks/: the two top-level notebooks + notebooks/_src/*.py, nothing else ---
+/notebooks/*
+!/notebooks/*.ipynb
+!/notebooks/_src/
+/notebooks/_src/*
+!/notebooks/_src/*.py
+.ipynb_checkpoints/
+
+# --- src/: python scripts only ---
+/src/*
+!/src/*.py
+
+# --- data/: only data/final, and only the four files this project ships ---
+/data/*
+!/data/final/
+/data/final/*
+!/data/final/*.csv
+!/data/final/*.parquet
+!/data/final/DATA_DICTIONARY.md
+!/data/final/mine_workings.csv
+
+# --- figuras/: vector PDFs, source CSVs and LaTeX table fragments -- not the TIFFs (heavy,
+# print-only duplicates of the PDFs) or the contact sheet PNG ---
+/figuras/*
+!/figuras/*.pdf
+!/figuras/*.csv
+!/figuras/*.tex
+
+# --- never, anywhere, regardless of the allowlist above ---
+.env
+*.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,60 @@
+run_id,figure,idioma_detectado,sample
+F4-20260923,FIG10_As_difference,ingles,"0.15 0.10 0.05 0.00 −0.05 0.2 0.4 0.6 0.8 Artificial censoring level )PG derosnec eht sruovaf evitisop( ecnereffid SPRC As kriging, L/2 − ce"
+F4-20260923,FIG10_Hg_difference,ingles,"0.5 0.4 0.3 0.2 0.1 0.0 −0.1 0.2 0.4 0.6 0.8 Artificial censoring level )PG derosnec eht sruovaf evitisop( ecnereffid SPRC Hg kriging, L/2 −"
+F4-20260923,FIG10_Pb_difference,ingles,0.7 0.6 0.5 0.4 0.3 0.2 0.1 0.0 −0.1 0.2 0.4 0.6 0.8 Artificial censoring level )PG derosnec eht sruovaf evitisop( ecnereffid SPRC Pb krigin
+F4-20260923,FIG11_interval_coverage,ingles,1.0 0.8 0.6 0.4 20 40 60 80 censoring imposed (%) lavretni % 59 lanimon eht fo egarevoc (a) interval coverage against the truth nominal 0.95
+F4-20260923,FIG12_cross_validation,mixto,0 −2 −4 −6 −8 −10 Hg Pb As Cd )retteb si rehgih( erocs evitciderp gol tnioJ Hg: vs ordinary kriging L Hg: vs GP with L/2 Hg: vs intercept (d
+F4-20260923,FIG13_background_and_city,espanol,6 5 4 3 2 1 0 Hg Hg Pb Pb As As Ba Ba Cd Cd bg PI bg PI bg PI bg PI bg PI )1−gk gm( noitartnecnoc gol 01 Dashed line: agricultural soil stan
+F4-20260923,FIG14_monitoring_design,ingles,0.64 0.62 0.60 0.58 0.56 0.54 0.52 0.50 0 5 10 15 20 Number of new sampling points )1−gk gm gol( ds roiretsop egareva-niamoD (a) 8585 8584 1
+F4-20260923,FIG15_lmc_cross_correlation,mixto,8 6 4 2 0 −1.00 −0.75 −0.50 −0.25 0.00 0.25 0.50 0.75 1.00 Posterior cross-correlation ytisneD Cd-Sb (a) 95% (b) 50% Cd-Ag Sb-Ag −1.00 −0.75
+F4-20260923,FIG16_site_map_versionA_basemap,mixto,8585 8584 8583 8582 8581 8580 502 503 504 504 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN The survey follows the valley below the old
+F4-20260923,FIG16_site_map_versionB_offline,mixto,8585 8584 8583 8582 8581 8580 502 503 504 504 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN Every sampled point lies within 7 km of Hua
+F4-20260923,FIG16_site_map_versionC_osm,ambiguo,"8585 8584 8583 8582 8581 8580 502 503 504 504 504 505 Easting UTM 18S, EPSG:32718 (km) )mk( S81 MTU gnihtroN N Santa Barbara Cumallipata Car"
+F4-20260923,FIG17_As_mean_and_uncertainty,mixto,8585 8584 8583 8582 8581 8580 503 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN (a) (b) extrapolation (0.8 %) 8585 N N Santa Bárbara Sa
+F4-20260923,FIG17_Ba_mean_and_uncertainty,mixto,8585 8584 8583 8582 8581 8580 503 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN (a) (b) extrapolation (0.8 %) 8585 N N Santa Bárbara Sa
+F4-20260923,FIG17_Cd_mean_and_uncertainty,mixto,8585 8584 8583 8582 8581 8580 503 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN (a) (b) extrapolation (0.8 %) 8585 N N Santa Bárbara Sa
+F4-20260923,FIG17_Hg_mean_and_uncertainty,mixto,8585 8584 8583 8582 8581 8580 503 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN (a) (b) extrapolation (0.8 %) 8585 N N Santa Bárbara Sa
+F4-20260923,FIG17_Pb_mean_and_uncertainty,mixto,8585 8584 8583 8582 8581 8580 503 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN (a) (b) extrapolation (0.8 %) 8585 N N Santa Bárbara Sa
+F4-20260923,FIG18_As_exceedance,mixto,8585 8584 8583 8582 8581 8580 502 503 504 504 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN As exceeds the agricultural standard almost
+F4-20260923,FIG18_Ba_exceedance,mixto,8585 8584 8583 8582 8581 8580 502 503 504 504 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN Ba exceeds the agricultural standard over 1
+F4-20260923,FIG18_Cd_exceedance,mixto,8585 8584 8583 8582 8581 8580 502 503 504 504 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN Cd exceeds the agricultural standard over 5
+F4-20260923,FIG18_Cd_exceedance_residential,mixto,8585 8584 8583 8582 8581 8580 502 503 504 504 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN Cd exceeds the residential standard over 6 
+F4-20260923,FIG18_Hg_exceedance,mixto,8585 8584 8583 8582 8581 8580 502 503 504 504 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN Hg exceeds the agricultural standard almost
+F4-20260923,FIG18_Pb_exceedance,mixto,8585 8584 8583 8582 8581 8580 502 503 504 504 504 505 Easting UTM 18S (km) )mk( S81 MTU gnihtroN Pb exceeds the agricultural standard almost
+F4-20260923,FIG19_substitution_bias,mixto,2.5 2.0 1.5 1.0 0.5 0.0 −0.5 −1.0 20 40 60 80 censoring imposed (%) )stinu gol( eurt − detciderp :saib Every method over-predicts under cens
+F4-20260923,FIG1_sampling_design_and_mercury,ambiguo,"8585 8584 8583 8582 8581 8580 503 504 Easting UTM 18S, EPSG:32718 (km) )mk( S81 MTU gnihtroN 8585 N 8584 8583 8582 8581 8580 1 km (a) 503 50"
+F4-20260923,FIG20_decision_thresholds,ingles,"100 80 60 40 20 0 1:1 1:2 1:5 1:10 1:20 cost ratio, false alarm : missed exceedance ecnadeecxe ni deralced niamod fo % (a) 2.5 2.0 1.5 1.0 H"
+F4-20260923,FIG21_prior_sensitivity,ingles,3.5 3.0 2.5 2.0 1.5 1.0 As Hg Pb Cd 0% censored 0% censored 0% censored 80% censored roiretsop σ tot (a) 0.9 0.8 0.7 0.6 0.5 0.4 As Hg Pb Cd
+F4-20260923,FIG22_exceedance_grid,ingles,8584 8582 8580 503 504 505 )mk( S81 MTU gnihtroN Hg ECA 6.6 100 % > 0.5 Pb ECA 70 99 % > 0.5 8584 8582 8580 503 504 505 8584 8582 8580 503 5
+F4-20260923,FIG23_red_bayesiana,ingles,"The non-detection indicator is a child of concentration, not a datum: that edge is the model reported LOD r η,ℓ,ρ β b bg σ n limit L field d"
+F4-20260923,FIG25_mezcla_poblaciones,ingles,10 8 6 4 2 0 0 2 4 6 log Hg (mg kg−1) stniop (a) ECA 6.6 8585 8584 8583 8582 8581 8580 503 504 505 Easting UTM 18S (km) background component
+F4-20260923,FIG26_gradiente_real_vs_impuesto,ingles,1.0 0.9 0.8 0.7 0.6 0.5 10 20 30 40 50 60 70 80 90 100 censoring (%) egarevoc lavretni %59 lanimon Real censoring reproduces the degradation
+F4-20260923,FIG27_censura_espacial,ingles,8.585 8.584 8.583 8.582 8.581 8.580 503000 504000 505000 Easting UTM 18S (m) )m( S81 MTU gnihtroN (a) 1e6 1000 800 600 400 200 0 Cd Cd Sb Sb
+F4-20260923,FIG28_coverage_three_models,mixto,1.0 0.9 0.8 0.7 0.6 0.5 0.4 20 40 60 80 imposed censoring (%) egarevoc lavretni %59 The classical baseline also collapses under censoring — 
+F4-20260923,FIG29_trazas_no_convergencia,ingles,1.2 1.0 0.8 0.6 0.4 0.2 0.0 0 200 400 600 800 1000 iteration ate GP with L/2 (baseline) 2.5 2.0 1.5 1.0 0.5 0 200 400 600 800 1000 iteration
+F4-20260923,FIG2_As_log_distribution,ambiguo,17.5 15.0 12.5 10.0 7.5 5.0 2.5 0.0 3 4 5 6 7 log As (mg kg−1) tnuoC As 0% censored ECA 50
+F4-20260923,FIG2_Ba_log_distribution,ambiguo,17.5 15.0 12.5 10.0 7.5 5.0 2.5 0.0 3 4 5 6 7 8 log Ba (mg kg−1) tnuoC Ba 0% censored ECA 750
+F4-20260923,FIG2_Cd_log_distribution,ambiguo,6 5 4 3 2 1 0 0 1 2 3 4 log Cd (mg kg−1) tnuoC Cd 80% censored ECA 1.4 LOD 0.5
+F4-20260923,FIG2_Hg_log_distribution,ambiguo,14 12 10 8 6 4 2 0 −1 0 1 2 3 4 5 6 7 log Hg (mg kg−1) tnuoC Hg 0% censored ECA 6.6
+F4-20260923,FIG2_Pb_log_distribution,ambiguo,12 10 8 6 4 2 0 3 4 5 6 7 8 9 10 11 log Pb (mg kg−1) tnuoC Pb 0% censored ECA 70
+F4-20260923,FIG2_Sb_log_distribution,ambiguo,5 4 3 2 1 0 1 2 3 4 5 6 7 8 log Sb (mg kg−1) tnuoC Sb 76% censored LOD 2.5
+F4-20260923,FIG30_plate_diagram,mixto,"Plate diagram: six shared parameters, eight variables per each of the 114 locations η,ℓ,ρ β b bg σ n r LOD L x(s) f(s) μ(s) y(s) g(s) D(s) y"
+F4-20260923,FIG31_preferencial_restringido,ingles,The sign of δ holds after removing the extrapolated zone grid restricted to data support full grid (original) −2.0 −1.5 −1.0 −0.5 0.0 δ (loa
+F4-20260923,FIG32_hsgp_test,ingles,8 6 4 2 0 As Hg dnoces / klub SSE (a) 1.0 0.8 0.6 0.4 0.2 0.0 As Hg latent GP HSGP (m=25×25) egarevoc lavretni %59 HSGP improves sampling ef
+F4-20260923,FIG33_mezcla_censurada_componentes,ingles,−60 −70 −80 −90 −100 −110 −120 1 2 3 number of components k ool_dple (a) 8585 8584 8583 8582 8581 8580 503 504 Easting UTM 18S (km) )mk( S81
+F4-20260923,FIG34_cd_coregionalizado_gonogo,ingles,−160 −180 −200 −220 −240 −260 univariate Cd within the Cd censored LMC ool_dple (a) 8585 8584 8583 8582 8581 8580 503 504 Easting UTM 18S (k
+F4-20260923,FIG35_sbc_ranks,ingles,"25 20 15 10 5 0 0.0 0.2 0.4 0.6 0.8 1.0 normalised rank, eta setacilper 25 20 15 10 5 0 0.0 0.2 0.4 0.6 0.8 1.0 normalised rank, sigma_n set"
+F4-20260923,FIG36_anisotropy_check,ingles,1.0 0.8 0.6 0.4 0.2 0.0 As Hg egarevoc lavretni %59 Coverage is identical whether the model is anisotropic or isotropic ARD (per-axis ell) i
+F4-20260923,FIG3_As_qq,ambiguo,7 6 5 4 3 2 −2 −1 0 1 2 Theoretical quantiles sA gol devresbO As Shapiro-Wilk p = 0.034
+F4-20260923,FIG3_Hg_qq,ambiguo,8 6 4 2 0 −2 −1 0 1 2 Theoretical quantiles gH gol devresbO Hg Shapiro-Wilk p = 0.016
+F4-20260923,FIG3_Pb_qq,ambiguo,10 8 6 4 2 −2 −1 0 1 2 Theoretical quantiles bP gol devresbO Pb Shapiro-Wilk p = 0.011
+F4-20260923,FIG4_variograms,ingles,7 6 5 4 3 2 1 0 0.0 0.5 1.0 1.5 2.0 2.5 Lag distance (km) 2)1−gk gm gol( )h(γ̂ ecnairavimeS 10 Hg As Pb Ba 8 6 4 2 (a) 0 0.0 0.5 1.0 1.5 2.0
+F4-20260923,FIG5_prior_predictive,ingles,0.8 0.6 0.4 0.2 0.0 0 1 2 3 4 5 Length scale ℓ (km) ytisned roirP (a) 0.6 0.4 0.2 0.0 −2 0 2 4 6 log concentration (mg kg−1) 10 Prior on ℓ M
+F4-20260923,FIG5a_prior_length_scale,ingles,0.8 0.6 0.4 0.2 0.0 0 1 2 3 4 5 Length scale ℓ (km) ytisned roirP Prior on ℓ 90% prior mass Median pair distance Domain diameter
+F4-20260923,FIG5b_prior_predictive_concentrations,ingles,0.6 0.4 0.2 0.0 −0.2 −2 0 2 4 6 log concentration (mg kg−1) 10 ytisned evitciderp roirP Ticks below the axis are the observed values Hg prio
+F4-20260923,FIG6_parameter_recovery,mixto,censored L/2 substitution beta0 beta0 b_background b_background ell[0] ell[0] ell[1] ell[1] eta eta sigma_n sigma_n (a) (b) rho rho −1 0 1 2
+F4-20260923,FIG7_stratum_support,mixto,0.5 0.0 −0.5 −1.0 −1.5 −1.5 −1.0 −0.5 0.0 0.5 Stratum effect b (log mg kg−1) background τgol rotcaf troppuS (a) Hg (b) Pb As Ba Cd −1.25 −1.
+F4-20260923,FIG8_prior_posterior,ingles,6 5 4 3 2 1 0 0.0 0.2 0.4 0.6 0.8 1.0 ρ (spatial fraction of variance) ytisneD 4.0 Prior As (a) Hg Ba 3.5 Pb Cd 3.0 2.5 2.0 1.5 1.0 0.5 0.0 
+F4-20260923,FIG9_As_crps,ingles,"1.1 1.0 0.9 0.8 0.7 0.6 0.5 0.2 0.4 0.6 0.8 imposed censoring level )1−gk gm gol( SPRC As censored GP GP, L/2"
+F4-20260923,FIG9_Hg_crps,ingles,"2.2 2.0 1.8 1.6 1.4 1.2 1.0 0.8 0.6 0.2 0.4 0.6 0.8 imposed censoring level )1−gk gm gol( SPRC Hg censored GP GP, L/2"
+F4-20260923,FIG9_Pb_crps,ingles,"2.25 2.00 1.75 1.50 1.25 1.00 0.75 0.2 0.4 0.6 0.8 imposed censoring level )1−gk gm gol( SPRC Pb censored GP GP, L/2"

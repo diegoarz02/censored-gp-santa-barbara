@@ -1,0 +1,7 @@
+run_id,analyte,land_use,threshold,pct_above_half
+F4-20260923,Hg,agricultural,6.6,99.7697
+F4-20260923,Pb,agricultural,70.0,98.6587
+F4-20260923,As,agricultural,50.0,92.1555
+F4-20260923,Ba,agricultural,750.0,15.5128
+F4-20260923,Cd,agricultural,1.4,57.4041
+F4-20260923,Cd,residential,10.0,6.3135

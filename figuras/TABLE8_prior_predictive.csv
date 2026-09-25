@@ -1,0 +1,11 @@
+prior,analyte,prior_p01,prior_median,prior_p99,prior_p999,p_above_physical_bound,observed_median,observed_p95,observed_max,covers_bulk,impossible_mass_negligible,not_absurd,plausible
+initial (all scales 1.0),Hg,0.121,53.96,22858.79,601519.6,0.0,60.625,780.865,1178.0,True,False,True,False
+initial (all scales 1.0),Pb,0.833,416.131,176490.727,4156458.137,0.003,386.0,6181.95,58000.0,True,False,True,False
+initial (all scales 1.0),As,0.25,114.784,48667.727,1196426.945,0.001,91.0,662.105,1730.0,True,False,True,False
+initial (all scales 1.0),Ba,0.56,257.73,106928.794,3065862.353,0.003,248.15,1857.8,5199.0,True,False,True,False
+initial (all scales 1.0),Cd,0.019,9.287,4521.438,138766.652,0.0,7.0,21.62,46.4,True,False,True,False
+"calibrated (beta 0.5, sigma 0.7, beta0 0.7)",Hg,1.504,52.917,1721.149,8160.204,0.0,60.625,780.865,1178.0,True,True,True,True
+"calibrated (beta 0.5, sigma 0.7, beta0 0.7)",Pb,11.673,414.343,12649.825,63433.811,0.0,386.0,6181.95,58000.0,True,True,True,True
+"calibrated (beta 0.5, sigma 0.7, beta0 0.7)",As,3.171,112.247,3660.741,17874.695,0.0,91.0,662.105,1730.0,True,True,True,True
+"calibrated (beta 0.5, sigma 0.7, beta0 0.7)",Ba,6.731,249.159,7641.379,38491.37,0.0,248.15,1857.8,5199.0,True,True,True,True
+"calibrated (beta 0.5, sigma 0.7, beta0 0.7)",Cd,0.256,9.162,283.554,1439.594,0.0,7.0,21.62,46.4,True,True,True,True

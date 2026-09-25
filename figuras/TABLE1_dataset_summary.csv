@@ -1,0 +1,11 @@
+analyte,role,n,n_censored,pct_censored,n_quantified,median_quantified,max_quantified,sd_log,reported_LOD,resolution,pct_above_eca_agri
+As,truth field,114,0,0.0,114,91.0,1730.0,1.11,,0.1,70.18
+Ba,truth field,114,0,0.0,114,248.15,5199.0,1.32,,0.1,21.05
+Hg,truth field,114,0,0.0,114,60.62,1178.0,1.8,,0.01,85.09
+Pb,truth field,114,0,0.0,114,386.0,58000.0,1.79,,1.0,78.95
+Co,censoring gradient,114,43,37.72,71,11.9,75.2,0.74,0.8,0.1,
+Sb,censoring gradient,114,87,76.32,27,188.8,3170.0,1.24,2.5,0.1,
+Ag,censoring gradient,114,89,78.07,25,11.2,148.2,1.21,0.6,0.1,
+Cd,decision metal,114,91,79.82,23,7.0,46.4,0.64,0.5,0.1,20.18
+Bi,censoring gradient,114,96,84.21,18,51.85,223.4,0.74,1.5,0.1,
+Ni,censoring gradient,114,106,92.98,8,50.0,211.0,1.0,1.0,1.0,

@@ -1,0 +1,9 @@
+analyte,subset,n,pct_censored,median_quantified,pct_above_eca
+Hg,all points,114,0.0,60.625,85.088
+Hg,background only,30,0.0,30.945,70.0
+Hg,interest only,80,0.0,105.3,90.0
+Hg,balanced subsample,60,0.0,58.445,83.333
+Cd,all points,114,79.825,7.0,20.175
+Cd,background only,30,100.0,,0.0
+Cd,interest only,80,76.25,7.0,23.75
+Cd,balanced subsample,60,95.0,6.3,5.0

@@ -1,0 +1,13 @@
+metal,baseline,metric,slope,slope_se,ci95_low,ci95_high,p_value,mean_diff_at_20,mean_diff_at_80,diverges
+Hg,ordinary kriging L/2,rmse,0.24128,0.20194,-0.15451,0.63708,0.23955,0.10459,0.2416,False
+Hg,ordinary kriging L/2,crps,0.30696,0.181,-0.0478,0.66173,0.09808,0.09158,0.27442,False
+Hg,GP with L/2,rmse,0.18443,0.10488,-0.02114,0.39,0.08673,0.04378,0.16498,False
+Hg,GP with L/2,crps,0.30999,0.08617,0.1411,0.47887,0.00091,0.02137,0.22155,True
+Pb,ordinary kriging L/2,rmse,0.13725,0.26435,-0.38087,0.65537,0.60663,0.21676,0.34396,False
+Pb,ordinary kriging L/2,crps,0.49573,0.25076,0.00424,0.98721,0.05534,0.14798,0.48679,True
+Pb,GP with L/2,rmse,0.0859,0.21076,-0.32719,0.499,0.68587,0.0251,0.10863,False
+Pb,GP with L/2,crps,0.35013,0.17427,0.00855,0.6917,0.05167,0.01897,0.26323,True
+As,ordinary kriging L/2,rmse,0.06686,0.1198,-0.16795,0.30167,0.58005,-0.00677,0.03222,False
+As,ordinary kriging L/2,crps,0.16395,0.09174,-0.01586,0.34375,0.0819,0.01149,0.11486,False
+As,GP with L/2,rmse,0.03286,0.08734,-0.13833,0.20405,0.70883,-0.02896,0.00367,False
+As,GP with L/2,crps,0.10311,0.05347,-0.0017,0.20792,0.06133,-0.017,0.05834,False

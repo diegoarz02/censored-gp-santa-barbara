@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\caption{Parameter recovery on a simulated field with known parameters over the 114 real locations, censored at 60\%. The censored likelihood is compared with the $L/2$ substitution.}
+\label{tab:recovery}
+\footnotesize
+\begin{tabular}{llrrrrrr}
+\toprule
+model & parameter & true & posterior\_mean & ci95\_low & ci95\_high & covers & rel\_bias\_pct \\
+\midrule
+censored & beta0 & 4.000 & 4.816 & 3.969 & 5.737 & True & 20.395 \\
+censored & b\_background & -0.900 & -0.762 & -1.292 & -0.161 & True & 15.294 \\
+censored & ell[0] & 0.650 & 0.918 & 0.407 & 1.919 & True & 41.180 \\
+censored & ell[1] & 1.550 & 0.929 & 0.400 & 1.744 & True & -40.036 \\
+censored & eta & 0.900 & 1.038 & 0.665 & 1.576 & True & 15.363 \\
+censored & sigma\_n & 0.450 & 0.404 & 0.310 & 0.532 & True & -10.195 \\
+censored & sigma\_tot & 1.006 & 1.118 & 0.770 & 1.630 & True & 11.120 \\
+censored & rho & 0.800 & 0.855 & 0.708 & 0.945 & True & 6.837 \\
+censored & beta[0] & 0.300 & 0.317 & -0.360 & 0.996 & True & 5.573 \\
+censored & beta[1] & -0.200 & -0.193 & -0.402 & -0.002 & True & 3.733 \\
+censored & beta[2] & -0.500 & -0.616 & -0.863 & -0.383 & True & -23.132 \\
+censored & beta[3] & 0.100 & 0.005 & -0.735 & 0.722 & True & -94.677 \\
+L/2 substitution & beta0 & 4.000 & 4.725 & 4.057 & 5.482 & False & 18.122 \\
+L/2 substitution & b\_background & -0.900 & -0.574 & -1.267 & 0.156 & True & 36.202 \\
+L/2 substitution & ell[0] & 0.650 & 0.693 & 0.350 & 1.313 & True & 6.599 \\
+L/2 substitution & ell[1] & 1.550 & 0.638 & 0.295 & 1.481 & False & -58.856 \\
+L/2 substitution & eta & 0.900 & 0.980 & 0.668 & 1.414 & True & 8.911 \\
+L/2 substitution & sigma\_n & 0.450 & 0.362 & 0.303 & 0.434 & False & -19.481 \\
+L/2 substitution & sigma\_tot & 1.006 & 1.048 & 0.755 & 1.464 & True & 4.113 \\
+L/2 substitution & rho & 0.800 & 0.869 & 0.755 & 0.943 & True & 8.627 \\
+L/2 substitution & beta[0] & 0.300 & 0.195 & -0.428 & 0.833 & True & -34.977 \\
+L/2 substitution & beta[1] & -0.200 & -0.105 & -0.228 & 0.016 & True & 47.520 \\
+L/2 substitution & beta[2] & -0.500 & -0.592 & -0.812 & -0.371 & True & -18.403 \\
+L/2 substitution & beta[3] & 0.100 & -0.154 & -0.821 & 0.545 & True & -253.941 \\
+\bottomrule
+\end{tabular}
+\end{table}
