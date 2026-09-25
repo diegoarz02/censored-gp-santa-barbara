@@ -1,0 +1,25 @@
+metal,metric,comparison,mean_diff,ci95_low,ci95_high,p_positive,wins_by_block,n_blocks
+Hg,joint_log_score,censored GP - ordinary kriging L/2,0.2666,-0.0577,0.5921,0.9176,3,5
+Hg,crps_det,ordinary kriging L/2 - censored GP,0.1253,-0.0872,0.3235,0.7898,2,5
+Hg,joint_log_score,censored GP - GP with L/2,0.0189,-0.0117,0.0456,0.8606,4,5
+Hg,crps_det,GP with L/2 - censored GP,0.0126,0.0002,0.0234,0.9778,4,5
+Hg,joint_log_score,censored GP - intercept (detections),0.5494,0.0227,1.023,0.9906,4,5
+Hg,crps_det,intercept (detections) - censored GP,0.3574,-0.0072,0.5871,0.9698,4,5
+Pb,joint_log_score,censored GP - ordinary kriging L/2,0.2236,0.0566,0.289,0.9886,4,5
+Pb,crps_det,ordinary kriging L/2 - censored GP,0.2063,0.0172,0.2874,0.982,4,5
+Pb,joint_log_score,censored GP - GP with L/2,0.027,0.0089,0.058,1.0,5,5
+Pb,crps_det,GP with L/2 - censored GP,0.0145,-0.001,0.032,0.963,4,5
+Pb,joint_log_score,censored GP - intercept (detections),0.1671,-0.2472,0.6322,0.7668,3,5
+Pb,crps_det,intercept (detections) - censored GP,0.1118,-0.1768,0.3701,0.761,3,5
+As,joint_log_score,censored GP - ordinary kriging L/2,0.0329,-0.1326,0.193,0.6224,2,5
+As,crps_det,ordinary kriging L/2 - censored GP,0.0157,-0.0693,0.1332,0.5976,2,5
+As,joint_log_score,censored GP - GP with L/2,-0.0103,-0.0211,0.0058,0.0912,1,5
+As,crps_det,GP with L/2 - censored GP,-0.0088,-0.0162,0.0016,0.0624,1,5
+As,joint_log_score,censored GP - intercept (detections),-0.0092,-0.1858,0.3591,0.4182,1,5
+As,crps_det,intercept (detections) - censored GP,-0.0168,-0.1266,0.1952,0.4086,1,5
+Cd,joint_log_score,censored GP - ordinary kriging L/2,-0.2223,-0.495,0.2199,0.1358,2,5
+Cd,crps_det,ordinary kriging L/2 - censored GP,,,,0.323,3,5
+Cd,joint_log_score,censored GP - GP with L/2,-0.3325,-0.6931,0.2859,0.1184,2,5
+Cd,crps_det,GP with L/2 - censored GP,,,,0.3276,4,5
+Cd,joint_log_score,censored GP - intercept (detections),8.81,5.6663,10.6302,1.0,5,5
+Cd,crps_det,intercept (detections) - censored GP,,,,0.0,0,5

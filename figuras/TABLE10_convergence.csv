@@ -1,0 +1,8 @@
+model,rhat_max,ess_bulk_min,ess_tail_min,divergences,bfmi_min,n_draws,passes
+main Hg,1.0104,330.7926,460.323,0,0.9039,4000,False
+main Pb,1.0068,751.5722,1272.3414,0,0.8428,4000,True
+main As,1.0064,913.1985,1204.5772,0,0.8747,4000,True
+main Ba,1.0035,1025.7674,1322.7309,0,0.8636,4000,True
+main Cd,1.002,841.7323,1382.8957,0,0.8989,4000,True
+"simulation, censored",1.0039,640.3965,1059.6232,0,0.8237,4000,True
+"simulation, L/2",1.0113,370.8766,527.5681,0,0.7419,4000,False

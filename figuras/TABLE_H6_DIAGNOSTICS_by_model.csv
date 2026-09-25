@@ -1,0 +1,3 @@
+run_id,model,n_fits,rhat_max,rhat_median,pct_rhat_gt_1.01,pct_rhat_gt_1.05,ess_min,ess_min_median,pct_ess_lt_400,pct_ess_lt_100,fits_with_divergences,divergences_total
+F3-20260908,GP with L/2,120.0,1.4904,1.0178,85.8333,15.8333,3.8842,133.4847,100.0,32.5,52.0,488.0
+F3-20260908,censored GP,120.0,1.0637,1.0154,84.1667,4.1667,17.6719,162.1752,100.0,15.8333,1.0,1.0

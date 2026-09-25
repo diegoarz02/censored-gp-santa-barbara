@@ -1,0 +1,5 @@
+run_id,analyte,variogram,sill_log_variance,effective_range_km_log,rho_log_at_1km,rho_conc_at_1km,half_correlation_km_log,half_correlation_km_conc,shrinkage_pct
+F3-20260908,Hg,spherical,3.3432,2.6841,0.467,0.1379,0.9322,0.3545,61.9732
+F3-20260908,Pb,spherical,3.7907,1.6556,0.2042,0.027,0.575,0.1962,65.8703
+F3-20260908,As,spherical,1.2679,0.7577,0.0,0.0,0.2631,0.1808,31.2968
+F3-20260908,Ba,spherical,1.9104,1.4327,0.123,0.046,0.4976,0.2811,43.497

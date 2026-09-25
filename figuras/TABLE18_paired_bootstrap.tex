@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\caption{Paired bootstrap over held-out blocks. For the joint log score a positive difference favours the censored GP; for CRPS the comparison is written so that a positive difference also favours it.}
+\label{tab:bootstrap}
+\footnotesize
+\begin{tabular}{llrrrrrrr}
+\toprule
+metal & metric & comparison & mean\_diff & ci95\_low & ci95\_high & p\_positive & wins\_by\_block & n\_blocks \\
+\midrule
+Hg & joint\_log\_score & censored GP - ordinary kriging L/2 & 0.267 & -0.058 & 0.592 & 0.918 & 3 & 5 \\
+Hg & crps\_det & ordinary kriging L/2 - censored GP & 0.125 & -0.087 & 0.324 & 0.790 & 2 & 5 \\
+Hg & joint\_log\_score & censored GP - GP with L/2 & 0.019 & -0.012 & 0.046 & 0.861 & 4 & 5 \\
+Hg & crps\_det & GP with L/2 - censored GP & 0.013 & 0.000 & 0.023 & 0.978 & 4 & 5 \\
+Hg & joint\_log\_score & censored GP - intercept (detections) & 0.549 & 0.023 & 1.023 & 0.991 & 4 & 5 \\
+Hg & crps\_det & intercept (detections) - censored GP & 0.357 & -0.007 & 0.587 & 0.970 & 4 & 5 \\
+Pb & joint\_log\_score & censored GP - ordinary kriging L/2 & 0.224 & 0.057 & 0.289 & 0.989 & 4 & 5 \\
+Pb & crps\_det & ordinary kriging L/2 - censored GP & 0.206 & 0.017 & 0.287 & 0.982 & 4 & 5 \\
+Pb & joint\_log\_score & censored GP - GP with L/2 & 0.027 & 0.009 & 0.058 & 1.000 & 5 & 5 \\
+Pb & crps\_det & GP with L/2 - censored GP & 0.015 & -0.001 & 0.032 & 0.963 & 4 & 5 \\
+Pb & joint\_log\_score & censored GP - intercept (detections) & 0.167 & -0.247 & 0.632 & 0.767 & 3 & 5 \\
+Pb & crps\_det & intercept (detections) - censored GP & 0.112 & -0.177 & 0.370 & 0.761 & 3 & 5 \\
+As & joint\_log\_score & censored GP - ordinary kriging L/2 & 0.033 & -0.133 & 0.193 & 0.622 & 2 & 5 \\
+As & crps\_det & ordinary kriging L/2 - censored GP & 0.016 & -0.069 & 0.133 & 0.598 & 2 & 5 \\
+As & joint\_log\_score & censored GP - GP with L/2 & -0.010 & -0.021 & 0.006 & 0.091 & 1 & 5 \\
+As & crps\_det & GP with L/2 - censored GP & -0.009 & -0.016 & 0.002 & 0.062 & 1 & 5 \\
+As & joint\_log\_score & censored GP - intercept (detections) & -0.009 & -0.186 & 0.359 & 0.418 & 1 & 5 \\
+As & crps\_det & intercept (detections) - censored GP & -0.017 & -0.127 & 0.195 & 0.409 & 1 & 5 \\
+Cd & joint\_log\_score & censored GP - ordinary kriging L/2 & -0.222 & -0.495 & 0.220 & 0.136 & 2 & 5 \\
+Cd & crps\_det & ordinary kriging L/2 - censored GP &  &  &  & 0.323 & 3 & 5 \\
+Cd & joint\_log\_score & censored GP - GP with L/2 & -0.333 & -0.693 & 0.286 & 0.118 & 2 & 5 \\
+Cd & crps\_det & GP with L/2 - censored GP &  &  &  & 0.328 & 4 & 5 \\
+Cd & joint\_log\_score & censored GP - intercept (detections) & 8.810 & 5.666 & 10.630 & 1.000 & 5 & 5 \\
+Cd & crps\_det & intercept (detections) - censored GP &  &  &  & 0.000 & 0 & 5 \\
+\bottomrule
+\end{tabular}
+\end{table}

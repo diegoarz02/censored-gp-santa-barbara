@@ -1,0 +1,25 @@
+metal,level,baseline,mean_coverage_gain,replicates_won,n,p_wilcoxon
+Hg,0.2,ordinary kriging L/2,0.0562,4,10,0.125
+Hg,0.2,GP with L/2,0.0004,2,10,1.0
+Pb,0.2,ordinary kriging L/2,0.0308,2,10,0.5
+Pb,0.2,GP with L/2,0.0003,4,10,1.0
+As,0.2,ordinary kriging L/2,0.003,1,10,1.0
+As,0.2,GP with L/2,-0.0113,0,10,0.125
+Hg,0.4,ordinary kriging L/2,0.0978,4,10,0.125
+Hg,0.4,GP with L/2,0.0298,2,10,0.75
+Pb,0.4,ordinary kriging L/2,0.1433,4,10,0.125
+Pb,0.4,GP with L/2,0.0652,3,10,0.25
+As,0.4,ordinary kriging L/2,0.0044,1,10,1.0
+As,0.4,GP with L/2,-0.0042,1,10,1.0
+Hg,0.6,ordinary kriging L/2,0.1336,5,10,0.25
+Hg,0.6,GP with L/2,0.0572,5,10,0.0938
+Pb,0.6,ordinary kriging L/2,0.1929,7,10,0.0195
+Pb,0.6,GP with L/2,0.1144,6,10,0.0547
+As,0.6,ordinary kriging L/2,0.1062,4,10,0.1562
+As,0.6,GP with L/2,0.0232,3,10,0.25
+Hg,0.8,ordinary kriging L/2,0.3008,10,10,0.002
+Hg,0.8,GP with L/2,0.3062,10,10,0.002
+Pb,0.8,ordinary kriging L/2,0.3837,10,10,0.002
+Pb,0.8,GP with L/2,0.3956,10,10,0.002
+As,0.8,ordinary kriging L/2,0.3893,10,10,0.002
+As,0.8,GP with L/2,0.2527,10,10,0.002

@@ -1,0 +1,6 @@
+analyte,morans_I,expected_I,z_score,p_value,note
+Hg,0.6781,-0.0088,16.7586,0.001,
+Pb,0.8005,-0.0088,17.9695,0.001,
+As,0.4963,-0.0088,12.0238,0.001,
+Ba,0.7266,-0.0088,17.9324,0.001,
+Cd,0.2717,-0.0088,6.5137,0.001,L/2 substitution used only for this exploratory statistic

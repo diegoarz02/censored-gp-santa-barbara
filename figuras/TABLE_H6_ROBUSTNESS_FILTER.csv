@@ -1,0 +1,10 @@
+run_id,metal,model,picp95_all,n_all,picp95_converged_only,n_converged,shift
+F3-20260908,As,censored GP,0.9528,10,0.9528,10,0.0
+F3-20260908,As,GP with L/2,0.6601,10,,0,
+F3-20260908,As,ordinary kriging L/2,0.5235,10,0.5235,10,0.0
+F3-20260908,Hg,censored GP,0.8317,10,0.8317,10,0.0
+F3-20260908,Hg,GP with L/2,0.4732,10,,0,
+F3-20260908,Hg,ordinary kriging L/2,0.4786,10,0.4786,10,0.0
+F3-20260908,Pb,censored GP,0.7384,10,0.7411,9,0.0027
+F3-20260908,Pb,GP with L/2,0.3405,10,,0,
+F3-20260908,Pb,ordinary kriging L/2,0.3524,10,0.3524,10,0.0

@@ -1,0 +1,11 @@
+analyte,stratum,n,pct_censored,median_quantified,pct_above_eca
+Hg,background,30,0.0,30.94,70.0
+Hg,potential_interest,80,0.0,105.3,90.0
+Pb,background,30,0.0,60.5,40.0
+Pb,potential_interest,80,0.0,646.5,92.5
+As,background,30,0.0,40.85,30.0
+As,potential_interest,80,0.0,158.65,83.75
+Ba,background,30,0.0,128.75,0.0
+Ba,potential_interest,80,0.0,293.3,27.5
+Cd,background,30,100.0,,0.0
+Cd,potential_interest,80,76.25,7.0,23.75

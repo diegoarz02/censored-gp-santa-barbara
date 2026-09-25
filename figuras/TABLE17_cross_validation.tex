@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\caption{Spatial block cross-validation on the real data. The joint log score covers every held-out observation and is the primary metric; the remaining columns are conditional on detection and cover only the upper truncated tail. Higher is better for the joint score, lower for the rest.}
+\label{tab:cv}
+\footnotesize
+\begin{tabular}{llrrrrrr}
+\toprule
+metal & model & joint\_log\_score & rmse\_det & mae\_det & crps\_det & picp95\_det & width95\_det \\
+\midrule
+As & intercept (detections) & -1.669 & 1.201 & 1.034 & 0.711 & 0.947 & 4.256 \\
+As & global mean with L/2 & -1.669 & 1.201 & 1.034 & 0.711 & 0.947 & 4.256 \\
+As & ordinary kriging L/2 & -1.712 & 1.251 & 1.083 & 0.744 & 0.912 & 4.314 \\
+As & GP with L/2 & -1.668 & 1.237 & 1.063 & 0.719 & 0.974 & 5.196 \\
+As & censored GP & -1.679 & 1.249 & 1.073 & 0.728 & 0.965 & 5.272 \\
+Cd & intercept (detections) & -10.643 & 0.699 & 0.565 & 0.396 & 0.913 & 2.476 \\
+Cd & global mean with L/2 & -1.371 & 3.010 & 2.929 & 2.191 & 0.304 & 5.364 \\
+Cd & ordinary kriging L/2 & -1.611 & 2.764 & 2.678 & 1.897 & 0.739 & 5.953 \\
+Cd & GP with L/2 & -1.500 & 2.931 & 2.817 & 2.034 & 0.609 & 5.921 \\
+Cd & censored GP & -1.833 & 2.186 & 1.831 & 1.266 & 0.826 & 7.447 \\
+Hg & intercept (detections) & -2.524 & 2.167 & 1.796 & 1.308 & 0.789 & 6.620 \\
+Hg & global mean with L/2 & -2.524 & 2.167 & 1.796 & 1.308 & 0.789 & 6.620 \\
+Hg & ordinary kriging L/2 & -2.241 & 1.827 & 1.433 & 1.076 & 0.877 & 6.684 \\
+Hg & GP with L/2 & -1.994 & 1.655 & 1.384 & 0.964 & 0.895 & 5.993 \\
+Hg & censored GP & -1.975 & 1.638 & 1.364 & 0.951 & 0.912 & 5.961 \\
+Pb & intercept (detections) & -2.340 & 2.108 & 1.775 & 1.267 & 0.851 & 6.778 \\
+Pb & global mean with L/2 & -2.340 & 2.108 & 1.775 & 1.267 & 0.851 & 6.778 \\
+Pb & ordinary kriging L/2 & -2.397 & 2.288 & 1.870 & 1.361 & 0.833 & 6.585 \\
+Pb & GP with L/2 & -2.200 & 1.987 & 1.643 & 1.169 & 0.868 & 6.432 \\
+Pb & censored GP & -2.173 & 1.971 & 1.627 & 1.155 & 0.886 & 6.459 \\
+\bottomrule
+\end{tabular}
+\end{table}

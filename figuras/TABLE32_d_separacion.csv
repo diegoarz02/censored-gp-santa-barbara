@@ -1,0 +1,6 @@
+run_id,desde,hasta,condicionando_en,d_separados,pregunta
+F4-20260923,g,y,"f, s, x",False,"¿El efecto del estrato sobre la concentración se puede leer condicionando en posición, covariables y campo espacial?"
+F4-20260923,s,y,"f, g, x",True,¿La posición influye en la concentración por alguna vía que el modelo no capture?
+F4-20260923,L,y,d,False,¿Condicionar en el indicador de detección abre un camino entre el límite y la concentración? (colisionador)
+F4-20260923,LOD,y,—,True,¿El LOD reportado informa sobre la concentración sin condicionar en nada?
+F4-20260923,theta,g,—,True,¿Los hiperparámetros de covarianza y el estrato son independientes a priori?
