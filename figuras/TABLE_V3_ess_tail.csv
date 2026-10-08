@@ -1,0 +1,6 @@
+metal,rhat_max,ess_bulk_min,ess_tail_min,divergences,pasa
+Hg,1.0104,330.8,460.3,0,False
+Pb,1.0068,751.6,1272.3,0,True
+As,1.0064,913.2,1204.6,0,True
+Ba,1.0035,1025.8,1322.7,0,True
+Cd,1.002,841.7,1382.9,0,True

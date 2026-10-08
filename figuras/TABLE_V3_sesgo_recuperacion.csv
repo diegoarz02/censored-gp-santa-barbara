@@ -1,0 +1,17 @@
+modelo,parametro,verdadero,media_posterior,sesgo,sesgo_pct,ci95_low,ci95_high,cubre
+censored,beta0,4.0,4.8158,0.8158,20.4,3.9691,5.7366,True
+censored,b_background,-0.9,-0.7624,0.1376,15.29,-1.2924,-0.1613,True
+censored,ell_0,0.65,0.9177,0.2677,41.18,0.4071,1.9189,True
+censored,ell_1,1.55,0.9294,-0.6206,-40.04,0.4003,1.7444,True
+censored,eta,0.9,1.0383,0.1383,15.36,0.665,1.5759,True
+censored,sigma_n,0.45,0.4041,-0.0459,-10.19,0.3099,0.5318,True
+censored,sigma_tot,1.0062,1.1181,0.1119,11.12,0.7696,1.6304,True
+censored,rho,0.8,0.8547,0.0547,6.84,0.7083,0.9451,True
+L/2 substitution,beta0,4.0,4.7249,0.7249,18.12,4.0573,5.4816,False
+L/2 substitution,b_background,-0.9,-0.5742,0.3258,36.2,-1.2668,0.1556,True
+L/2 substitution,ell_0,0.65,0.6929,0.0429,6.6,0.3504,1.3128,True
+L/2 substitution,ell_1,1.55,0.6377,-0.9123,-58.86,0.2951,1.4808,False
+L/2 substitution,eta,0.9,0.9802,0.0802,8.91,0.6681,1.4138,True
+L/2 substitution,sigma_n,0.45,0.3623,-0.0877,-19.48,0.3034,0.4338,False
+L/2 substitution,sigma_tot,1.0062,1.0476,0.0414,4.11,0.7555,1.4636,True
+L/2 substitution,rho,0.8,0.869,0.069,8.63,0.7552,0.9433,True
