@@ -26,7 +26,7 @@ GLOBAL = {
     "theta": (1.0, 5.4), "beta": (2.0, 5.4), "b_bg": (3.0, 5.4),
     "sigma_n": (4.0, 5.4), "r": (5.0, 5.4), "LOD": (6.0, 5.4),
 }
-GLOBAL_LABEL = {"theta": r"$\eta,\ell,\rho$", "beta": r"$\beta$", "b_bg": r"$b_{bg}$",
+GLOBAL_LABEL = {"theta": r"$\sigma_f,\ell,\rho$", "beta": r"$\beta$", "b_bg": r"$b_{bg}$",
                "sigma_n": r"$\sigma_n$", "r": r"$r$", "LOD": r"LOD"}
 GLOBAL_OBSERVED = {"LOD"}          # el límite reportado por el laboratorio; todo lo demás es latente
 
@@ -35,7 +35,7 @@ PLATE = {
     "x": (1.2, 3.6), "g": (1.2, 2.6), "f": (2.4, 3.6), "mu": (3.6, 3.1),
     "L": (5.6, 4.1), "y": (4.8, 3.1), "d": (5.8, 2.5), "yobs": (5.8, 1.5),
 }
-PLATE_LABEL = {"x": r"$x(s)$", "g": r"$g(s)$", "f": r"$f(s)$", "mu": r"$\mu(s)$",
+PLATE_LABEL = {"x": r"$x(s)$", "g": r"$z(s)$", "f": r"$f(s)$", "mu": r"$\eta(s)$",
               "L": r"$L$", "y": r"$y(s)$", "d": r"$D(s)$", "yobs": r"$y^{obs}(s)$"}
 PLATE_OBSERVED = {"x", "g", "d", "yobs"}
 PLATE_DETERMINISTIC = {"mu", "L"}   # funcion determinista de sus padres, no un parametro libre
