@@ -71,8 +71,13 @@ if __name__ == "__main__":
                 rng = (w.max(axis=1) - w.min(axis=1)) / w.mean(axis=1)
                 txt += [f"**{nombre}**: variación relativa entre priors, "
                         f"máximo {100 * rng.max():.1f} %, mediana {100 * rng.median():.1f} %.", ""]
-    (OUT / "H_sensibilidad_priors.md").write_text("\n".join(txt), encoding="utf-8")
+    # Nombre distinto de "H_sensibilidad_priors.md": ese nombre lo usa h_sens_priors_informe.py
+    # para su informe final (con FIG21, que SÍ se cita). Este script solo deja el log crudo del
+    # ajuste MCMC -- antes ambos escribian al mismo archivo y re-correr este borraba en silencio
+    # el informe bueno (hallazgo del barrido de bugs del 2026-10-23, sin impacto en el articulo
+    # porque main.tex lee TABLE31_prior_sensitivity.csv, no ningun .md).
+    (OUT / "H_sensibilidad_priors_RAW_fit.md").write_text("\n".join(txt), encoding="utf-8")
     observe(f"Sensibilidad al prior ejecutada: {len(ok)} de {len(units)} ajustes. Tres "
             f"especificaciones (actual, PC priors con U despejado del limite fisico, y vaga segun "
             f"Banerjee p.149) sobre {len(METALS)} metales.", "Bloque 4 - artículo")
-    print("\nescrito: outputs/H_sensibilidad_priors.md, TABLE31")
+    print("\nescrito: outputs/H_sensibilidad_priors_RAW_fit.md, TABLE31")

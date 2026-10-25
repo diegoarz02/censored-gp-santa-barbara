@@ -108,7 +108,7 @@ def main():
 ## Por qué se hizo así
 
 El contraste fondo-minería no se resuelve con la etiqueta de OEFA porque esa etiqueta está aliasada
-con la posición: el R² de predecirla desde las coordenadas y las covariables es **0.840**
+con la posición: el R² de predecirla desde las coordenadas y las covariables es **0.839**
 (`H_DAG_identificabilidad.md`). Más modelo sobre la etiqueta no arregla eso.
 
 La salida es **dejar de usar la etiqueta**. Se ajusta una mezcla de dos componentes sobre la

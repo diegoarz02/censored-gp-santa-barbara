@@ -186,7 +186,7 @@ caminos simultáneos**.
 d-separación de `g` e `y` condicionando en `s`, `x` y `f`: **{q1}**.
 
 Es decir: el grafo dice que el camino existe y **no se bloquea** con lo que el modelo condiciona. Eso
-es coherente con la medición del R² = 0.840 (`H_DAG_identificabilidad.md`): no es que falte potencia,
+es coherente con la medición del R² = 0.839 (`H_DAG_identificabilidad.md`): no es que falte potencia,
 es que el efecto del estrato no está separado del de la posición.
 
 ## Todas las consultas
@@ -208,7 +208,7 @@ Figura `FIG23_red_bayesiana`, tabla `TABLE32_d_separacion.csv`.
             f"que condicionar en el patrón de detección acopla el límite con la concentración — eso "
             f"justifica formalmente estimar L en vez de fijarlo; (3) el camino estrato-respuesta no "
             f"se bloquea condicionando en posición, covariables y campo (d-separados = {q1}), "
-            f"coherente con el R²=0.840.", "Bloque 8 - sílabo")
+            f"coherente con el R²=0.839.", "Bloque 8 - sílabo")
     print("\nescrito: outputs/H_red_bayesiana.md, FIG23, TABLE32")
 
 
