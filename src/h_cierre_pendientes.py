@@ -1,7 +1,7 @@
 """Los tres pendientes que quedaban: mezcla bayesiana, Box-Cox y muestreo preferencial.
 
 **H8.5b — mezcla gaussiana bayesiana (sílabo, semana 10).** El contraste fondo-minería no se resuelve
-porque la etiqueta de estrato de OEFA está aliasada con la posición (R² = 0.840). La salida no es más
+porque la etiqueta de estrato de OEFA está aliasada con la posición (R² = 0.839). La salida no es más
 modelo sobre la etiqueta: es **dejar de usarla**. Se ajusta una mezcla de dos componentes sobre la
 concentración en escala log —población de fondo y población afectada— y se compara la asignación
 posterior contra la etiqueta oficial.
