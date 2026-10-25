@@ -1,14 +1,22 @@
 """C1 (corrida 3) -- Simulation-Based Calibration del modelo principal (Talts et al. 2018).
 
 Convierte "el modelo es correcto" en una figura verificable: se dibuja theta del prior, se simula
-y con el mismo generador (incluida la censura), se reajusta el modelo a la simulacion con el
-protocolo BARATO ya validado en F3 (500 tune / 500 draws / 2 cadenas, correlacion 0.9994 contra
-NUTS completo -- medido, no asumido, TIEMPOS_MEDIDOS.md), y se guarda el rango del valor
-verdadero dentro de la posterior para cada parametro clave. Con muchas replicas, los rangos deben
-ser uniformes si el modelo y la inferencia son correctos.
+y con el mismo generador y la censura simulada con un limite por cuantil sobre el campo simulado
+(ver nota en `simulate_one`), se reajusta el modelo a la simulacion con el protocolo BARATO ya
+validado en F3 (500 tune / 500 draws / 2 cadenas, correlacion 0.9994 contra NUTS completo --
+medido, no asumido, TIEMPOS_MEDIDOS.md), y se guarda el rango del valor verdadero dentro de la
+posterior para cada parametro clave. Con muchas replicas, los rangos deben ser uniformes si el
+modelo y la inferencia son correctos.
 
 Regla 3 (medir, no calcular): se mide 1 replica antes de comprometerse a las 200, y el numero real
 de replicas ejecutadas queda documentado con el porque.
+
+CORREGIDO 2026-10-23: las 200 replicas corridas antes de esta fecha usaban un LOD tomado de
+`reported_limit`, que para As es NaN en las 114 filas (0% censura real, ver nota en
+`simulate_one`) -- esas 200 replicas nunca tuvieron un solo dato censurado, asi que el mecanismo
+de censura del modelo nunca se puso a prueba en la calibracion. Los checkpoints de esa corrida se
+archivaron en `outputs/c1_sbc_BUGGY_sin_censura_2026-10-23/` (no se borraron) y esta corrida
+vuelve a generar las 200 replicas desde cero con el limite correcto.
 """
 import json
 import sys
@@ -60,11 +68,31 @@ def simulate_one(ctx, rng):
     y_true_log = mu + rng.normal(0, sigma_n, n)
     value = np.exp(y_true_log)
 
-    # censura con un LOD y resolucion reales (As), para que el mecanismo sea el mismo que en los
-    # datos de verdad, no un umbral inventado
+    # BUG REAL encontrado y corregido 2026-10-23 (observacion del profe Luis sobre el Cuadro V,
+    # al repetir el analisis con replicas): As tiene 0% de censura real en el dataset -- es uno de
+    # los "truth fields" completos, usado por eso mismo en el experimento de enmascarado -- asi que
+    # "reported_limit" esta vacio (NaN) en las 114 filas por diseno (ver el diccionario de datos en
+    # nb01_dataset.py: "Empty for analytes with no censored result"). La version anterior de esta
+    # funcion hacia `lod = float(g_as["reported_limit"].iloc[0])` sin comprobar el NaN: como
+    # `valor < NaN` es SIEMPRE False, las 200 replicas de SBC ya corridas con esta funcion nunca
+    # tuvieron un solo dato censurado -- el mecanismo de censura del modelo nunca se ejercito en la
+    # calibracion. El resto del proyecto (masking_worker.py, h41_analisis.py, h86_loo.py, etc.) ya
+    # usa un guard `if np.isfinite(...) else fallback` para este mismo campo; a esta funcion se le
+    # olvido aplicarlo cuando se escribio.
+    #
+    # El fallback de esos otros scripts (nanmin del valor ya observado) no sirve aqui: ahi la
+    # censura ya viene dada por una columna real (`censored`), y `lod` solo entra en la
+    # verosimilitud de observaciones que YA estan marcadas como censuradas (ninguna, para As) --
+    # un `lod` aproximado ahi es inocuo. Aqui, en cambio, `lod` es lo que DECIDE que esta censurado
+    # en un campo simulado: usar el minimo del propio campo como limite dejaria, por definicion,
+    # cero puntos por debajo de el -- el mismo problema con otra cara. El mecanismo correcto es el
+    # que ya uso `notebooks/_src/nb02.py::simulate_field` para generar el Cuadro V original (una
+    # sola replica): un limite por CUANTIL de la concentracion simulada, que garantiza una fraccion
+    # conocida de censura sin importar la escala que implique el theta de esa replica.
     g_as = ctx["df"][ctx["df"].analyte == "As"].set_index("location_id").loc[ctx["loc"].index]
-    lod = float(g_as["reported_limit"].iloc[0])
     resolution = float(g_as["resolution"].iloc[0])
+    CENS_RATE = 0.60      # mismo cuantil que nb02.py::simulate_field uso para el Cuadro V original
+    lod = float(np.quantile(value, CENS_RATE))
     censored = value < lod
 
     theta_true = {"eta": eta, "ell_0": ell[0], "ell_1": ell[1], "sigma_n": sigma_n,
