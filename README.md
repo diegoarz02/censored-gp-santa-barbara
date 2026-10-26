@@ -24,7 +24,6 @@ notebooks/_src/       sbmodel.py (modelo), y utilidades compartidas
 src/                  scripts del pipeline, análisis y figuras
 data/final/           dataset analítico + diccionario de variables
 figuras/              figuras del artículo (PDF) y tablas (CSV/TEX)
-prompts/              prompts usados para generar y auditar el análisis
 requirements.txt      dependencias con versiones
 README.md
 ```
@@ -43,11 +42,18 @@ README.md
   python src/fig9_crps.py       # curvas de CRPS del experimento de enmascaramiento
   # (ver la cabecera de cada script en src/ para la figura que genera)
   ```
-- **Objetos InferenceData (ArviZ):** los checkpoints de MCMC (`.nc`, `.npz`, `.json`) son voluminosos y se archivan en Zenodo con DOI (ver más abajo), no en este repositorio; los scripts los regeneran desde cero con las semillas fijadas.
+- **Objetos InferenceData (ArviZ):** los checkpoints de MCMC (`.nc`, `.npz`, `.json`) son voluminosos y no se versionan en este repositorio; los scripts los regeneran desde cero con las semillas fijadas.
 
 ## Software principal
 
 PyMC + nutpie (NUTS, backend numba) para la inferencia; ArviZ para diagnóstico (R-hat, ESS, divergencias, LOO); PyKrige para el baseline de kriging; geopandas/pyproj/rasterio para el manejo espacial; matplotlib para las figuras. Versiones exactas en `requirements.txt`.
+
+## Cita
+
+Snapshot de este repositorio archivado en Zenodo:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22968165.svg)](https://doi.org/10.5281/zenodo.22968165)
+— el DOI de concepto resuelve siempre a la versión más reciente; cada release queda además con su
+propio DOI versionado.
 
 ## Cita de los datos
 
