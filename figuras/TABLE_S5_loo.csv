@@ -1,6 +1,6 @@
-metal,elpd_loo,se,p_loo,note
-Hg,,,,idata_main has no log_likelihood group; not recomputed
-Pb,,,,idata_main has no log_likelihood group; not recomputed
-As,,,,idata_main has no log_likelihood group; not recomputed
-Ba,,,,idata_main has no log_likelihood group; not recomputed
-Cd,,,,idata_main has no log_likelihood group; not recomputed
+run_id,analyte,pct_censored,elpd_loo,se_loo,p_loo,khat_max,n_khat_gt_0.7,pct_khat_gt_0.7,n_obs
+F4-20260923,Hg,0.0,-1153.5306,21.6169,20.8547,0.9649,3,2.6316,114
+F4-20260923,Pb,0.0,-823.252,23.4706,16.3248,0.8097,1,0.8772,114
+F4-20260923,As,0.0,-913.1539,14.429,17.8746,0.8387,1,0.8772,114
+F4-20260923,Ba,0.0,-993.1398,17.1253,19.6213,0.828,1,0.8772,114
+F4-20260923,Cd,79.8246,-241.2089,26.1415,30.8528,1.1448,4,3.5088,114
