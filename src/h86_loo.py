@@ -39,7 +39,20 @@ METALS = ["Hg", "Pb", "As", "Ba", "Cd"]
 
 
 def pointwise_loglik(idata, value, censored, resolution, lod):
-    """Matriz (cadena, muestra, punto) de log-verosimilitud, reconstruida del posterior."""
+    """Matriz (cadena, muestra, punto) de log-verosimilitud, reconstruida del posterior.
+
+    CORRECCION (flip L=LD, 2026-10-28): cuando el modelo se ajusto con el umbral como parametro
+    libre (`limit_as_parameter=True` en `build_censored_gp`, caso del Cd oficial r-libre), el
+    posterior guarda un `log_limit` POR DRAW (Deterministic de `log(lod*r)`, ver sbmodel.py
+    L.213-222) -- el Potential de censura usa ESE valor, no `log(lod)` fijo. La version anterior
+    de esta funcion usaba `log(lod)` fijo para TODOS los modelos, lo cual es correcto cuando
+    `limit_as_parameter=False` (L=LD o L=LQ, sin r) pero est  INCORRECTO para el Cd oficial
+    r-libre: el log_limit real (media log_limit~0.77, equivalente a L~2.15 mg/kg) es muy distinto
+    de log(lod)=log(0.5)=-0.69 que se usaba. Verificado: corrige el elpd_loo del Cd oficial de
+    -241.21 a -172.09 (+69, ver outputs/FLIP_LD_PRINCIPAL.md). Los otros 4 metales (As/Ba/Hg/Pb)
+    no tienen censura real (0/114), asi que `censored.any()` nunca entra para ellos y no les
+    afecta este fix.
+    """
     post = idata.posterior
     mu = post["mu"].values                                   # (chain, draw, n)
     s = post["sigma_n"].values[..., None]                    # (chain, draw, 1)
@@ -58,7 +71,10 @@ def pointwise_loglik(idata, value, censored, resolution, lod):
         b = norm.logcdf(z_lo)
         out[..., det] = a + np.log1p(-np.exp(np.minimum(b - a, -1e-12)))
     if censored.any():
-        log_L = np.log(lod)
+        if "log_limit" in post:
+            log_L = post["log_limit"].values[..., None]      # (chain, draw, 1), varia por draw
+        else:
+            log_L = np.log(lod)                               # umbral fijo (L=LD, L=LQ, etc.)
         out[..., censored] = norm.logcdf((log_L - mu[..., censored]) / s)
     return out
 
