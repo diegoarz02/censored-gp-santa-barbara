@@ -189,7 +189,11 @@ ajuste ya estaba hecho.
     h11_path = OUT / "H11_lmc_cd_sb_ag_convergencia.md"
     if h11_path.exists():
         old = h11_path.read_text(encoding="utf-8")
-        correction = f"""
+        marker = "## CORRECCIÓN (corrida 3"
+        if marker in old:            # ya corregido en una corrida anterior: no duplicar el append
+            pass
+        else:
+            correction = f"""
 
 ## CORRECCIÓN (corrida 3, {RUN_ID}) — el LMC ya usaba censura, no L/2
 
@@ -199,7 +203,7 @@ verosimilitud censurada real por metal desde el principio. El error salió de re
 la suposición de la auditoría externa ("a verificar al reajustar con censura"), en vez de abrir
 el código fuente. Detalle y el go/no-go resultante en `outputs/B4_coregionalizacion_cd_gonogo.md`.
 """
-        h11_path.write_text(old + correction, encoding="utf-8")
+            h11_path.write_text(old + correction, encoding="utf-8")
 
     observe(f"B4 completo, y con una correccion importante: el LMC Cd-Sb-Ag YA usaba verosimilitud "
             f"censurada real (verificado leyendo build_lmc() en el codigo), no L/2 como decia mi "
