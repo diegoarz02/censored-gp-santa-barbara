@@ -1,0 +1,49 @@
+=== FUENTES (tamano en pt, fuentes embebidas) ===
+                    stem  width_mm  height_mm  fs_min_all  fs_max_all  fs_min_baseline  fs_max_baseline  all_embedded  all_arial                                                        fonts
+                    Fig1     174.0      100.9         5.6        10.0              8.0             10.0          True       True                        [CRMMXU+ArialMT, EVRKFW+Arial-BoldMT]
+                    Fig2     174.0       90.5         8.0        10.0              8.0             10.0          True       True                        [CJTTVH+Arial-BoldMT, COWDSK+ArialMT]
+                    Fig3      84.0       84.0         5.6         8.0              8.0              8.0          True       True                      [BERESM+ArialMT, FXDGGH+Arial-ItalicMT]
+                    Fig4     174.0       73.1         5.6         9.0              8.0              9.0          True       True                                             [FAJCOL+ArialMT]
+                    Fig5     174.0       73.1         6.3        10.0              8.0             10.0          True       True [CJTTVH+Arial-BoldMT, FETWOH+Arial-ItalicMT, XEFVKW+ArialMT]
+                    Fig6     174.0      104.4         8.0         9.0              8.0              9.0          True       True                                             [FYJDKH+ArialMT]
+                    Fig7     174.0       97.4         8.0         9.0              8.0              9.0          True       True                                             [DCPYZT+ArialMT]
+                    Fig8     174.0       80.0         6.3        10.0              8.0             10.0          True       True [CJTTVH+Arial-BoldMT, ENBEUD+Arial-ItalicMT, FZFYCV+ArialMT]
+                    Fig9     174.0      104.4         5.6        10.0              8.0             10.0          True       True                        [EEAGXI+ArialMT, EVRKFW+Arial-BoldMT]
+                   Fig10     174.0      104.4         5.6        10.0              8.0             10.0          True       True                        [EVRKFW+Arial-BoldMT, TZQGUY+ArialMT]
+                   Fig11     174.0      107.9         6.3        10.0              8.0             10.0          True       True                        [BGRNWE+ArialMT, EXXPQY+Arial-BoldMT]
+FigS1_latent_diagnostics     174.0       80.0         8.0        10.0              8.0             10.0          True       True [CJTTVH+Arial-BoldMT, FTCYMH+ArialMT, GHKBDO+Arial-ItalicMT]
+
+=== RASTERS (dpi efectivo) ===
+ stem  xref  w_px  h_px  dpi_x  dpi_y
+ Fig1    19    51  1017    600    600
+ Fig2    13   738  1477    600    600
+ Fig9    13   996  1993    600    600
+ Fig9    16   997  1993    600    600
+ Fig9    18    65  1292    600    600
+ Fig9    19    65  1292    600    600
+Fig10    13   997  1993    600    600
+Fig10    16   996  1993    600    600
+Fig10    18    64  1268    600    600
+Fig10    19    63  1268    600    600
+Fig11    13  1035  2070    600    600
+Fig11    16  1035  2070    600    600
+Fig11    19    63  1266    600    600
+Fig11    20    63  1266    600    600
+
+=== TITULOS INTERNOS (deberia salir vacio en todas) ===
+                    stem titulos_encontrados
+                    Fig1                  []
+                    Fig2                  []
+                    Fig3                  []
+                    Fig4                  []
+                    Fig5                  []
+                    Fig6                  []
+                    Fig7                  []
+                    Fig8                  []
+                    Fig9                  []
+                   Fig10                  []
+                   Fig11                  []
+FigS1_latent_diagnostics                  []
+
+OK: texto de linea base fuera de [8,12] pt
+OK: titulos internos

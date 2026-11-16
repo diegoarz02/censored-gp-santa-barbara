@@ -119,7 +119,8 @@ def main():
               edgecolor="k", linewidth=0.3, zorder=3, marker="x",
               label=f"censored (n={int(cen_mask.sum())})")
     ax.set_xlim(e0, e1); ax.set_ylim(n0, n1); ax.set_aspect("equal")
-    ax.set_xlabel("Easting UTM 18S (m)"); ax.set_ylabel("Northing UTM 18S (m)")
+    ax.set_xlabel("Easting UTM 18S (km)"); ax.set_ylabel("Northing UTM 18S (km)")
+    ef.utm_km_ticks(ax, explicit_ticks=True)
     ax.tick_params(labelsize=ef.FS_MIN)
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.14), frameon=False, fontsize=ef.FS_MIN)
     ef.panel_label(ax, "a")

@@ -1,0 +1,13 @@
+stem,width_mm,height_mm,fs_min_all,fs_max_all,fs_min_baseline,fs_max_baseline,n_text_spans,fonts,n_fonts,all_embedded,all_arial
+Fig1,174.0,100.9,5.6,10.0,8.0,10.0,45,"['CRMMXU+ArialMT', 'EVRKFW+Arial-BoldMT']",2,True,True
+Fig2,174.0,90.5,8.0,10.0,8.0,10.0,27,"['CJTTVH+Arial-BoldMT', 'COWDSK+ArialMT']",2,True,True
+Fig3,84.0,84.0,5.6,8.0,8.0,8.0,51,"['BERESM+ArialMT', 'FXDGGH+Arial-ItalicMT']",2,True,True
+Fig4,174.0,73.1,5.6,9.0,8.0,9.0,26,['FAJCOL+ArialMT'],1,True,True
+Fig5,174.0,73.1,6.3,10.0,8.0,10.0,32,"['CJTTVH+Arial-BoldMT', 'FETWOH+Arial-ItalicMT', 'XEFVKW+ArialMT']",3,True,True
+Fig6,174.0,104.4,8.0,9.0,8.0,9.0,22,['FYJDKH+ArialMT'],1,True,True
+Fig7,174.0,97.4,8.0,9.0,8.0,9.0,29,['DCPYZT+ArialMT'],1,True,True
+Fig8,174.0,80.0,6.3,10.0,8.0,10.0,35,"['CJTTVH+Arial-BoldMT', 'ENBEUD+Arial-ItalicMT', 'FZFYCV+ArialMT']",3,True,True
+Fig9,174.0,104.4,5.6,10.0,8.0,10.0,53,"['EEAGXI+ArialMT', 'EVRKFW+Arial-BoldMT']",2,True,True
+Fig10,174.0,104.4,5.6,10.0,8.0,10.0,58,"['EVRKFW+Arial-BoldMT', 'TZQGUY+ArialMT']",2,True,True
+Fig11,174.0,107.9,6.3,10.0,8.0,10.0,51,"['BGRNWE+ArialMT', 'EXXPQY+Arial-BoldMT']",2,True,True
+FigS1_latent_diagnostics,174.0,80.0,8.0,10.0,8.0,10.0,40,"['CJTTVH+Arial-BoldMT', 'FTCYMH+ArialMT', 'GHKBDO+Arial-ItalicMT']",3,True,True

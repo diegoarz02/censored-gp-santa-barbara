@@ -1,0 +1,24 @@
+g++ not available, if using conda: `conda install gxx`
+C:\Users\diego\OneDrive\Documentos\ANALISIS BAYESIANO\proyecto_metales_bayesiano\notebooks\_src\sbmodel.py:57: FutureWarning: find_constrained_prior is deprecated and will be removed in a future version. Please use maxent function from PreliZ. https://preliz.readthedocs.io/en/latest/api_reference.html#preliz.unidimensional.maxent
+  params = pm.find_constrained_prior(
+[1] Codigo citado -- worker_v4.py::run_deep(), L.135-139:
+    limit = float(np.quantile(value, level))   # value = las 114 concentraciones
+    censored = value < limit                    # sin restringir a train
+    labels = sb.spatial_blocks(xy, k=N_BLOCKS, seed=20260906)
+    test = labels == block; train = ~test
+    Confirmado leyendo el codigo: el umbral se calcula ANTES del split train/test, sobre las 114 concentraciones completas -- se aplica igual a ambos por construccion, no hay dos calculos distintos.
+
+[2] 60 combinaciones metal x nivel x bloque (esperado 3x4x5=60).
+    diferencia relativa de umbral: min=-75.15% max=243.93% media=10.07% |media|=29.22%
+    puntos de test que cambiarian de estado: total=86 de 1368 (media 4.64% por celda, max 34.62%)
+
+    Por nivel:
+      diff_rel_pct          pct_test_cambia_estado        
+              mean      max                   mean     max
+level                                                     
+0.2         14.967  243.935                  3.001  18.182
+0.4         11.610  109.284                  4.785  22.222
+0.6          9.425   85.464                  5.019  16.667
+0.8          4.278   51.432                  5.765  34.615
+
+escrito: outputs/serra_r1/umbral_fuga.csv

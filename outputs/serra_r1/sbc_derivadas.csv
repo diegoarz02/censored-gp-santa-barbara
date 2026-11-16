@@ -1,0 +1,3 @@
+fuente,n_replicas,guarda_campo_o_eta_i,claves_guardadas
+"c1_sbc (SBC, 200 replicas)",200,False,"['run_id', 'rep', 'seconds', 'n_draws_total', 'rhat_max', 'divergences', 'ranks', 'theta_true', 'ok']"
+"c2_recovery_reps (recuperacion, 50 replicas)",50,False,"['run_id', 'rep', 'n_censored', 'lod', 'resolution', 'censored', 'L/2 substitution', 'seconds_total']"

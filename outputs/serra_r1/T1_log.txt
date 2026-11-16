@@ -1,0 +1,18 @@
+g++ not available, if using conda: `conda install gxx`
+[1] filas: 360 (esperado 360) | todas deep=True: True | combinaciones metal x modelo x nivel x replica: 360 (esperado 360)
+[2] 36 medias recalculadas. diferencia maxima absoluta = 0.000497 (tolerancia 0.0005). filas sobre tolerancia: 0/36
+[3] censurado 80%: Hg rango [0.5714, 1.0000] (manuscrito 0.57-1.00) | Pb rango [0.3636, 0.9615] (manuscrito 0.36-0.96), n=10/10
+[4] src/figserra.py::fig6() lee TABLE_H6_MAIN_con_kriging.csv: True | usa groupby(level)[picp95].mean(): True
+
+[5] Wilcoxon de rangos con signo (|PICP95-0.95|, 15 unidades metal x bloque, 2 semillas promediadas por bloque):
+ level             baseline  n_pairs_total  n_pairs_no_empate  censurado_gana  p_bilateral
+   0.2          GP with L/2             15                  4               1     1.000000
+   0.2 ordinary kriging L/2             15                  7               4     0.578125
+   0.4          GP with L/2             15                  7               4     0.203125
+   0.4 ordinary kriging L/2             15                  7               4     0.203125
+   0.6          GP with L/2             15                  9               7     0.019531
+   0.6 ordinary kriging L/2             15                 13               8     0.032471
+   0.8          GP with L/2             15                 15              15     0.000061
+   0.8 ordinary kriging L/2             15                 15              15     0.000061
+
+Cita del codigo (worker_v4.py L97-103, L128, L135-138): "block": r % n_blocks  ->  replica r y r+5 caen en el MISMO block (r%5==(r+5)%5); seed = SEED0 + 1000*rep + 97*int(level*100) + 13*(hash(metal)%1000)  ->  depende de `rep`, no de `block`, asi que r y r+5 difieren SOLO en la semilla MCMC. limit = np.quantile(value, level); censored = value < limit  ->  depende solo de (metal, level), igual para las 10 replicas -- comparten mascara.

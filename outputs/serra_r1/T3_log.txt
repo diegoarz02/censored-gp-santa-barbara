@@ -1,0 +1,40 @@
+C:\Users\diego\AppData\Roaming\Python\Python314\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+C:\Users\diego\AppData\Roaming\Python\Python314\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+C:\Users\diego\AppData\Roaming\Python\Python314\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+C:\Users\diego\AppData\Roaming\Python\Python314\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+C:\Users\diego\AppData\Roaming\Python\Python314\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+C:\Users\diego\AppData\Roaming\Python\Python314\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+C:\Users\diego\AppData\Roaming\Python\Python314\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+C:\Users\diego\AppData\Roaming\Python\Python314\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+g++ not available, if using conda: `conda install gxx`
+C:\Users\diego\OneDrive\Documentos\ANALISIS BAYESIANO\proyecto_metales_bayesiano\notebooks\_src\sbmodel.py:57: FutureWarning: find_constrained_prior is deprecated and will be removed in a future version. Please use maxent function from PreliZ. https://preliz.readthedocs.io/en/latest/api_reference.html#preliz.unidimensional.maxent
+  params = pm.find_constrained_prior(
+=== T3a: diagnosticos por modelo x nivel ===
+  gp_l2_divergences_total: 52 (esperado 52)
+  gp_l2_rhat_max: 1.192 (esperado 1.19)
+  censored_rhat_max: 1.024 (esperado 1.024)
+
+=== T3b: cobertura restringida a ajustes sanos ===
+  As, 80%, Rhat<1.05 y 0 divergencias en ambos GP (esperado: censurado 0.681, GP-L/2 0.949, n=3):
+               model  n  picp95_mean
+         censored GP  3     0.949495
+         GP with L/2  3     0.680976
+ordinary kriging L/2  3     0.329966
+
+=== T3c: diff de implementacion GP-L/2 vs censurado ===
+  sbmodel.py build_censored_gp(), L.122-127: `if substitute_half_lod: y_value = np.where(censored, lod/2.0, y_value); censored = np.zeros(n, bool)` -- unica rama que distingue los dos modelos.
+  mismo bloque de priors (beta0~N(ybar,sd_beta0), beta~N(0,sd_beta), b_bg~N(0,sd_beta), ell~InvGamma(ell_params), sigma_tot~HalfNormal(sd_sigma), rho~Beta(2,2), eta=sigma_tot*sqrt(rho), sigma_n=sigma_tot*sqrt(1-rho) -- la parametrizacion de varianza particionada que evita el funnel, L.132-190), mismo nucleo Matern 5/2, mismo gp.Latent, mismo ajuste de ruido por soporte compuesto (log_tau), y mismo fit_model() (draws/tune/target_accept/chains/seed identicos, nutpie+numba, L.260-274) -- NO hay construccion ni llamada de ajuste separada para el baseline, es la MISMA funcion con un solo flag.
+
+=== T3d: mecanismo (investigacion, SIN reajustar nada) ===
+  celdas de GP-L/2 con Rhat>1.05 o divergencias: 34 de 120
+  % de entrenamiento empatado en L/2 (GP-L/2, celdas problematicas): min=29.6% max=93.2% media=71.3%
+
+escrito: outputs/serra_r1/baseline_diag.csv, baseline_cobertura_restringida.csv, baseline_diff_implementacion.md, baseline_mecanismo_ties.csv

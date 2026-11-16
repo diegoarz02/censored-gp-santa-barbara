@@ -12,6 +12,7 @@ Ajusta un proceso gaussiano espacial con verosimilitud censurada (Tobit) por int
 
 - **Fuente:** OEFA — Datos Abiertos, componente Suelo. Informe N.° 00341-2018-OEFA/DEAM-STEC.
   Portal: https://datosabiertos.gob.pe/dataset/oefa-evaluacion-ambiental
+- **Procedencia del informe:** el Informe N.° 00341-2018-OEFA/DEAM-STEC se obtuvo por solicitud de acceso a la información pública (Ley N.° 27806, expediente 2026-E01-114527); ver *Data provenance* más abajo.
 - **Dataset analítico:** `data/final/santa_barbara_soil.csv` — 114 ubicaciones, 10 analitos, formato largo. Diccionario de variables en `data/final/DATA_DICTIONARY.md`.
 - **CRS:** UTM zona 18S (EPSG:32718) y WGS84 (EPSG:4326).
 - Los datos crudos completos del OEFA no se versionan aquí (ver portal); el dataset limpio y su diccionario sí.
@@ -62,3 +63,50 @@ Organismo de Evaluación y Fiscalización Ambiental (OEFA), Informe N.° 00341-2
 ## Licencia
 
 Código bajo licencia MIT (ver `LICENSE`). Los datos ambientales provienen del OEFA (datos abiertos del Estado peruano) y se redistribuyen citando la fuente.
+
+---
+
+## About
+
+Bayesian spatial geostatistics with censored data for mapping heavy-metal soil contamination
+around the Santa Bárbara historical mercury mine (Huancavelica, Peru). Fits a spatial Gaussian
+process with an interval-censored (Tobit) likelihood and compares it, via spatial block
+cross-validation and a masking experiment on fields of known truth, against the classical
+substitution by half the detection limit ($L/2$) and ordinary kriging. Under strong censoring,
+substitution preserves point accuracy but destroys uncertainty calibration; the censored model
+preserves it. The calibrated model produces the exposure, uncertainty and exceedance-probability
+maps against environmental quality standards.
+
+## How to reproduce
+
+```bash
+python -m venv .venv && source .venv/bin/activate   # on Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python src/mapas_f3.py        # mean, uncertainty and exceedance maps
+python src/fig9_crps.py       # CRPS curves from the masking experiment
+# see each script's header in src/ for the figure it produces
+```
+
+MCMC checkpoints (`.nc`, `.npz`, `.json`) are not versioned here (too large); every script
+regenerates them from scratch with the fixed seeds listed above. `outputs/serra_r1/` holds the
+CSV evidence and the execution logs behind the reproducibility checks prepared ahead of
+submission (Tables/Figures recomputed independently from the same source files cited in the
+paper; see `outputs/serra_r1/SERRA_R1_INFORME.md`).
+
+## Data provenance
+
+The source report, OEFA Informe N.° 00341-2018-OEFA/DEAM-STEC, was obtained through a public
+records request under Peru's Transparency and Access to Public Information Law (Ley N.° 27806),
+case file 2026-E01-114527. The analytical dataset `data/final/santa_barbara_soil.csv` is derived
+from that report.
+
+**Redistributed here:** the cleaned analytical CSV (`data/final/santa_barbara_soil.csv`) and its
+data dictionary — what the paper's statistical analysis is actually built on.
+**Not redistributed:** the scanned OEFA PDF report itself, because of its size; it can be
+requested from OEFA by citing the case file above, or obtained through Peru's open-data portal
+for the underlying dataset (see *Datos* above).
+
+## Citation
+
+If you use this code or the analytical dataset, please cite the Zenodo archive (badge above) and
+the source report (OEFA, cited above under *Cita de los datos*).

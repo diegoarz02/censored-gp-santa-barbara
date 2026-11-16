@@ -1,0 +1,9 @@
+level,baseline,n_pairs_total,n_pairs_no_empate,censurado_gana,p_bilateral
+0.2,GP with L/2,15,4,1,1.0
+0.2,ordinary kriging L/2,15,7,4,0.578125
+0.4,GP with L/2,15,7,4,0.203125
+0.4,ordinary kriging L/2,15,7,4,0.203125
+0.6,GP with L/2,15,9,7,0.01953125
+0.6,ordinary kriging L/2,15,13,8,0.032470703125
+0.8,GP with L/2,15,15,15,6.103515625e-05
+0.8,ordinary kriging L/2,15,15,15,6.103515625e-05

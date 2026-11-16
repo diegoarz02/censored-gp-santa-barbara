@@ -118,11 +118,21 @@ def message_title(fig_or_ax, sentence: str, **kw) -> None:
         sentence, ha="left", x=kw.pop("x", 0.01), **{"fontweight": "bold", **kw})
 
 
-def utm_km_ticks(ax, axis: str = "both") -> None:
+def utm_km_ticks(ax, axis: str = "both", explicit_ticks: bool = False) -> None:
     """UTM northing is ~8.58e6 m: matplotlib's default `ScalarFormatter` factors that out as a
     literal "1e6" text box floating over the axis instead of proper "x10^6" notation, which reads
     as a rendering bug on the page. Format the ticks as plain kilometres instead — the real value,
     not an auto-scaled one — so nothing needs a multiplier at all.
+
+    `explicit_ticks=True` (H2.6) also fixes the tick LOCATIONS at whole-kilometre boundaries
+    instead of leaving them to matplotlib's default locator. The formatter alone is not enough:
+    the default locator picks "nice" positions in metres based on the axes' pixel width, and for
+    some panel widths that lands on sub-kilometre spacing (e.g. 500 m) which the kilometre
+    formatter then rounds to the SAME label twice — found in FIG18_Cd_exceedance's x-axis
+    ("502 503 504 504 504 505"), absent from FIG17's x-axis only because its two side-by-side
+    panels happen to be narrow enough that the default locator lands on whole km anyway. Kept
+    opt-in (default False) so every other current caller of this function keeps its exact existing
+    tick behaviour; pass it explicitly wherever a figure actually needs the guarantee.
     """
     from matplotlib.ticker import FuncFormatter
     # `ax.ticklabel_format(style="plain")` only works on the default ScalarFormatter, and raises
@@ -131,8 +141,21 @@ def utm_km_ticks(ax, axis: str = "both") -> None:
     fmt = FuncFormatter(lambda v, _pos: f"{v / 1000:.0f}")
     if axis in ("x", "both"):
         ax.xaxis.set_major_formatter(fmt)
+        if explicit_ticks:
+            ax.set_xticks(_whole_km_ticks(*ax.get_xlim()))
     if axis in ("y", "both"):
         ax.yaxis.set_major_formatter(fmt)
+        if explicit_ticks:
+            ax.set_yticks(_whole_km_ticks(*ax.get_ylim()))
+
+
+def _whole_km_ticks(lo: float, hi: float, step: float = 1000.0):
+    """Whole-kilometre tick positions strictly inside [lo, hi], in the same metre units as the data."""
+    start = np.ceil(lo / step) * step
+    end = np.floor(hi / step) * step
+    if end < start:
+        return []
+    return np.arange(start, end + step / 2, step)
 
 
 def soft_grid(ax, axis: str = "y") -> None:

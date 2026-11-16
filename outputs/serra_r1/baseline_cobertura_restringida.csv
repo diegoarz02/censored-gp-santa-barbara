@@ -1,0 +1,73 @@
+criterio,metal,level,model,n,picp95_mean
+rhat_lt_1.01,As,0.2,censored GP,8,0.9535256410256411
+rhat_lt_1.01,As,0.2,GP with L/2,8,0.9714452214452215
+rhat_lt_1.01,As,0.2,ordinary kriging L/2,8,0.951486013986014
+rhat_lt_1.01,As,0.4,censored GP,8,0.9694055944055945
+rhat_lt_1.01,As,0.4,GP with L/2,8,0.9665646853146854
+rhat_lt_1.01,As,0.4,ordinary kriging L/2,8,0.9485722610722611
+rhat_lt_1.01,As,0.6,censored GP,3,1.0
+rhat_lt_1.01,As,0.6,GP with L/2,3,1.0
+rhat_lt_1.01,As,0.6,ordinary kriging L/2,3,1.0
+rhat_lt_1.01,As,0.8,censored GP,1,0.8484848484848485
+rhat_lt_1.01,As,0.8,GP with L/2,1,0.5151515151515151
+rhat_lt_1.01,As,0.8,ordinary kriging L/2,1,0.2121212121212121
+rhat_lt_1.01,Hg,0.2,censored GP,4,1.0
+rhat_lt_1.01,Hg,0.2,GP with L/2,4,1.0
+rhat_lt_1.01,Hg,0.2,ordinary kriging L/2,4,1.0
+rhat_lt_1.01,Hg,0.4,censored GP,2,0.8787878787878788
+rhat_lt_1.01,Hg,0.4,GP with L/2,2,0.8636363636363636
+rhat_lt_1.01,Hg,0.4,ordinary kriging L/2,2,0.7588383838383839
+rhat_lt_1.01,Hg,0.6,censored GP,5,0.9714285714285715
+rhat_lt_1.01,Hg,0.6,GP with L/2,5,0.9142857142857143
+rhat_lt_1.01,Hg,0.6,ordinary kriging L/2,5,0.8420634920634921
+rhat_lt_1.01,Hg,0.8,censored GP,1,0.6060606060606061
+rhat_lt_1.01,Hg,0.8,GP with L/2,1,0.1818181818181818
+rhat_lt_1.01,Hg,0.8,ordinary kriging L/2,1,0.2121212121212121
+rhat_lt_1.01,Pb,0.2,censored GP,6,0.8421578421578421
+rhat_lt_1.01,Pb,0.2,GP with L/2,6,0.8573093573093572
+rhat_lt_1.01,Pb,0.2,ordinary kriging L/2,6,0.8581973581973582
+rhat_lt_1.01,Pb,0.4,censored GP,4,0.8939393939393939
+rhat_lt_1.01,Pb,0.4,GP with L/2,4,0.8939393939393939
+rhat_lt_1.01,Pb,0.4,ordinary kriging L/2,4,0.8491161616161617
+rhat_lt_1.01,Pb,0.6,censored GP,3,0.8484848484848485
+rhat_lt_1.01,Pb,0.6,GP with L/2,3,0.7424242424242423
+rhat_lt_1.01,Pb,0.6,ordinary kriging L/2,3,0.7222222222222222
+rhat_lt_1.01,Pb,0.8,censored GP,1,0.3636363636363636
+rhat_lt_1.01,Pb,0.8,GP with L/2,1,0.2727272727272727
+rhat_lt_1.01,Pb,0.8,ordinary kriging L/2,1,0.0606060606060606
+rhat_lt_1.05,As,0.2,censored GP,10,0.9589743589743589
+rhat_lt_1.05,As,0.2,GP with L/2,10,0.9694638694638694
+rhat_lt_1.05,As,0.2,ordinary kriging L/2,10,0.9534965034965035
+rhat_lt_1.05,As,0.4,censored GP,10,0.9694638694638694
+rhat_lt_1.05,As,0.4,GP with L/2,10,0.9702214452214453
+rhat_lt_1.05,As,0.4,ordinary kriging L/2,10,0.9527972027972028
+rhat_lt_1.05,As,0.6,censored GP,8,0.9807692307692308
+rhat_lt_1.05,As,0.6,GP with L/2,8,0.9495192307692308
+rhat_lt_1.05,As,0.6,ordinary kriging L/2,8,0.9118589743589743
+rhat_lt_1.05,As,0.8,censored GP,3,0.9494949494949495
+rhat_lt_1.05,As,0.8,GP with L/2,3,0.6809764309764309
+rhat_lt_1.05,As,0.8,ordinary kriging L/2,3,0.32996632996632996
+rhat_lt_1.05,Hg,0.2,censored GP,10,0.9311688311688313
+rhat_lt_1.05,Hg,0.2,GP with L/2,10,0.9341991341991343
+rhat_lt_1.05,Hg,0.2,ordinary kriging L/2,10,0.8896103896103897
+rhat_lt_1.05,Hg,0.4,censored GP,10,0.9454545454545455
+rhat_lt_1.05,Hg,0.4,GP with L/2,10,0.8784049284049283
+rhat_lt_1.05,Hg,0.4,ordinary kriging L/2,10,0.8205988455988455
+rhat_lt_1.05,Hg,0.6,censored GP,8,0.9642857142857143
+rhat_lt_1.05,Hg,0.6,GP with L/2,8,0.8736263736263736
+rhat_lt_1.05,Hg,0.6,ordinary kriging L/2,8,0.810630341880342
+rhat_lt_1.05,Hg,0.8,censored GP,2,0.5887445887445888
+rhat_lt_1.05,Hg,0.8,GP with L/2,2,0.23376623376623373
+rhat_lt_1.05,Hg,0.8,ordinary kriging L/2,2,0.2489177489177489
+rhat_lt_1.05,Pb,0.2,censored GP,10,0.8794705294705295
+rhat_lt_1.05,Pb,0.2,GP with L/2,10,0.8885614385614387
+rhat_lt_1.05,Pb,0.2,ordinary kriging L/2,10,0.9033799533799532
+rhat_lt_1.05,Pb,0.4,censored GP,6,0.922882672882673
+rhat_lt_1.05,Pb,0.4,GP with L/2,6,0.8972416472416472
+rhat_lt_1.05,Pb,0.4,ordinary kriging L/2,6,0.7968466718466717
+rhat_lt_1.05,Pb,0.6,censored GP,8,0.9170447607947607
+rhat_lt_1.05,Pb,0.6,GP with L/2,8,0.7948544511044511
+rhat_lt_1.05,Pb,0.6,ordinary kriging L/2,8,0.7148962148962149
+rhat_lt_1.05,Pb,0.8,censored GP,1,0.3636363636363636
+rhat_lt_1.05,Pb,0.8,GP with L/2,1,0.2727272727272727
+rhat_lt_1.05,Pb,0.8,ordinary kriging L/2,1,0.0606060606060606

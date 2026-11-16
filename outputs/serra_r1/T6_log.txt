@@ -1,0 +1,3 @@
+g++ not available, if using conda: `conda install gxx`
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+saved: Fig2 | 174x90 mm | 600 dpi | eps=ok

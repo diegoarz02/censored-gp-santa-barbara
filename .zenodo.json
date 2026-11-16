@@ -1,0 +1,13 @@
+{
+  "creators": [
+    {
+      "name": "Araujo Villegas, Diego Alonso",
+      "orcid": "0000-0002-6987-3948",
+      "affiliation": "Universidad Nacional Mayor de San Marcos"
+    }
+  ],
+  "title": "censored-gp-santa-barbara: code and analytical data for \"Bayesian geostatistics with censored data for mapping heavy-metal soil contamination around the Santa Bárbara mine (Huancavelica, Peru)\"",
+  "upload_type": "software",
+  "license": "MIT",
+  "version": "v1.5"
+}

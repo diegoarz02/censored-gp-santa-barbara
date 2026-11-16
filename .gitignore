@@ -5,6 +5,7 @@
 
 /*
 !/.gitignore
+!/.zenodo.json
 !/README.md
 !/LICENSE
 !/requirements.txt
@@ -12,6 +13,7 @@
 !/src/
 !/data/
 !/figuras/
+!/outputs/
 
 # --- notebooks/: the two top-level notebooks + notebooks/_src/*.py, nothing else ---
 /notebooks/*
@@ -40,6 +42,29 @@
 !/figuras/*.pdf
 !/figuras/*.csv
 !/figuras/*.tex
+
+# --- figuras/serra/: SERRA submission figures. Unlike the rule above, the TIFF IS the
+# deliverable here (journals ask for a 600 dpi raster, not a redundant duplicate of the PDF), and
+# EPS is the third required format -- so all three stay, plus the verification CSVs/thumbnails
+# (SERRA-R1 T7). The _prev/ backup of a figure about to be replaced is deliberately NOT published:
+# it is a local safety copy, not deliverable evidence. ---
+!/figuras/serra/
+/figuras/serra/*
+!/figuras/serra/*.pdf
+!/figuras/serra/*.eps
+!/figuras/serra/*.tif
+!/figuras/serra/*.csv
+!/figuras/serra/*.png
+
+# --- outputs/: private by design (internal audit reports) -- EXCEPT outputs/serra_r1/, the
+# reproducible-evidence CSV/informe for the pre-submission review (SERRA-R1), which is meant to be
+# public. No checkpoints (.nc/.npz) go here regardless. ---
+/outputs/*
+!/outputs/serra_r1/
+/outputs/serra_r1/*
+!/outputs/serra_r1/*.csv
+!/outputs/serra_r1/*.md
+!/outputs/serra_r1/*.txt
 
 # --- never, anywhere, regardless of the allowlist above ---
 .env

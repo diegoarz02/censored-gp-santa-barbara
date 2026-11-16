@@ -1,0 +1,32 @@
+g++ not available, if using conda: `conda install gxx`
+=== T2.1: diagnostico del campo latente (f, mu) por metal ===
+[cache] C:\Users\diego\OneDrive\Documentos\ANALISIS BAYESIANO\proyecto_metales_bayesiano\outputs\serra_r1\campo_latente_diag.csv
+metal variable  n_dims  rhat_min  rhat_q05  rhat_q50  rhat_q95  rhat_max  ess_bulk_min  ess_bulk_q05  ess_bulk_q50  ess_bulk_q95  ess_bulk_max  ess_tail_min  ess_tail_max  pct_rhat_ge_1.01  pct_ess_bulk_lt_400  pct_ess_tail_lt_400
+   As        f     114  0.999820  0.999943  1.002958  1.005460  1.009398   1012.063088   1106.088293   1290.360110   1721.130600   1845.530578   1553.159609   2358.617517               0.0                  0.0                  0.0
+   As       mu     114  0.999297  0.999599  1.000247  1.001388  1.001760   2777.922875   3211.775911   3960.525396   4975.861418   5291.472496   2832.386946   3977.412986               0.0                  0.0                  0.0
+   Ba        f     114  0.999764  0.999987  1.000763  1.002701  1.003464   1255.044201   1266.397725   1420.239311   1725.094378   1863.486185   1651.707962   2518.081135               0.0                  0.0                  0.0
+   Ba       mu     114  0.999143  0.999638  1.000401  1.001485  1.002087   2955.360858   3487.996838   4203.372450   5048.884018   5336.914335   3041.271465   4122.619462               0.0                  0.0                  0.0
+   Pb        f     114  1.000242  1.000479  1.001570  1.003122  1.003738   1455.804348   1491.260456   1729.216380   2006.732557   2162.004257   1784.779122   2704.691384               0.0                  0.0                  0.0
+   Pb       mu     114  0.999481  0.999664  1.000462  1.002535  1.004909   1572.228482   2633.043985   4257.737407   5086.498171   5628.858242   1912.295497   4103.454493               0.0                  0.0                  0.0
+   Hg        f     114  1.000535  1.000717  1.002069  1.004066  1.004403   1555.112515   1774.900518   2387.169309   3154.276537   4135.405248   1891.894554   5247.023402               0.0                  0.0                  0.0
+   Hg       mu     114  0.999813  0.999895  1.000317  1.001242  1.001584   1316.401924   1679.121062   6564.413704  10358.817511  10874.197043   3073.961769   7882.948769               0.0                  0.0                  0.0
+   Cd        f     114  0.999673  0.999775  1.000592  1.002369  1.002621   1884.480520   1993.410633   2798.973004   3984.517919   4259.397258   1864.368908   3756.559647               0.0                  0.0                  0.0
+   Cd       mu     114  0.999688  0.999866  1.000615  1.001920  1.002610   2004.797188   2581.862599   4467.025963   5170.390433   5678.746364   1988.921438   4151.339193               0.0                  0.0                  0.0
+  [T2.2a] Hg: 7406s area_frac_median=96.53% rhat=0.9999 ess_bulk=3372
+  [T2.2a] Pb: 352s area_frac_median=84.62% rhat=1.0046 ess_  [T2.2a] H  [T2.2a] As: 562s area_frac_median=71.89% rhat=1.0039 ess_b  [T2.2a] 
+=== T2.2b: MCSE por celda, Cd ===
+  [T2.2b] Cd: 3.75% de 7381 celdas con clasificacion inestable (|P-0.5| < 2*MCSE)
+
+=== T2.2
+=== T2.2b: MCSE por celda, Cd ===
+  [T2.2b] Cd: 3.75% de 7381 celdas con cl  [T2.2c] Cd listo
+  [T2.2c] Hg listo
+  [T2.2c] Pb listo
+The PostScript backend does not support transparency; partially transparent artists will b  [T2.2c] Hg listo
+  [T2.2c] Pb listo
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+
+=== FigS1 ===
+saved: FigS1_latent_diagnostics | 174x73 mm | 600 dpi | eps=ok
+
+escrito: outputs/serra_r1/campo_latente_diag.csv, cantidades_mapa_diag_area.csv, cantidades_mapa_diag_cd_cellwise.csv, cantidades_mapa_diag_cd_summary.csv, cantidades_mapa_diag_ubicaciones.csv, figuras/serra/FigS1_latent_diagnostics.pdf

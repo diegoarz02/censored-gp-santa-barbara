@@ -124,7 +124,7 @@ def base_axes(D, ax, *, hill_alpha=0.35, scale_x=0.62):
                 bbox=dict(boxstyle="round,pad=0.14", fc="white", ec="#52514e", lw=0.3, alpha=0.9))
     ax.set_xlabel("Easting UTM 18S (km)")
     ax.set_ylabel("Northing UTM 18S (km)")
-    ef.utm_km_ticks(ax)
+    ef.utm_km_ticks(ax, explicit_ticks=True)
     _scale_bar(ax, frac_x=scale_x)
     _north(ax)
 
