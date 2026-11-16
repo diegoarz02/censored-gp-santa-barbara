@@ -110,3 +110,7 @@ for the underlying dataset (see *Datos* above).
 
 If you use this code or the analytical dataset, please cite the Zenodo archive (badge above) and
 the source report (OEFA, cited above under *Cita de los datos*).
+
+- **This release (v1.5):** https://doi.org/10.5281/zenodo.24291974 — the version that matches the
+  analyses and figures of the paper; cite it when a specific version is needed.
+- **All versions (concept DOI, always resolves to the latest):** https://doi.org/10.5281/zenodo.22968165

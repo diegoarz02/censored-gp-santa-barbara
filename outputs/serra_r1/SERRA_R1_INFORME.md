@@ -404,6 +404,7 @@ El concepto lista ahora 6 versiones (v1.0, v1.1, v1.2, v1.3, v1.4, v1.5). El DOI
 resuelve (`https://doi.org/10.5281/zenodo.24291974` → zenodo.org). Versión, creador, título, tipo y
 licencia coinciden con `.zenodo.json`.
 
-El tag `v1.5` apunta al commit `5c200d5`. Esta sección se añadió en un commit posterior (no puede
-estar en el archivo del release, que se generó antes de conocer el DOI): el contenido archivado
-en Zenodo es el árbol de `5c200d5`; este informe, con esta sección, es el de `master`.
+El tag `v1.5` apunta al commit `24d077b`. Esta sección y el DOI de versión que ahora aparece en el
+README se añadieron en un commit posterior (no pueden estar en el archivo del release, que se
+generó antes de conocer el DOI): el contenido archivado en Zenodo es el árbol del tag `v1.5`;
+este informe, con esta sección, es el de `master`.
