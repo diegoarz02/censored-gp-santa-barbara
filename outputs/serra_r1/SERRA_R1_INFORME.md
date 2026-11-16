@@ -127,7 +127,7 @@ borde de extrapolación 2).** Ninguna por debajo de los umbrales habituales (R̂
 incluida la zona de extrapolación, que es la más expuesta a baja información. Detalle:
 `outputs/serra_r1/cantidades_mapa_diag_ubicaciones.csv`.
 
-*Corrección respecto a la primera versión de esta sección (commit `41b285d`)*: allí "cerca de
+*Corrección respecto a la primera versión de esta sección (previa a su publicación)*: allí "cerca de
 labores" se había definido con un proxy (celdas próximas a la mediana de la distancia al dato
 más cercano), que no es distancia a labores, y "fondo" eran las celdas más cercanas a un dato. Se
 rehízo con las reglas de arriba. Valores anteriores → nuevos: R̂ máx 1.0035 → 1.0035 (la misma
