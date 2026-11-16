@@ -378,3 +378,32 @@ exactos con lo ya citado o con lo ya señalado desde el CSV. Los hallazgos nuevo
 esta ronda (3.75 % de celdas de Cd con clasificación inestable por MCSE; 6.3 % de fuga del umbral
 del enmascaramiento; GP-L/2 sin diferencia de parametrización respecto al censurado) son
 **matices que no estaban cuantificados antes**, no contradicciones de lo publicado.
+
+---
+
+## Verificación post-release (Zenodo)
+
+Consultada el 2026-11-16 en la API pública de Zenodo (`https://zenodo.org/api/records/24291974`),
+segundos después de publicar el release `v1.5` en GitHub. Valores tal cual los devolvió la API:
+
+| campo | valor devuelto |
+|---|---|
+| DOI de versión | **10.5281/zenodo.24291974** |
+| DOI de concepto | 10.5281/zenodo.22968165 (el de la insignia del README) |
+| versión | v1.5 |
+| tipo | software |
+| licencia | mit-license |
+| creador | Araujo Villegas, Diego Alonso — ORCID 0000-0002-6987-3948 — Universidad Nacional Mayor de San Marcos |
+| título | idéntico al de `.zenodo.json` |
+| estado / acceso | published / open |
+| creado | 2026-11-16T20:35:09 UTC (fecha de publicación 2026-11-16) |
+| relación | `isSupplementTo` → `https://github.com/diegoarz02/censored-gp-santa-barbara/tree/v1.5` |
+| archivos (1) | `diegoarz02/censored-gp-santa-barbara-v1.5.zip`, 78 621 376 bytes, `md5:60e31abc530ad13a324abd04e1c68a3e` |
+
+El concepto lista ahora 6 versiones (v1.0, v1.1, v1.2, v1.3, v1.4, v1.5). El DOI de versión
+resuelve (`https://doi.org/10.5281/zenodo.24291974` → zenodo.org). Versión, creador, título, tipo y
+licencia coinciden con `.zenodo.json`.
+
+El tag `v1.5` apunta al commit `5c200d5`. Esta sección se añadió en un commit posterior (no puede
+estar en el archivo del release, que se generó antes de conocer el DOI): el contenido archivado
+en Zenodo es el árbol de `5c200d5`; este informe, con esta sección, es el de `master`.
