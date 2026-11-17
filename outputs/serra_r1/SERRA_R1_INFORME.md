@@ -341,8 +341,9 @@ texto de cuerpo — ver la función `font_report()` de `src/verify_figserra.py`,
 3. **README**: sección en inglés (*About / How to reproduce / Data provenance / Citation*) añadida
    sin borrar la española. Procedencia: Informe N.° 00341-2018-OEFA/DEAM-STEC obtenido por solicitud
    de acceso a la información pública (Ley N.° 27806, expediente 2026-E01-114527); se redistribuye
-   el CSV analítico `santa_barbara_soil.csv`, no el PDF escaneado del informe (por tamaño). Se
-   mantiene la insignia del DOI de concepto (10.5281/zenodo.22968165).
+   el CSV analítico `santa_barbara_soil.csv`, no el PDF escaneado del informe (por tamaño). El
+   release `v1.5` conserva la insignia del DOI de concepto (10.5281/zenodo.22968165); en `master`
+   el README la sustituye por una nota hasta que exista el registro nuevo (última sección).
 4. **Revisión previa a publicar**: se barrió el árbol completo (texto con `git grep`; los PDF/TIFF
    extrayendo su texto y metadatos con PyMuPDF/PIL, porque la búsqueda binaria marca como
    coincidencias secuencias de bytes comprimidos que no son texto) y los mensajes de commit.
@@ -408,3 +409,25 @@ El tag `v1.5` apunta al commit `24d077b`. Esta sección y el DOI de versión que
 README se añadieron en un commit posterior (no pueden estar en el archivo del release, que se
 generó antes de conocer el DOI): el contenido archivado en Zenodo es el árbol del tag `v1.5`;
 este informe, con esta sección, es el de `master`.
+
+---
+
+## Registro de Zenodo para el artículo (en preparación)
+
+El release `v1.5` quedó archivado automáticamente por la integración GitHub–Zenodo dentro del
+concepto 10.5281/zenodo.22968165 (sección anterior), que también agrupa versiones tempranas del
+repositorio. Para el artículo se prepara un **registro nuevo, con DOI de concepto propio**, que
+contenga únicamente el árbol de este commit:
+
+- **Contenido.** `git archive` del commit que contiene esta sección. No se crea tag ni release de
+  GitHub para él, para no disparar la integración automática. El hash del commit, el SHA-256 del zip
+  y la lista de archivos están en el manifiesto local `outputs/zenodo_nuevo/` (carpeta no
+  publicada).
+- **Alta.** Depósito manual en Zenodo: tipo software, licencia MIT, mismos creador y título que
+  `.zenodo.json`, versión `v1.5`.
+- **Al publicarse.** El DOI de versión y el de concepto se añadirán al README (secciones *Cita* y
+  *Citation*, que hoy no listan ninguno) y a este informe.
+- **Pendiente.** Decidir cómo mantener el vínculo entre el repositorio y Zenodo para las versiones
+  siguientes: depósitos manuales de «nueva versión» sobre el registro nuevo, o integración
+  automática asociada a otro repositorio. La integración automática actual sigue asociada al
+  concepto anterior.

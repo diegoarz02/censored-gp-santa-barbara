@@ -51,10 +51,8 @@ PyMC + nutpie (NUTS, backend numba) para la inferencia; ArviZ para diagnóstico 
 
 ## Cita
 
-Snapshot de este repositorio archivado en Zenodo:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22968165.svg)](https://doi.org/10.5281/zenodo.22968165)
-— el DOI de concepto resuelve siempre a la versión más reciente; cada release queda además con su
-propio DOI versionado.
+Snapshot de este repositorio archivado en Zenodo. El DOI de la versión archivada para el artículo
+se publicará aquí en cuanto el registro esté disponible.
 
 ## Cita de los datos
 
@@ -108,9 +106,6 @@ for the underlying dataset (see *Datos* above).
 
 ## Citation
 
-If you use this code or the analytical dataset, please cite the Zenodo archive (badge above) and
-the source report (OEFA, cited above under *Cita de los datos*).
-
-- **This release (v1.5):** https://doi.org/10.5281/zenodo.24291974 — the version that matches the
-  analyses and figures of the paper; cite it when a specific version is needed.
-- **All versions (concept DOI, always resolves to the latest):** https://doi.org/10.5281/zenodo.22968165
+If you use this code or the analytical dataset, please cite the Zenodo archive of this version (its
+DOI will be listed here once the record is published) and the source report (OEFA, cited above
+under *Cita de los datos*).
