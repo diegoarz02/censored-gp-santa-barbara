@@ -1,0 +1,17 @@
+cantidad,antes_main_Hg,despues_reforzado,diferencia,en_el_articulo,impreso
+% del dominio con P(Hg > 6.6) > 0.5 (agricola = residencial: mismo ECA),99.76967890529738,99.81032380436255,0.0406448990651711,"Tabla 9 (tab:exc), fila Hg y texto",99.8 -> 99.8
+% del dominio con P(Hg > 6.6) > 0.8 (agricola = residencial: mismo ECA),96.69421487603306,96.84324617260533,0.1490312965722751,"Tabla 9 (tab:exc), fila Hg",96.7 -> 96.8
+% del dominio con P(Hg > 6.6) > 0.95 (agricola = residencial: mismo ECA),76.11434764937,77.41498441945535,1.3006367700853474,"Tabla 9 (tab:exc), fila Hg",76.1 -> 77.4
+"area excedida (% del dominio), mediana",96.4029264327327,96.54518357946078,0.14225714672808465,no impreso para Hg,96.4 -> 96.5
+"area excedida (% del dominio), cuantil 2.5 %",88.84974935645576,89.44587454274489,0.5961251862891288,no impreso para Hg,88.8 -> 89.4
+"area excedida (% del dominio), cuantil 97.5 %",98.8890394255521,98.92968432461726,0.04064489906515689,no impreso para Hg,98.9 -> 98.9
+"area excedida (% del dominio), media",95.78603509009619,95.92867158921555,0.14263649911936227,no impreso para Hg,95.8 -> 95.9
+mediana posterior de la concentracion (mg/kg): minimo en la grilla,2.6401797995504266,2.6756232748234323,0.03544347527300573,,
+mediana posterior de la concentracion (mg/kg): maximo en la grilla,1576.7816806982637,1489.0140252483764,-87.76765544988734,,
+media posterior de la concentracion (mg/kg): minimo en la grilla,5.377805968056077,5.110569943063404,-0.2672360249926724,,
+media posterior de la concentracion (mg/kg): maximo en la grilla,7999.095474232973,7114.9929265793535,-884.1025476536197,,
+sd predictivo (log): media sobre la grilla,1.4219230747879588,1.4219536818112792,3.060702332047249e-05,Fig. 8 (barra de sd),
+sd predictivo (log): maximo,2.110413138776603,2.1213609572080196,0.010947818431416678,,
+P(exceder) maxima en la grilla,1.0,1.0,0.0,,
+celdas con P > 0.5,7364.0,7367.0,3.0,,
+celdas con P > 0.9,6634.0,6662.0,28.0,,

@@ -1,0 +1,5 @@
+variante,ell_typ_km,umbral_km,celdas_extrapoladas,pct_dominio
+"A. original de nb02 (Hg estandar, Cd r libre)",1.0294157544113713,1.544123631617057,57,0.7722530822381791
+"B. Hg reforzado, resto igual (la unica diferencia de R2)",1.0370696521810516,1.5556044782715774,51,0.6909632841078445
+C. Hg reforzado y Cd L=LD (no es parte de R2),1.0910240528256607,1.636536079238491,13,0.1761278959490584
+D. constante fija de mapas_f3.py (la que dibujan las figuras),1.03,1.545,57,0.7722530822381791

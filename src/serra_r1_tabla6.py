@@ -33,8 +33,8 @@ LEVELS = [0.2, 0.4, 0.6, 0.8]
 
 
 def signed_rank_exact(x):
-    """Prueba de Wilcoxon de rangos con signo EXACTA (enumeracion completa de 2^n, sin scipy) --
-    v14_wilcoxon_bloques.py, reutilizado tal cual."""
+    """Prueba de Wilcoxon de rangos con signo EXACTA (enumeracion completa de 2^n, sin scipy). Rangos y
+    cola superior como en v14_wilcoxon_bloques.py; se anade el p bilateral exacto (ver el return)."""
     x = [v for v in x if v != 0]
     n = len(x)
     a = [abs(v) for v in x]
@@ -49,9 +49,12 @@ def signed_rank_exact(x):
             r[o[k]] = (i + j) / 2 + 1
         i = j + 1
     W = sum(rk for rk, v in zip(r, x) if v > 0)
-    p1 = sum(sum(rk for rk, s in zip(r, sg) if s) >= W - 1e-9
-             for sg in itertools.product([0, 1], repeat=n)) / 2 ** n
-    return n, min(1.0, 2 * p1)
+    sums = [sum(rk for rk, s in zip(r, sg) if s) for sg in itertools.product([0, 1], repeat=n)]
+    p_up = sum(w >= W - 1e-9 for w in sums) / 2 ** n
+    p_lo = sum(w <= W + 1e-9 for w in sums) / 2 ** n
+    # p_v14: convencion de v14_wilcoxon_bloques.py (doble de la cola superior); coincide con el
+    # bilateral exacto cuando el censurado gana, pero sobrestima cuando pierde. p_two: bilateral exacto.
+    return n, min(1.0, 2 * p_up), min(1.0, 2 * min(p_up, p_lo))
 
 
 def main():
@@ -126,10 +129,11 @@ def main():
                     c = sum(abs(D[k]["censored GP"] - 0.95) for k in ks) / len(ks)
                     s = sum(abs(D[k][base] - 0.95) for k in ks) / len(ks)
                     diffs_w.append(s - c)
-            n, p = signed_rank_exact(diffs_w)
+            n, p_v14, p_two = signed_rank_exact(diffs_w)
             wins = sum(d_ > 0 for d_ in diffs_w)
             wilcox_rows.append({"level": lvl, "baseline": base, "n_pairs_total": len(diffs_w),
-                               "n_pairs_no_empate": n, "censurado_gana": wins, "p_bilateral": p})
+                               "n_pairs_no_empate": n, "censurado_gana": wins,
+                               "p_bilateral": p_two, "p_v14_doble_cola_superior": p_v14})
     wilcox = pd.DataFrame(wilcox_rows)
     wilcox.to_csv(OUT_DIR / "T6_wilcoxon.csv", index=False, encoding="utf-8")
     print("\n[5] Wilcoxon de rangos con signo (|PICP95-0.95|, 15 unidades metal x bloque, "

@@ -66,6 +66,16 @@
 !/outputs/serra_r1/*.md
 !/outputs/serra_r1/*.txt
 
+# --- outputs/serra_r2/: same rule for the second evidence round (mercury results recomputed with the
+# reinforced fit). One small derived-summary .npz (map products, no posterior draws) is shipped on
+# purpose; its _prev/ backups stay local. ---
+!/outputs/serra_r2/
+/outputs/serra_r2/*
+!/outputs/serra_r2/*.csv
+!/outputs/serra_r2/*.md
+!/outputs/serra_r2/*.txt
+!/outputs/serra_r2/posterior_maps_Hg_refuerzo.npz
+
 # --- never, anywhere, regardless of the allowlist above ---
 .env
 *.env

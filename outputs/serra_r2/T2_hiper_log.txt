@@ -1,0 +1,12 @@
+g++ not available, if using conda: `conda install gxx`
+grid oficial: 61 x 121 = 7381 celdas de 50 m (buffer 300 m) -- debe ser 7381 para igualar el mapa publicado
+[autovalidacion] TABLE11 Hg (antes) reproducida: max|dif| = 4.65e-05 (redondeo a 4 dec.)
+[autovalidacion] P(log tau<0) Hg antes = 0.2785 (TABLE_T1_1: 0.2785)
+[autovalidacion] PPC Hg antes vs TABLE14 (p_bayes): median_log: 0.3567/0.3567, sd_log: 0.4767/0.4767, max_log: 0.9533/0.9533, pct_censored: 1.0000/1.0000
+                                                     variante  ell_typ_km  umbral_km  celdas_extrapoladas  pct_dominio
+                A. original de nb02 (Hg estandar, Cd r libre)      1.0294     1.5441                   57       0.7723
+     B. Hg reforzado, resto igual (la unica diferencia de R2)      1.0371     1.5556                   51       0.6910
+                C. Hg reforzado y Cd L=LD (no es parte de R2)      1.0910     1.6365                   13       0.1761
+D. constante fija de mapas_f3.py (la que dibujan las figuras)      1.0300     1.5450                   57       0.7723
+[autovalidacion] diseno 'antes' recalculado = monitoring_design.npz: puntos iguales = True; max|dif traza| = 0.00e+00
+escrito: hg_hiperparametros_antes_despues.csv, hg_extrapolacion.csv, hg_diseno_monitoreo_antes_despues.csv, hg_covariables_ic95_cinco_metales.csv

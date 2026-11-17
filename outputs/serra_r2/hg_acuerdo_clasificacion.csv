@@ -1,0 +1,4 @@
+umbral_P,acuerdo_celda_a_celda_pct,celdas_que_cambian,de_excedente_a_no,de_no_a_excedente
+0.5,99.95935510093483,3,0,3
+0.8,99.82387210405093,13,1,12
+0.95,97.48001625795962,186,45,141

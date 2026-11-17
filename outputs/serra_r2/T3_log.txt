@@ -1,0 +1,11 @@
+g++ not available, if using conda: `conda install gxx`
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+=== Fig9 (SERRA) ===
+saved: Fig9 | 174x104 mm | 600 dpi | eps=ok
+{'stem': 'Fig9', 'declared_w_mm': 174.0, 'declared_h_mm': 104.39999999999999, 'eps_ok': True, 'actual_w_mm': 173.98999999999998, 'actual_h_mm': 104.394, 'width_ok': True, 'height_ok': True, 'extrap_frac': 0.007722530822381791}
+=== FIG17_Hg (espanol) ===
+saved: FIG17_Hg_mean_and_uncertainty | 190 mm | 600 dpi
+{'stem': 'FIG17_Hg_mean_and_uncertainty', 'declared_mm': np.float64(190.0), 'actual_mm': 189.992, 'ok': True, 'extrap_frac': 0.007722530822381791}
+            figura  pixeles  pct_pixeles_que_difieren_>8_niveles  pct_pixeles_que_difieren_>32_niveles  dif_maxima_nivel_0_255
+      Fig9 (SERRA)   341562                               0.4351                                0.1965                     255
+FIG17_Hg (espanol)   420553                               3.5879                                2.3707                     255

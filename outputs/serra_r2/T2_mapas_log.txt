@@ -1,0 +1,19 @@
+g++ not available, if using conda: `conda install gxx`
+grid oficial: 61 x 121 = 7381 celdas de 50 m (buffer 300 m) -- debe ser 7381 para igualar el mapa publicado
+[validacion] pipeline con main_Hg.nc, bloque 0 (celdas 0-1499) contra posterior_maps.npz
+    bloque 0: celdas 0-1499
+     clave  celdas  max_abs_dif  max_rel_dif
+   Hg_mean    1500          0.0          0.0
+ Hg_median    1500          0.0          0.0
+   Hg_sd_f    1500          0.0          0.0
+   Hg_sd_y    1500          0.0          0.0
+ Hg_p_agri    1500          0.0          0.0
+Hg_p_resid    1500          0.0          0.0 
+  (37 s)
+[mapas] pipeline con el ajuste reforzado, 7381 celdas
+    bloque 0: celdas 0-1499
+    bloque 1: celdas 1500-2999
+    bloque 2: celdas 3000-4499
+    bloque 3: celdas 4500-5999
+    bloque 4: celdas 6000-7380
+[mapas] 184 s -> posterior_maps_Hg_refuerzo.npz

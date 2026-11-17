@@ -35,9 +35,17 @@ Script: `src/serra_r1_tabla6.py`. Fuente: `figuras/TABLE_H6_MAIN_con_kriging.csv
    | 60 % | GP-L/2 | 7/9 | **0.0195** (✓) |
    | 60 % | kriging | 8/13 | **0.0325** (✓) |
    | 40 % | GP-L/2 / kriging | 4/7 | 0.203 (no significativo, ✓) |
-   | 20 % | GP-L/2 / kriging | 1/4, 4/7 | 1.00 / 0.578 (no significativo, ✓) |
+   | 20 % | GP-L/2 / kriging | 1/4, 4/7 | **0.375** / 0.578 (no significativo, ✓) |
 
-   **Los 8 p-valores reproducen exacto los citados en el manuscrito.**
+   **Los 4 p-valores que imprime el manuscrito (80 %: 6.1×10⁻⁵ frente a ambos; 60 %: 0.0195 y 0.0325)
+   se reproducen exactos.** Los de 20 % y 40 % no se imprimen y son no significativos.
+
+   *Corrección respecto a la primera versión de esta tabla*: el p al 20 % frente a GP-L/2 salía 1.00
+   porque se había reutilizado la convención de `v14_wilcoxon_bloques.py` (doble de la cola
+   superior), que coincide con el bilateral exacto cuando el censurado gana pero sobrestima cuando
+   pierde (aquí gana 1 de 4). El bilateral exacto es **0.375**, igual que el recálculo independiente.
+   `T6_wilcoxon.csv` conserva las dos columnas (`p_bilateral` y `p_v14_doble_cola_superior`); las otras
+   7 filas no cambian.
 
    Cita del código que confirma que las réplicas r y r+5 comparten máscara y bloque, y difieren
    solo en la semilla (`notebooks/_src/worker_v4.py`):
@@ -142,8 +150,7 @@ dimensiones del campo latente `f`, un histograma por metal (cada metal con su pr
 estilo de línea), con la línea de referencia en R̂ = 1.01 y en ESS = 400. Los valores crudos por
 dimensión (5 metales × 114 × `f`/`mu`) están en `outputs/serra_r1/campo_latente_por_dimension.csv`;
 su resumen coincide con `campo_latente_diag.csv` a 10⁻¹³. *(La primera versión mostraba barras
-de R̂ máx y ESS mín por metal, no histogramas como pedía el encargo; reemplazada. Respaldo local en
-`outputs/serra_r1/_prev/`, no publicado.)*
+de R̂ máx y ESS mín por metal, no histogramas como pedía el encargo; reemplazada.)*
 
 ### Archivos de T2 y registro de ejecución
 
@@ -315,9 +322,7 @@ f/mu) costaría varios GB. Salida: `outputs/serra_r1/sbc_derivadas.csv`,
 `outputs/serra_r1/T6_verificacion_log.txt`, regeneración en `T6_log.txt`): fuentes Arial
 embebidas (bytes reales extraídos del PDF), texto de línea base 8.0–10.0 pt (dentro de 8–12),
 0 títulos internos, 174 × 90.5 mm, raster a 600 dpi. **Ningún número cambió** (los datos del
-boxplot son los mismos; solo cambió la disposición visual y la etiqueta del eje). Versión
-anterior conservada en `figuras/serra/_prev/Fig2_v1.{pdf,eps,tif}` (no publicada, solo respaldo
-local). Los tamaños bajo 8 pt que reporta `_verify_fonts.csv` en la columna `fs_min_all` en
+boxplot son los mismos; solo cambió la disposición visual y la etiqueta del eje). Los tamaños bajo 8 pt que reporta `_verify_fonts.csv` en la columna `fs_min_all` en
 otras figuras son los sub/superíndices de mathtext (≈70 % del tamaño del símbolo por diseño), no
 texto de cuerpo — ver la función `font_report()` de `src/verify_figserra.py`, que separa ambos.
 
@@ -363,7 +368,7 @@ texto de cuerpo — ver la función `font_report()` de `src/verify_figserra.py`,
 | T3 | `src/serra_r1_baseline.py` | `baseline_diag.csv`, `baseline_cobertura_restringida.csv`, `baseline_diff_implementacion.md`, `baseline_mecanismo_ties.csv` | `T3_log.txt` |
 | T4 | `src/serra_r1_umbral.py` | `umbral_fuga.csv` | `T4_log.txt` |
 | T5 | `src/serra_r1_sbc.py` | `sbc_derivadas.csv`, `sbc_derivadas_nota.md` | `T5_log.txt` |
-| T6 | `src/figserra.py::fig2()`, `src/verify_figserra.py` | `figuras/serra/Fig2.*` (+ `_prev/` local) | `T6_log.txt`, `T6_verificacion_log.txt` |
+| T6 | `src/figserra.py::fig2()`, `src/verify_figserra.py` | `figuras/serra/Fig2.*` | `T6_log.txt`, `T6_verificacion_log.txt` |
 | T7 | `.zenodo.json`, `README.md` | — | sección *Verificación post-release* |
 
 Los scripts son deterministas sobre los checkpoints de entrada: T4 y T5 se volvieron a ejecutar
@@ -373,7 +378,7 @@ para generar su registro y reprodujeron CSV idénticos (`git` no detectó ningú
 
 ## Resumen de discrepancias con el artículo
 
-**Ninguna.** Las 36 medias de la Tabla 6, los 8 p-valores del Wilcoxon, los 3 totales de
+**Ninguna.** Las 36 medias de la Tabla 6, los 4 p-valores del Wilcoxon que imprime el artículo, los 3 totales de
 divergencias/R̂ del baseline, y el número de celdas del enmascaramiento (60, 360) coinciden
 exactos con lo ya citado o con lo ya señalado desde el CSV. Los hallazgos nuevos de
 esta ronda (3.75 % de celdas de Cd con clasificación inestable por MCSE; 6.3 % de fuga del umbral

@@ -1,0 +1,7 @@
+g++ not available, if using conda: `conda install gxx`
+metal                                idata  rhat_max_calculado  rhat_max_articulo  ess_bulk_calculado  ess_bulk_articulo  ess_tail_calculado  ess_tail_articulo  divergencias  coincide
+   Hg probe_Hg_strict_2026-10-26_ta0999.nc              1.0059             1.0059            467.2003                467            692.5639                693             0      True
+   Pb                           main_Pb.nc              1.0068             1.0068            751.5722                752           1272.3414               1272             0      True
+   As                           main_As.nc              1.0064             1.0064            913.1985                913           1204.5772               1205             0      True
+   Ba                           main_Ba.nc              1.0035             1.0035           1025.7674               1026           1322.7309               1323             0      True
+   Cd                        flip_LD_Cd.nc              1.0051             1.0051            767.0524                767            844.5098                845             0      True

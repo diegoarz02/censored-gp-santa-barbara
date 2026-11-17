@@ -1,0 +1,11 @@
+g++ not available, if using conda: `conda install gxx`
+grid oficial: 61 x 121 = 7381 celdas de 50 m (buffer 300 m) -- debe ser 7381 para igualar el mapa publicado
+{'ajuste': 'antes (main_Hg.nc)', 'semilla': 20260906, 'pct_P_gt_0.5': 99.76967890529738, 'pct_P_gt_0.8': 96.69421487603306, 'pct_P_gt_0.95': 76.11434764937, 'area_excedida_mediana_pct': 96.4029264327327, 'segundos': 177.7183268070221}
+{'ajuste': 'antes (main_Hg.nc)', 'semilla': 20260907, 'pct_P_gt_0.5': 99.76967890529738, 'pct_P_gt_0.8': 96.80260127354016, 'pct_P_gt_0.95': 76.16854084812356, 'area_excedida_mediana_pct': 96.43002303210947, 'segundos': 181.32759928703308}
+{'ajuste': 'antes (main_Hg.nc)', 'semilla': 20260908, 'pct_P_gt_0.5': 99.76967890529738, 'pct_P_gt_0.8': 96.77550467416339, 'pct_P_gt_0.95': 76.34466874407262, 'area_excedida_mediana_pct': 96.43679718195366, 'segundos': 185.79897046089172}
+{'ajuste': 'antes (main_Hg.nc)', 'semilla': 20260909, 'pct_P_gt_0.5': 99.76967890529738, 'pct_P_gt_0.8': 96.72131147540983, 'pct_P_gt_0.95': 76.38531364313779, 'area_excedida_mediana_pct': 96.45034548164205, 'segundos': 167.412415266037}
+{'ajuste': 'despues (reforzado)', 'semilla': 20260906, 'pct_P_gt_0.5': 99.81032380436255, 'pct_P_gt_0.8': 96.84324617260533, 'pct_P_gt_0.95': 77.41498441945535, 'area_excedida_mediana_pct': 96.54518357946078, 'segundos': 161.93055391311646}
+{'ajuste': 'despues (reforzado)', 'semilla': 20260907, 'pct_P_gt_0.5': 99.78322720498576, 'pct_P_gt_0.8': 96.85679447229373, 'pct_P_gt_0.95': 77.9840130063677, 'area_excedida_mediana_pct': 96.50453868039561, 'segundos': 165.10790371894836}
+{'ajuste': 'despues (reforzado)', 'semilla': 20260908, 'pct_P_gt_0.5': 99.78322720498576, 'pct_P_gt_0.8': 96.761956374475, 'pct_P_gt_0.95': 77.63175721446959, 'area_excedida_mediana_pct': 96.55873187914916, 'segundos': 177.18701124191284}
+{'ajuste': 'despues (reforzado)', 'semilla': 20260909, 'pct_P_gt_0.5': 99.78322720498576, 'pct_P_gt_0.8': 96.81614957322856, 'pct_P_gt_0.95': 77.4827259178973, 'area_excedida_mediana_pct': 96.57228017883756, 'segundos': 180.7179172039032}
+escrito: hg_ruido_montecarlo_semillas.csv

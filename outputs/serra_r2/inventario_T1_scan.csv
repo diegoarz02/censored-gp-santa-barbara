@@ -1,0 +1,64 @@
+archivo,linea,patron,texto
+src/build_maps_f3.py,3,posterior_maps,"No MCMC: `outputs/posterior_maps.npz` already holds the posterior, so this only re-draws."
+src/extraccion_v3_luis.py,6,main_{,"2. outputs/idata/main_{Hg,Pb,As,Ba,Cd}.nc -- ya ajustados, solo se les corre az.ess(method=""tail"")."
+src/extraccion_v3_luis.py,91,"f""main_","p = OUT / ""idata"" / f""main_{metal}.nc"""
+src/h85ce_advi_jerarquico.py,102,"f""main_","nuts = az.from_netcdf(OUT / ""idata"" / f""main_{metal}.nc"")"
+src/h86_loo.py,88,"f""main_","p = OUT / ""idata"" / f""main_{a}.nc"""
+src/h_hg_strict_probe.py,15,main_Hg,"Checkpoint separado de `outputs/idata/main_Hg.nc` (el oficial, F4-20260923) para no tocarlo:"
+src/h_hg_strict_probe.py,16,probe_Hg_strict,`outputs/idata/probe_Hg_strict_2026-10-26.nc`.
+src/h_hg_strict_probe.py,108,probe_Hg_strict,"ck = DIR_IDATA / f""probe_Hg_strict_2026-10-26_{tag}.nc"""
+src/mapas_f3.py,50,posterior_maps,"mp = dict(np.load(OUT / ""posterior_maps.npz""))"
+src/q1_t1_preferencial_excedencia_cd.py,22,posterior_maps,"contra el modelo estandar (outputs/area_excedida_posterior_arrays.npz, outputs/posterior_maps.npz)."
+src/q1_t1_preferencial_excedencia_cd.py,220,posterior_maps,"official = np.load(OUT / ""posterior_maps.npz"")"
+src/serra_r1_campo_latente.py,26,probe_Hg_strict,"""Hg"": ""probe_Hg_strict_2026-10-26_ta0999.nc"", ""Cd"": ""flip_LD_Cd.nc"","
+src/t1_1_prueba_varianza.py,15,main_{,"3. Verifica esa formula NUMERICAMENTE, por draw, contra los posteriors reales de main_{As,Ba,Hg,Pb,Cd}.nc."
+src/t1_1_prueba_varianza.py,66,"f""main_","path = OUT / ""idata"" / f""main_{metal}.nc"""
+src/t1_1_prueba_varianza.py,68,main_%,"resultados.append(dict(metal=metal, estado=""NO_DISPONIBLE (falta main_%s.nc)"" % metal))"
+src/t1_2_sensibilidad_soporte.py,235,posterior_maps,"pct_agri=57.4,  # publicado; ver TABLE20_exceedance_summary.csv / posterior_maps.npz"
+src/t2_1_area_excedida_posterior.py,5,main_{,"separa y calcula TRES cantidades, reutilizando el idata oficial ya guardado (main_{metal}.nc,"
+src/t2_1_area_excedida_posterior.py,7,posterior_maps,"`notebooks/_src/nb02_f_maps.py` (el que de hecho genero outputs/posterior_maps.npz, el mapa"
+src/t2_1_area_excedida_posterior.py,54,posterior_maps,"SEED = 20260906                 # SEED de nb02.py, el que de hecho genero posterior_maps.npz"
+src/t2_1_area_excedida_posterior.py,133,"f""main_","idata = az.from_netcdf(OUT / ""idata"" / f""main_{metal}.nc"")"
+src/t2_1_area_excedida_posterior.py,202,posterior_maps,# chequeo de consistencia contra el mapa oficial ya publicado (posterior_maps.npz)
+src/t2_1_area_excedida_posterior.py,203,posterior_maps,"official = dict(np.load(OUT / ""posterior_maps.npz""))"
+src/t2_1_area_excedida_posterior.py,204,posterior_maps,"print(""\n=== Chequeo de consistencia contra outputs/posterior_maps.npz (oficial) ==="")"
+src/t2_3_diagnostico_campo_latente.py,39,"f""main_","idata = az.from_netcdf(OUT / ""idata"" / f""main_{metal}.nc"")"
+src/verify_milestones.py,181,posterior_maps,"__import__(""numpy"").load(OUT / ""posterior_maps.npz"")))"
+notebooks/_src/nb02.py,928,"f""main_","f""main_{analyte}"","
+notebooks/_src/nb02.py,938,idata_main,idata_main = {a: fit_main(a) for a in MAIN_METALS}
+notebooks/_src/nb02.py,949,idata_main,d = sb.diagnose(idata_main[a])
+notebooks/_src/nb02.py,972,idata_main,p = idata_main[a].posterior
+notebooks/_src/nb02.py,999,idata_main,"e = idata_main[a].posterior[""ell""].values.reshape(-1, 2)"
+notebooks/_src/nb02.py,1016,idata_main,p = idata_main[a].posterior
+notebooks/_src/nb02.py,1049,idata_main,p = idata_main[a].posterior
+notebooks/_src/nb02.py,1106,idata_main,p = idata_main[a].posterior
+notebooks/_src/nb02.py,1136,idata_main,v = idata_main[a].posterior[nm].values
+notebooks/_src/nb02.py,1198,idata_main,"for r_ in posterior_predictive_stats(a, idata_main[a])]).round(4)"
+notebooks/_src/nb02.py,1408,idata_main,p = idata_main[metal].posterior
+notebooks/_src/nb02.py,1892,idata_main,idt = idata_main[metal]
+notebooks/_src/nb02.py,1898,idata_main,# `idata_main` is saved without a `log_likelihood` group (Diego confirmed on
+notebooks/_src/nb02.py,1904,idata_main,"""note"": ""idata_main has no log_likelihood group; not recomputed""})"
+notebooks/_src/nb02.py,1965,idata_main,p = idata_main[a].posterior
+notebooks/_src/nb02.py,2154,idata_main,idt = idata_main[analyte]
+notebooks/_src/nb02.py,2191,posterior_maps,"MAP_PATH = DIR_OUT / ""posterior_maps.npz"""
+notebooks/_src/nb02.py,2206,idata_main,"pr = sb.predict_field(idata_main[a], XY, XY_GRID[b0:b1], COV_GRID[b0:b1],"
+notebooks/_src/nb02.py,2251,idata_main,"ell_typ = float(np.mean([idata_main[a].posterior[""ell""].values.reshape(-1, 2).mean()"
+notebooks/_src/nb02.py,2278,idata_main,p_design = idata_main[DESIGN_METAL].posterior
+notebooks/_src/nb02_c_main.py,22,"f""main_","f""main_{analyte}"","
+notebooks/_src/nb02_c_main.py,32,idata_main,idata_main = {a: fit_main(a) for a in MAIN_METALS}
+notebooks/_src/nb02_c_main.py,43,idata_main,d = sb.diagnose(idata_main[a])
+notebooks/_src/nb02_c_main.py,66,idata_main,p = idata_main[a].posterior
+notebooks/_src/nb02_c_main.py,93,idata_main,"e = idata_main[a].posterior[""ell""].values.reshape(-1, 2)"
+notebooks/_src/nb02_c_main.py,110,idata_main,p = idata_main[a].posterior
+notebooks/_src/nb02_c_main.py,143,idata_main,p = idata_main[a].posterior
+notebooks/_src/nb02_c_main.py,199,idata_main,p = idata_main[a].posterior
+notebooks/_src/nb02_c_main.py,229,idata_main,v = idata_main[a].posterior[nm].values
+notebooks/_src/nb02_c_main.py,291,idata_main,"for r_ in posterior_predictive_stats(a, idata_main[a])]).round(4)"
+notebooks/_src/nb02_d_masking.py,199,idata_main,p = idata_main[metal].posterior
+notebooks/_src/nb02_e_cv.py,259,idata_main,idt = idata_main[metal]
+notebooks/_src/nb02_f_maps.py,13,idata_main,p = idata_main[a].posterior
+notebooks/_src/nb02_f_maps.py,197,idata_main,idt = idata_main[analyte]
+notebooks/_src/nb02_f_maps.py,234,posterior_maps,"MAP_PATH = DIR_OUT / ""posterior_maps.npz"""
+notebooks/_src/nb02_f_maps.py,249,idata_main,"pr = sb.predict_field(idata_main[a], XY, XY_GRID[b0:b1], COV_GRID[b0:b1],"
+notebooks/_src/nb02_f_maps.py,294,idata_main,"ell_typ = float(np.mean([idata_main[a].posterior[""ell""].values.reshape(-1, 2).mean()"
+notebooks/_src/nb02_g_design_lmc.py,22,idata_main,p_design = idata_main[DESIGN_METAL].posterior

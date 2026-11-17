@@ -1,0 +1,23 @@
+g++ not available, if using conda: `conda install gxx`
+                                                                cantidad  antes_main_Hg  despues_reforzado  diferencia                     en_el_articulo      impreso
+ % del dominio con P(Hg > 6.6) > 0.5 (agricola = residencial: mismo ECA)        99.7697            99.8103      0.0406 Tabla 9 (tab:exc), fila Hg y texto 99.8 -> 99.8
+ % del dominio con P(Hg > 6.6) > 0.8 (agricola = residencial: mismo ECA)        96.6942            96.8432      0.1490         Tabla 9 (tab:exc), fila Hg 96.7 -> 96.8
+% del dominio con P(Hg > 6.6) > 0.95 (agricola = residencial: mismo ECA)        76.1143            77.4150      1.3006         Tabla 9 (tab:exc), fila Hg 76.1 -> 77.4
+                                  area excedida (% del dominio), mediana        96.4029            96.5452      0.1423                 no impreso para Hg 96.4 -> 96.5
+                            area excedida (% del dominio), cuantil 2.5 %        88.8497            89.4459      0.5961                 no impreso para Hg 88.8 -> 89.4
+                           area excedida (% del dominio), cuantil 97.5 %        98.8890            98.9297      0.0406                 no impreso para Hg 98.9 -> 98.9
+                                    area excedida (% del dominio), media        95.7860            95.9287      0.1426                 no impreso para Hg 95.8 -> 95.9
+      mediana posterior de la concentracion (mg/kg): minimo en la grilla         2.6402             2.6756      0.0354                                                
+      mediana posterior de la concentracion (mg/kg): maximo en la grilla      1576.7817          1489.0140    -87.7677                                                
+        media posterior de la concentracion (mg/kg): minimo en la grilla         5.3778             5.1106     -0.2672                                                
+        media posterior de la concentracion (mg/kg): maximo en la grilla      7999.0955          7114.9929   -884.1025                                                
+                              sd predictivo (log): media sobre la grilla         1.4219             1.4220      0.0000               Fig. 8 (barra de sd)             
+                                             sd predictivo (log): maximo         2.1104             2.1214      0.0109                                                
+                                          P(exceder) maxima en la grilla         1.0000             1.0000      0.0000                                                
+                                                      celdas con P > 0.5      7364.0000          7367.0000      3.0000                                                
+                                                      celdas con P > 0.9      6634.0000          6662.0000     28.0000                                                
+ umbral_P  acuerdo_celda_a_celda_pct  celdas_que_cambian  de_excedente_a_no  de_no_a_excedente
+     0.50                    99.9594                   3                  0                  3
+     0.80                    99.8239                  13                  1                 12
+     0.95                    97.4800                 186                 45                141
+{'corr_log_mediana': 0.9985806172528829, 'max_abs_dif_log_mediana': 0.21400721421985303, 'max_abs_dif_P': 0.040000000000000036, 'max_abs_dif_sd_y': 0.14396818252454602, 'mediana_dif_rel_mediana_conc_pct': 3.581293662918994}
