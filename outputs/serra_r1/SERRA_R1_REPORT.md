@@ -425,3 +425,8 @@ repository. The final record of the article is a **new manual deposit, with its 
 DOI** (version `v2.0.0`: the repository plus the scanned OEFA report), without automatic integration.
 Its version DOI and the concept DOI will be added to the README, to `CITATION.cff` and to this report once
 published.
+
+**Update (2026-11-18).** The tags and releases `v1.0` to `v1.5` were withdrawn from GitHub and versions
+1.1 to 1.5 of the Zenodo concept (including record 24291974 of the previous section) were deleted; the
+commit history is kept. The current version is the `v2.0.0` release; the article's Zenodo record will be
+created with its own DOI and added here.

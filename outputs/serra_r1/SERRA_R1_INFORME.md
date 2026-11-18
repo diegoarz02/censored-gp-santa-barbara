@@ -425,3 +425,8 @@ repositorio. El registro definitivo del artículo es un **depósito manual nuevo
 propio** (versión `v2.0.0`: el repositorio más el informe OEFA escaneado), sin integración automática.
 Su DOI de versión y el de concepto se añadirán al README, a `CITATION.cff` y a este informe una vez
 publicado.
+
+**Actualización (2026-11-18).** Los tags y releases `v1.0` a `v1.5` se retiraron de GitHub y las
+versiones 1.1 a 1.5 del concepto de Zenodo (incluido el registro 24291974 de la sección anterior) se
+borraron; el historial de commits se conserva. La versión vigente es el release `v2.0.0`; el registro de
+Zenodo del artículo se creará con su propio DOI y se añadirá aquí.
