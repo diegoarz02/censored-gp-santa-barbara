@@ -2,7 +2,7 @@
 
 **La crítica que cierra.** El experimento principal impone la censura por cuantiles sobre campos que
 no la tienen. El argumento de validez es correcto —un límite de laboratorio fijo que produce un c %
-de no detectados *es* un cuantil— pero un revisor lo va a señalar, y con razón.
+de no detectados *es* un cuantil— pero alguien lo va a señalar, y con razón.
 
 **La respuesta está en los datos y no cuesta recolectar nada.** Hay seis metales con censura
 **real** en las mismas 114 localizaciones, el mismo día y el mismo laboratorio:

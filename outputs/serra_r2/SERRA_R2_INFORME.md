@@ -76,7 +76,7 @@ L = LD (que ya no usa el pipeline original) 0.2 %. Es una cuestión de redacció
 
 Barrido automático de `src/` y `notebooks/_src/` (`inventario_T1_scan.csv`) y tabla curada (21 filas,
 `inventario_T1.csv`), contrastada con `main_FINAL_v15.tex`. 18 entradas dependen del ajuste estándar; el artículo usa
-7 de ellas. El manuscrito en inglés para SERRA no está en disco: lo que solo apareciera en él figura como no verificable.
+7 de ellas. El manuscrito en inglés para SERRA no se revisó en esa ronda: lo que solo apareciera en él figura como no verificado.
 
 | Dependencia | Cantidad | ¿La usa el artículo? | Acción |
 |---|---|---|---|
@@ -225,12 +225,11 @@ niveles: Fig9 0.44 %, FIG17_Hg 3.59 %. La leyenda de extrapolación sigue dicien
 
 ---
 
-## T5 — Zip para el registro nuevo de Zenodo
+## T5 — Preparación del archivo de Zenodo
 
-Se hizo commit de esta ronda (con el mismo barrido de rastros que en la ronda anterior) y se subió a GitHub **sin tag ni release**.
-El zip `censored-gp-santa-barbara-v1.6.zip` se genera con `git archive` (con `core.autocrlf=false`) del commit que contiene
-este informe; su commit, tamaño, SHA-256, MD5 y número de archivos están en el manifiesto local `outputs/zenodo_nuevo/`
-(no publicado). Versión **v1.6**; el registro nuevo incluye `outputs/serra_r2/`.
+Se hizo commit de esta ronda (con el mismo barrido de rastros que en la ronda anterior) y se subió a GitHub **sin tag ni release**;
+con eso el repositorio quedó listo para archivar. El registro definitivo de Zenodo se prepara en la ronda siguiente (versión
+**v2.0.0**: el repositorio y el informe OEFA escaneado, depósito manual, sin integración automática).
 
 ---
 

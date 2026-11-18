@@ -14,7 +14,7 @@ reports:
   por letra estrecha en las 47 figuras
 * **geometry** — width not in {90, 140, 190} mm, Type 3 fonts
 
-Runs on the PDF rather than the figure object, so it audits what a reviewer will actually receive,
+Runs on the PDF rather than the figure object, so it audits what a reader will actually receive,
 including figures produced by code this module never saw.
 """
 from __future__ import annotations

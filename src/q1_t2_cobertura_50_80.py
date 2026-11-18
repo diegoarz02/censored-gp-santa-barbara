@@ -1,4 +1,4 @@
-"""Q1-T2 (ronda Q1, orden de revision externa 2026-10-28): cobertura a 50% y 80%, completando la
+"""Q1-T2 (ronda Q1, 2026-10-28): cobertura a 50% y 80%, completando la
 calibracion multinivel (hoy solo hay 90/95%, ver figuras/TABLE_T3_3_calibracion_multinivel.csv).
 
 Costo medido ANTES de lanzar nada (regla 3 del proyecto): la corrida original de las 240 celdas
@@ -6,7 +6,7 @@ profundas del experimento de enmascaramiento (outputs/OBSERVACIONES.md, 09:42) t
 minutos (~110h) con 10 procesos en paralelo para 167 de 240 celdas. Repetir las 240 con 10
 replicas completas hoy costaria ~150-160h de reloj -- no viable en una sesion. Decision tomada
 con Diego (pregunta explicita, respuesta "la que sea mas viable y sirva"): primero se lanzo con
-**1 replica** por celda. La revision externa, al revisar, sugirio **3 replicas** como "punto dulce" (reparte
+**1 replica** por celda. Al revisar el plan se sugirio **3 replicas** como "punto dulce" (reparte
 el tiempo entre 3 en vez de 10, pero conserva algo de la dispersion entre replicas que pedia
 originalmente) -- ajuste fino aplicado aqui: se extiende a replicas 0,1,2 (24 celdas x 3 = 72
 ajustes x 2 modelos = 144 ajustes nuevos en total), reutilizando los checkpoints de la replica 0
@@ -43,7 +43,7 @@ CK_DIR.mkdir(parents=True, exist_ok=True)
 
 METALS = ["Hg", "Pb", "As"]          # mismos TRUTH_FIELDS del experimento original
 LEVELS = [0.2, 0.4, 0.6, 0.8]
-# 3 replicas (no 10): ajuste fino con la revision externa tras su recomendacion de "punto dulce" -- la r0 se
+# 3 replicas (no 10): ajuste fino tras la recomendacion de "punto dulce" -- la r0 se
 # lanzo primero sola (decision inicial de costo), esta extension anade r1/r2 sin repetir r0 (los
 # checkpoints de r0 ya en outputs/q1_t2_cobertura_50_80/ se reutilizan tal cual).
 REPLICATES = [int(a) for a in sys.argv[1:]] or [0]

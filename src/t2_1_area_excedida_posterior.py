@@ -1,6 +1,6 @@
-"""T2.1 del blindaje Q1/Q2 (orden de revision externa, 2026-10-28) -- LA TAREA MAS IMPORTANTE.
+"""T2.1 del blindaje Q1/Q2 (2026-10-28) -- LA TAREA MAS IMPORTANTE.
 
-Ajuste del profe Luis #2 + objecion #4: el manuscrito reporta "57.4% del dominio con
+Ajuste #2 + objecion #4: el manuscrito reporta "57.4% del dominio con
 P(excedencia)>0.5" como una cifra puntual, pero eso mezcla dos preguntas distintas. Este script
 separa y calcula TRES cantidades, reutilizando el idata oficial ya guardado (main_{metal}.nc,
 SIN reajustar el modelo) y replicando EXACTO el grid/seed/protocolo de

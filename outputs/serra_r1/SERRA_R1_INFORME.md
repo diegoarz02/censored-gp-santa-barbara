@@ -342,13 +342,14 @@ texto de cuerpo — ver la función `font_report()` de `src/verify_figserra.py`,
    `outputs/c2_recovery/`, `outputs/flip_ld_cd/`) **no se publican** por tamaño.
 2. **`.zenodo.json`** en la raíz: creador Araujo Villegas, Diego Alonso (ORCID
    0000-0002-6987-3948, Universidad Nacional Mayor de San Marcos), `upload_type` `software`,
-   licencia MIT, versión `v1.5` (la del release v1.5; en `master` es ahora `v1.6`).
+   licencia MIT, versión `v1.5` (la del release v1.5; en `master` es ahora `v2.0.0`).
 3. **README**: sección en inglés (*About / How to reproduce / Data provenance / Citation*) añadida
    sin borrar la española. Procedencia: Informe N.° 00341-2018-OEFA/DEAM-STEC obtenido por solicitud
    de acceso a la información pública (Ley N.° 27806, expediente 2026-E01-114527); se redistribuye
    el CSV analítico `santa_barbara_soil.csv`, no el PDF escaneado del informe (por tamaño). El
    release `v1.5` conserva la insignia del DOI de concepto (10.5281/zenodo.22968165); en `master`
-   el README la sustituye por una nota hasta que exista el registro nuevo (última sección).
+   el README principal está ahora en inglés (la versión en español, en `README_es.md`) y la cita
+   del DOI se añadirá cuando exista el registro definitivo (última sección).
 4. **Revisión previa a publicar**: se barrió el árbol completo (texto con `git grep`; los PDF/TIFF
    extrayendo su texto y metadatos con PyMuPDF/PIL, porque la búsqueda binaria marca como
    coincidencias secuencias de bytes comprimidos que no son texto) y los mensajes de commit.
@@ -395,7 +396,7 @@ segundos después de publicar el release `v1.5` en GitHub. Valores tal cual los 
 | campo | valor devuelto |
 |---|---|
 | DOI de versión | **10.5281/zenodo.24291974** |
-| DOI de concepto | 10.5281/zenodo.22968165 (el de la insignia del README) |
+| DOI de concepto | 10.5281/zenodo.22968165 (el de la insignia del README del release `v1.5`) |
 | versión | v1.5 |
 | tipo | software |
 | licencia | mit-license |
@@ -410,28 +411,17 @@ El concepto lista ahora 6 versiones (v1.0, v1.1, v1.2, v1.3, v1.4, v1.5). El DOI
 resuelve (`https://doi.org/10.5281/zenodo.24291974` → zenodo.org). Versión, creador, título, tipo y
 licencia coinciden con `.zenodo.json`.
 
-El tag `v1.5` apunta al commit `24d077b`. Esta sección y el DOI de versión que ahora aparece en el
-README se añadieron en un commit posterior (no pueden estar en el archivo del release, que se
-generó antes de conocer el DOI): el contenido archivado en Zenodo es el árbol del tag `v1.5`;
-este informe, con esta sección, es el de `master`.
+El tag `v1.5` apunta al commit `24d077b`. Esta sección se añadió en un commit posterior (no puede
+estar en el archivo del release, que se generó antes de conocer el DOI): el contenido archivado
+en Zenodo es el árbol del tag `v1.5`; este informe, con esta sección, es el de `master`.
 
 ---
 
-## Registro de Zenodo para el artículo (en preparación)
+## Registro de Zenodo para el artículo
 
 El release `v1.5` quedó archivado automáticamente por la integración GitHub–Zenodo dentro del
 concepto 10.5281/zenodo.22968165 (sección anterior), que también agrupa versiones tempranas del
-repositorio. Para el artículo se prepara un **registro nuevo, con DOI de concepto propio**, que
-contenga únicamente el árbol del commit de la ronda siguiente (`outputs/serra_r2/SERRA_R2_INFORME.md`, T5):
-
-- **Contenido.** `git archive` de ese commit. No se crea tag ni release de
-  GitHub para él, para no disparar la integración automática. El hash del commit, el SHA-256 del zip
-  y la lista de archivos están en el manifiesto local `outputs/zenodo_nuevo/` (carpeta no
-  publicada).
-- **Alta.** Depósito manual en Zenodo: tipo software, licencia MIT, mismos creador y título que
-  `.zenodo.json`, versión `v1.6` (incluye `outputs/serra_r2/`).
-- **Al publicarse.** El DOI de versión y el de concepto se añadirán al README (secciones *Cita* y
-  *Citation*, que hoy no listan ninguno) y a este informe.
-- **Versiones siguientes.** Depósitos manuales de «nueva versión» sobre el registro nuevo, con el zip
-  de `git archive`; la integración automática del repositorio, que sigue asociada al concepto
-  anterior, se apaga en la configuración de Zenodo.
+repositorio. El registro definitivo del artículo es un **depósito manual nuevo, con DOI de concepto
+propio** (versión `v2.0.0`: el repositorio más el informe OEFA escaneado), sin integración automática.
+Su DOI de versión y el de concepto se añadirán al README, a `CITATION.cff` y a este informe una vez
+publicado.

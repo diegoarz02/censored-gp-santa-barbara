@@ -439,7 +439,7 @@ def exceedance(D, analyte, land_use="agricultural"):
 
 # =============================================================================================
 # Rejilla 2x2 de excedencia — idea de Diego, y el argumento es bueno: cuatro PDF separados
-# obligan al revisor a recordar; una rejilla con los mismos limites geograficos deja ver de un
+# obligan al lector a recordar; una rejilla con los mismos limites geograficos deja ver de un
 # vistazo si los focos de As, Hg, Pb, Cd y Ba comparten la misma huella espacial desde la mina.
 # 2026-09-25, pedido de Diego: se agrega As (antes solo Hg/Pb/Cd/Ba) y la 6a celda del grid 2x3
 # se usa para Cd residencial en vez de quedar vacia -- aporta el contraste agricola/residencial

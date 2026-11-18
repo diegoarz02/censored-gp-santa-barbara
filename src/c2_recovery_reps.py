@@ -1,4 +1,4 @@
-"""C2 -- recuperacion de parametros sobre N replicas (obs 2 de Luis: "repetir con al menos 50
+"""C2 -- recuperacion de parametros sobre N replicas (observacion 2: "repetir con al menos 50
 replicas, reportando sesgo, RMSE y cobertura por parametro").
 
 Diseno A (verdad fija, datos repetidos), preferido sobre el Diseno B (theta del
@@ -6,7 +6,7 @@ prior, estilo SBC) que usa c1_sbc.py::simulate_one por defecto: aqui theta queda
 mismos valores que ya usa TABLE9_parameter_recovery.csv (el TRUE dict de notebooks/_src/nb02.py,
 seccion 6), y solo varia la parte estocastica (realizacion del campo, ruido, que puntos caen bajo
 censura) replica a replica. Asi el sesgo y el RMSE por parametro tienen una interpretacion limpia
-respecto de una verdad conocida -- exactamente lo que pide la observacion de Luis.
+respecto de una verdad conocida -- exactamente lo que pide esa observacion.
 
 Mecanismo de generacion: Matern 5/2, reparametrizacion sigma_tot/rho, resolucion REAL de As
 (reutilizado tal cual de c1_sbc.py::simulate_one). El ajuste (build_censored_gp, las dos variantes

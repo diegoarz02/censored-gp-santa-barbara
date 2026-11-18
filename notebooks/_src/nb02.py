@@ -1640,7 +1640,7 @@ save_fig(fig, "FIG11_interval_coverage")
 # there is no truth at the censored locations, so the design has to be chosen so that the scores
 # still mean something.
 #
-# **Why only one classical baseline.** A reviewer will ask why there is no comparison against
+# **Why only one classical baseline.** One may ask why there is no comparison against
 # machine learning. The answer is deliberate: the claim of this paper is about the **treatment of
 # censoring**, not about the model class. Ordinary kriging with `L/2` substitution is exactly the
 # practice being criticised, and the GP with `L/2` isolates the censoring treatment as the only

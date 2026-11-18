@@ -1,6 +1,6 @@
 """T2.3 del blindaje Q1/Q2: diagnosticos MCMC incluyendo el campo latente `f`.
 
-El manuscrito aclara (anadido en la revision externa) que el R-hat/ESS de la tabla de convergencia se reporta
+El manuscrito aclara (anadido en la ronda de revision) que el R-hat/ESS de la tabla de convergencia se reporta
 sobre los hiperparametros, no sobre el campo latente de ~114 dimensiones (ver
 outputs/AUDITORIA_UMBRAL_CENSURA.md, Bloque 2, donde se confirmo que esa exclusion reproduce
 exacto la tabla publicada). Este script:

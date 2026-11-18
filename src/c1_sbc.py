@@ -68,7 +68,7 @@ def simulate_one(ctx, rng):
     y_true_log = mu + rng.normal(0, sigma_n, n)
     value = np.exp(y_true_log)
 
-    # BUG REAL encontrado y corregido 2026-10-23 (observacion del profe Luis sobre el Cuadro V,
+    # BUG REAL encontrado y corregido 2026-10-23 (observacion sobre el Cuadro V,
     # al repetir el analisis con replicas): As tiene 0% de censura real en el dataset -- es uno de
     # los "truth fields" completos, usado por eso mismo en el experimento de enmascarado -- asi que
     # "reported_limit" esta vacio (NaN) en las 114 filas por diseno (ver el diccionario de datos en

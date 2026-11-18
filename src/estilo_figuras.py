@@ -1,6 +1,6 @@
 """H2.0 — the single place where figure style lives. No colour is defined anywhere else.
 
-The rules below are not taste, they are the reasons a reviewer can or cannot read the figure:
+The rules below are not taste, they are the reasons a reader can or cannot read the figure:
 
 1. One figure, one message, and the message is the title — an affirmative sentence saying what to
    see. If that sentence cannot be written, the figure does not know what it is for.

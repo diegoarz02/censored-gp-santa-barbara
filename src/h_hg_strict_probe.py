@@ -3,7 +3,7 @@ para ver si pasa el criterio estricto de convergencia (R-hat<1.01, ESS>400, 0 di
 falla por poco (R-hat=1.0104, ESS bulk=331, Cuadro IV).
 
 Pedido explicito de Diego (2026-10-26), alcance acotado: correr y reportar, nada mas. No toca
-main.tex, no toca el PDF, no toca ningun otro analito ni figura. La redaccion la hace el equipo de revision externa
+main.tex, no toca el PDF, no toca ningun otro analito ni figura. La redaccion se hace
 despues de validar estos numeros.
 
 Replica EXACTAMENTE la preparacion de datos de `notebooks/_src/nb02.py::fit_main()` (seccion 7,

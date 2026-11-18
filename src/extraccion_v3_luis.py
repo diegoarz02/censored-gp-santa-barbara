@@ -1,5 +1,5 @@
 """Corrida extra v3 -- extrae tres numeros que faltan para levantar las observaciones 3, 4 y 5
-del profe Luis.
+pendientes.
 
 Regla dura: NADA de MCMC nuevo, nada de aumento de muestra. Los tres numeros salen de:
 1. ell_prior_params(xy) -- determinista, de la configuracion real de puntos (sb.ell_prior_params).
@@ -53,7 +53,7 @@ def verificar_true_contra_fuente():
 
 
 # =============================================================================================
-# Bloque 1 -- InvGamma de las escalas (obs 3 de Luis)
+# Bloque 1 -- InvGamma de las escalas (obs 3)
 # =============================================================================================
 def bloque1_invgamma():
     ctx = mw._context()
@@ -76,7 +76,7 @@ def bloque1_invgamma():
 
 
 # =============================================================================================
-# Bloque 2 -- ESS tail por metal (obs 4 de Luis)
+# Bloque 2 -- ESS tail por metal (obs 4)
 # =============================================================================================
 def bloque2_ess_tail():
     # Reusa sb.diagnose() -- la funcion canonica del proyecto -- en vez de recalcular R-hat/ESS
@@ -125,7 +125,7 @@ def bloque2_ess_tail():
 
 
 # =============================================================================================
-# Bloque 3 -- Sesgo con signo, censurado vs L/2 (obs 5 de Luis)
+# Bloque 3 -- Sesgo con signo, censurado vs L/2 (obs 5)
 # =============================================================================================
 def bloque3_sesgo():
     paths = {"censored": OUT / "idata" / "sim_censored.nc",

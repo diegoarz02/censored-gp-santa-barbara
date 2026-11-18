@@ -1,4 +1,4 @@
-"""V7REV feedback del profe Luis (via revision externa) -- V1/V2: corrige las etiquetas del eje x
+"""V7REV feedback de revision -- V1/V2: corrige las etiquetas del eje x
 de FIG18_Cd_exceedance y FIG18_Cd_exceedance_residential (duplicadas por redondeo: "502 503 504
 504 504 505") y regenera las otras 3 figuras que comparten la misma ruta de codigo
 (mapas_f3.py::base_axes) para confirmar que el fix (estilo_figuras.py::utm_km_ticks,

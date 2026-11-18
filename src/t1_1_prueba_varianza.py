@@ -1,13 +1,13 @@
-"""T1.1 del blindaje Q1/Q2 (orden de revision externa, 2026-10-28): ajuste del profe Luis sobre la
+"""T1.1 del blindaje Q1/Q2 (2026-10-28): ajuste sobre la
 descomposicion de varianza, ec. (6) del manuscrito.
 
-Anotacion del profe: "Verificar esta igualdad, creo que deberia ser:
+Anotacion recibida: "Verificar esta igualdad, creo que deberia ser:
 sigma_f^2+sigma_n^2 = sigma_tot^2*[rho^2+(1-rho)]"
 
 Este script:
 1. Prueba simbolica (sympy) de que sigma_f^2+sigma_n^2=sigma_tot^2 bajo la parametrizacion REAL
    del codigo (sbmodel.py L.167-168: sigma_f=eta=sigma_tot*sqrt(rho), sigma_n=sigma_tot*sqrt(1-rho)),
-   y que la forma del profe (sigma_tot^2*[rho^2+(1-rho)]) solo coincide si sigma_f=sigma_tot*rho
+   y que la forma propuesta (sigma_tot^2*[rho^2+(1-rho)]) solo coincide si sigma_f=sigma_tot*rho
    (sin raiz) -- parametrizacion distinta a la del codigo.
 2. Deriva simbolicamente la varianza marginal con el factor de muestra compuesta:
    Var(Y_i) = sigma_f^2 + sd_i^2, sd_i = sigma_n*exp(log_tau*c_i) (L.188)
@@ -36,7 +36,7 @@ sigma_n_code = sigma_tot * sp.sqrt(1 - rho)      # L.168 del codigo real
 suma_code = sp.simplify(sigma_f_code**2 + sigma_n_code**2)
 identidad_code_ok = sp.simplify(suma_code - sigma_tot**2) == 0
 
-# forma propuesta por el profe: sigma_f sin raiz (sigma_f = sigma_tot*rho)
+# forma propuesta: sigma_f sin raiz (sigma_f = sigma_tot*rho)
 sigma_f_profe = sigma_tot * rho
 suma_profe_con_sigma_f_profe = sp.simplify(sigma_f_profe**2 + sigma_n_code**2)
 forma_profe_rhs = sigma_tot**2 * (rho**2 + (1 - rho))

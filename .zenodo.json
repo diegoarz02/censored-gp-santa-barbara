@@ -7,7 +7,20 @@
     }
   ],
   "title": "censored-gp-santa-barbara: code and analytical data for \"Bayesian geostatistics with censored data for mapping heavy-metal soil contamination around the Santa Bárbara mine (Huancavelica, Peru)\"",
+  "description": "Code and analytical data supporting the article \"Bayesian geostatistics with censored data for mapping heavy-metal soil contamination around the Santa Bárbara mine (Huancavelica, Peru)\", submitted to Stochastic Environmental Research and Risk Assessment. The archive contains the Bayesian censored Gaussian-process pipeline (PyMC with nutpie), the analytical dataset (114 locations, 10 analytes, data/final/santa_barbara_soil.csv), the article figures and tables, and the reproducibility evidence behind the checks reported in the supplementary material (outputs/serra_r1/ and outputs/serra_r2/). In addition to the repository, this Zenodo record includes the scanned source report, OEFA Informe N.° 00341-2018-OEFA/DEAM-STEC, obtained through a public-records request (Ley N.° 27806, case file 2026-E01-114527); the scanned report is an OEFA document and is not covered by the MIT licence of the code. Documentation in Spanish: README_es.md.",
   "upload_type": "software",
   "license": "MIT",
-  "version": "v1.6"
+  "version": "v2.0.0",
+  "keywords": [
+    "censored data",
+    "Gaussian process",
+    "geostatistics",
+    "Bayesian inference",
+    "heavy metals",
+    "soil contamination",
+    "limit of detection",
+    "mercury",
+    "cadmium",
+    "Peru"
+  ]
 }

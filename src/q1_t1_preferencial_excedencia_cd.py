@@ -1,7 +1,7 @@
 """Q1-T1 (ronda Q1, la brecha principal): efecto del muestreo preferencial sobre la excedencia
 del Cd.
 
-Objecion de revisor: delta excluye cero (verificado abajo, para Cd especificamente -- el
+Objecion: delta excluye cero (verificado abajo, para Cd especificamente -- el
 delta=-1.724 de outputs/B1_preferencial_restringido.md es de **Hg**, el metal con el que se
 corrio h_cierre_pendientes.preferential() en esa fase; Cd nunca se habia ajustado con este modelo
 conjunto. Aclaracion importante: no son el mismo numero, hay que medir el de Cd aparte).

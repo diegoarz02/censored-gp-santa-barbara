@@ -1,4 +1,4 @@
-"""Flip L=LD para Cd (orden de revision externa) -- F2, F3, F4.
+"""Flip L=LD para Cd -- F2, F3, F4.
 
 Reutiliza el idata YA AJUSTADO en outputs/idata/flip_LD_Cd.nc (ver F1, generado por
 scratchpad/f1_refit_cd_LD.py: L=LD fijo, protocolo oficial, R-hat=1.0051, 0 divergencias, 156s).

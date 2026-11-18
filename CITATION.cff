@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or the analytical dataset, please cite it using the metadata in this file."
+type: software
+title: "censored-gp-santa-barbara: code and analytical data for \"Bayesian geostatistics with censored data for mapping heavy-metal soil contamination around the Santa Bárbara mine (Huancavelica, Peru)\""
+authors:
+  - family-names: "Araujo Villegas"
+    given-names: "Diego Alonso"
+    orcid: "https://orcid.org/0000-0002-6987-3948"
+    affiliation: "Universidad Nacional Mayor de San Marcos"
+version: v2.0.0
+date-released: 2026-11-18
+license: MIT
+repository-code: "https://github.com/diegoarz02/censored-gp-santa-barbara"
+abstract: "Code and analytical data supporting the article on Bayesian spatial geostatistics with censored data for mapping heavy-metal soil contamination around the Santa Bárbara mercury mine (Huancavelica, Peru): a spatial Gaussian process with an interval-censored (Tobit) likelihood, compared against substitution by half the detection limit and ordinary kriging through spatial block cross-validation and a masking experiment, and used to map concentrations, uncertainty and exceedance probabilities."
+keywords:
+  - censored data
+  - Gaussian process
+  - geostatistics
+  - Bayesian inference
+  - heavy metals
+  - soil contamination
+  - limit of detection
+  - mercury
+  - cadmium
+  - Peru
