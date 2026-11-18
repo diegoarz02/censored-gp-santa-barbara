@@ -7,7 +7,7 @@ authors:
     given-names: "Diego Alonso"
     orcid: "https://orcid.org/0000-0002-6987-3948"
     affiliation: "Universidad Nacional Mayor de San Marcos"
-version: v2.0.0
+version: v2.0.1
 doi: 10.5281/zenodo.24347680
 identifiers:
   - type: doi
