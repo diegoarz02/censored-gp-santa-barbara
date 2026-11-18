@@ -133,9 +133,10 @@ Todas las dibuja `src/figserra.py` en `figuras/serra/` (PDF, EPS y TIFF); `src/v
 
 Si usas el código o los datos analíticos, cita la versión archivada de este repositorio y el informe fuente.
 
-> Araujo Villegas, D. A. (2026). *censored-gp-santa-barbara: code and analytical data for "Bayesian geostatistics with censored data for mapping heavy-metal soil contamination around the Santa Bárbara mine (Huancavelica, Peru)"* (v2.0.0) [Software]. Zenodo. <https://doi.org/10.5281/zenodo.24347680>
+> Araujo Villegas, D. A. (2026). *censored-gp-santa-barbara: code and analytical data for "Bayesian geostatistics with censored data for mapping heavy-metal soil contamination around the Santa Bárbara mine (Huancavelica, Peru)"* (v2.0.1) [Software]. Zenodo. <https://doi.org/10.5281/zenodo.24353450>
 
-- DOI de la versión (v2.0.0): [10.5281/zenodo.24347680](https://doi.org/10.5281/zenodo.24347680)
+- DOI de la versión (v2.0.1, esta versión): [10.5281/zenodo.24353450](https://doi.org/10.5281/zenodo.24353450)
+- DOI de la versión (v2.0.0, versión anterior): [10.5281/zenodo.24347680](https://doi.org/10.5281/zenodo.24347680)
 - DOI de concepto (todas las versiones): [10.5281/zenodo.24347679](https://doi.org/10.5281/zenodo.24347679)
 
 Los metadatos para gestores de citas están en [`CITATION.cff`](CITATION.cff). **Cita de los datos:** Organismo de Evaluación y Fiscalización Ambiental (OEFA), Informe N.º 00341-2018-OEFA/DEAM-STEC, evaluación ambiental de la unidad minera Santa Bárbara, Huancavelica, 2018.

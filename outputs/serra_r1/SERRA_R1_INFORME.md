@@ -422,32 +422,40 @@ en Zenodo es el árbol del tag `v1.5`; este informe, con esta sección, es el de
 El release `v1.5` quedó archivado automáticamente por la integración GitHub–Zenodo dentro del
 concepto 10.5281/zenodo.22968165 (sección anterior), que también agrupa versiones tempranas del
 repositorio. El registro definitivo del artículo es un **depósito manual nuevo, con DOI de concepto
-propio** (versión `v2.0.0`: el repositorio más el informe OEFA escaneado), sin integración automática.
+propio** (el repositorio más el informe OEFA escaneado; versiones `v2.0.0` y `v2.0.1`), sin integración automática.
 Sus DOI de versión y de concepto figuran en el README, en `CITATION.cff` y en este informe (a continuación).
 
 **Actualización (2026-11-18).** Los tags y releases `v1.0` a `v1.5` se retiraron de GitHub y las
 versiones 1.1 a 1.5 del concepto de Zenodo (incluido el registro 24291974 de la sección anterior) se
-borraron; el historial de commits se conserva. La versión vigente es el release `v2.0.0`; su registro de
-Zenodo, publicado con su propio DOI, se verifica a continuación.
+borraron; el historial de commits se conserva. La versión vigente es el release `v2.0.1` (la `v2.0.0` queda como
+versión anterior); sus registros de Zenodo se verifican a continuación.
 
 ### Verificación del registro definitivo (Zenodo)
 
-Consultado el 2026-11-18 en la API pública de Zenodo (`https://zenodo.org/api/records/24347680`). Valores tal
-como los devolvió:
+Consultado el 2026-11-18 en la API pública de Zenodo. Valores tal como los devolvió.
+
+**Versión v2.0.1 (vigente)** (`https://zenodo.org/api/records/24353450`):
 
 | campo | valor devuelto |
 |---|---|
-| DOI de versión | **10.5281/zenodo.24347680** (`https://doi.org/10.5281/zenodo.24347680`) |
+| DOI de versión | **10.5281/zenodo.24353450** (`https://doi.org/10.5281/zenodo.24353450`) |
 | DOI de concepto | **10.5281/zenodo.24347679** (`https://doi.org/10.5281/zenodo.24347679`) |
-| versión | v2.0.0 |
+| versión | v2.0.1 |
 | tipo | software |
 | licencia | mit-license |
 | creador | Araujo Villegas, Diego Alonso — ORCID 0000-0002-6987-3948 — Universidad Nacional Mayor de San Marcos |
 | título | idéntico al de `.zenodo.json` |
 | estado / acceso | published / open |
-| creado | 2026-11-18T18:18:28 UTC (fecha de publicación 2026-11-18) |
-| relación | `isSupplementTo` → `https://github.com/diegoarz02/censored-gp-santa-barbara/tree/v2.0.0` |
-| archivos (2) | `censored-gp-santa-barbara-v2.0.0.zip`, 78 888 563 bytes, `md5:81d958d6417be5929dfaf555928e0f38`; `INFORME OEFA.zip`, 665 954 061 bytes, `md5:2f0537fb905fa13c9cd5f91c60a40961` |
+| creado | 2026-11-18T20:51:54 UTC (fecha de publicación 2026-11-18) |
+| relación | `isSupplementTo` → `https://github.com/diegoarz02/censored-gp-santa-barbara/tree/v2.0.1` |
+| archivos (2) | `INFORME OEFA.zip`, 665 954 061 bytes, `md5:2f0537fb905fa13c9cd5f91c60a40961`; `censored-gp-santa-barbara-v2.0.1.zip`, 78 889 987 bytes, `md5:b9e82b50953721bcadf62c38d8c7573d` |
 
-Los dos MD5 coinciden con los calculados antes de subir los archivos, y los dos DOI resuelven (`doi.org`
-redirige a zenodo.org). El concepto 10.5281/zenodo.24347679 contiene esta única versión.
+Los dos MD5 coinciden con los calculados antes de subir los archivos, y los DOI de versión y de concepto
+resuelven (`doi.org` redirige a zenodo.org). El concepto 10.5281/zenodo.24347679 contiene 2 versiones: v2.0.1
+(10.5281/zenodo.24353450) y v2.0.0 (10.5281/zenodo.24347680).
+
+**Versión anterior v2.0.0** (`https://zenodo.org/api/records/24347680`, consultada antes de publicar la v2.0.1): DOI de
+versión 10.5281/zenodo.24347680; creado 2026-11-18T18:18:28 UTC; relación `isSupplementTo` →
+`https://github.com/diegoarz02/censored-gp-santa-barbara/tree/v2.0.0`; archivos: `censored-gp-santa-barbara-v2.0.0.zip`,
+78 888 563 bytes, `md5:81d958d6417be5929dfaf555928e0f38`; `INFORME OEFA.zip`, 665 954 061 bytes,
+`md5:2f0537fb905fa13c9cd5f91c60a40961`. Sigue publicada y su DOI resuelve.

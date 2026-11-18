@@ -8,14 +8,17 @@ authors:
     orcid: "https://orcid.org/0000-0002-6987-3948"
     affiliation: "Universidad Nacional Mayor de San Marcos"
 version: v2.0.1
-doi: 10.5281/zenodo.24347680
+doi: 10.5281/zenodo.24353450
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.24347680
-    description: "Version v2.0.0 (this version)"
+    value: 10.5281/zenodo.24353450
+    description: "Version v2.0.1 (this version)"
   - type: doi
     value: 10.5281/zenodo.24347679
     description: "Concept DOI (all versions)"
+  - type: doi
+    value: 10.5281/zenodo.24347680
+    description: "Version v2.0.0 (previous version)"
 date-released: 2026-11-18
 license: MIT
 repository-code: "https://github.com/diegoarz02/censored-gp-santa-barbara"
