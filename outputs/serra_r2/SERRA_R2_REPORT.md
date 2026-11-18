@@ -228,8 +228,9 @@ levels: Fig9 0.44 %, FIG17_Hg 3.59 %. The extrapolation legend still says 0.8 %.
 ## T5 — Preparation of the Zenodo archive
 
 This round was committed (with the same sweep for traces as in the previous round) and pushed to GitHub **without a tag or a release**;
-the repository was thereby ready to be archived. The final Zenodo record is prepared in the next round (version
-**v2.0.0**: the repository and the scanned OEFA report, manual deposit, no automatic integration).
+the repository was thereby ready to be archived. The final Zenodo record (version **v2.0.0**: the repository and the
+scanned OEFA report, manual deposit, no automatic integration) was published afterwards, with version DOI 10.5281/zenodo.24347680 and
+concept DOI 10.5281/zenodo.24347679; its verification through the API is in the R1 report.
 
 ---
 

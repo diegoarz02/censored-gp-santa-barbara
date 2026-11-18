@@ -349,7 +349,7 @@ body text — see the function `font_report()` of `src/verify_figserra.py`, whic
    `santa_barbara_soil.csv` is redistributed, not the scanned PDF of the report (because of its size). The
    `v1.5` release keeps the concept-DOI badge (10.5281/zenodo.22968165); in `master`
    the main README is now in English (the Spanish version in `README_es.md`) and the DOI citation
-   will be added when the final record exists (last section).
+   of the final record (version and concept) is in the last section and in the README.
 4. **Review before publishing**: the complete tree was swept (text with `git grep`; PDF/TIFF
    by extracting their text and metadata with PyMuPDF/PIL, because the binary search flags as
    matches sequences of compressed bytes that are not text) and the commit messages.
@@ -423,10 +423,31 @@ The `v1.5` release was archived automatically by the GitHub–Zenodo integration
 concept 10.5281/zenodo.22968165 (previous section), which also groups early versions of the
 repository. The final record of the article is a **new manual deposit, with its own concept
 DOI** (version `v2.0.0`: the repository plus the scanned OEFA report), without automatic integration.
-Its version DOI and the concept DOI will be added to the README, to `CITATION.cff` and to this report once
-published.
+Its version DOI and the concept DOI are given in the README, in `CITATION.cff` and in this report (below).
 
 **Update (2026-11-18).** The tags and releases `v1.0` to `v1.5` were withdrawn from GitHub and versions
 1.1 to 1.5 of the Zenodo concept (including record 24291974 of the previous section) were deleted; the
-commit history is kept. The current version is the `v2.0.0` release; the article's Zenodo record will be
-created with its own DOI and added here.
+commit history is kept. The current version is the `v2.0.0` release; its Zenodo record, published with its
+own DOI, is verified below.
+
+### Verification of the final record (Zenodo)
+
+Queried on 2026-11-18 in the public Zenodo API (`https://zenodo.org/api/records/24347680`). Values exactly as
+returned:
+
+| field | value returned |
+|---|---|
+| version DOI | **10.5281/zenodo.24347680** (`https://doi.org/10.5281/zenodo.24347680`) |
+| concept DOI | **10.5281/zenodo.24347679** (`https://doi.org/10.5281/zenodo.24347679`) |
+| version | v2.0.0 |
+| type | software |
+| licence | mit-license |
+| creator | Araujo Villegas, Diego Alonso — ORCID 0000-0002-6987-3948 — Universidad Nacional Mayor de San Marcos |
+| title | identical to that of `.zenodo.json` |
+| status / access | published / open |
+| created | 2026-11-18T18:18:28 UTC (publication date 2026-11-18) |
+| relation | `isSupplementTo` → `https://github.com/diegoarz02/censored-gp-santa-barbara/tree/v2.0.0` |
+| files (2) | `censored-gp-santa-barbara-v2.0.0.zip`, 78 888 563 bytes, `md5:81d958d6417be5929dfaf555928e0f38`; `INFORME OEFA.zip`, 665 954 061 bytes, `md5:2f0537fb905fa13c9cd5f91c60a40961` |
+
+Both MD5 values match those computed before uploading the files, and both DOIs resolve (`doi.org` redirects
+to zenodo.org). The concept 10.5281/zenodo.24347679 contains this single version.

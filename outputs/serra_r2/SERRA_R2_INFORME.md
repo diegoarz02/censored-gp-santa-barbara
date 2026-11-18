@@ -228,8 +228,9 @@ niveles: Fig9 0.44 %, FIG17_Hg 3.59 %. La leyenda de extrapolación sigue dicien
 ## T5 — Preparación del archivo de Zenodo
 
 Se hizo commit de esta ronda (con el mismo barrido de rastros que en la ronda anterior) y se subió a GitHub **sin tag ni release**;
-con eso el repositorio quedó listo para archivar. El registro definitivo de Zenodo se prepara en la ronda siguiente (versión
-**v2.0.0**: el repositorio y el informe OEFA escaneado, depósito manual, sin integración automática).
+con eso el repositorio quedó listo para archivar. El registro definitivo de Zenodo (versión **v2.0.0**: el repositorio y el informe
+OEFA escaneado, depósito manual, sin integración automática) se publicó después, con el DOI de versión 10.5281/zenodo.24347680 y el DOI de
+concepto 10.5281/zenodo.24347679; su verificación por la API está en el informe de la ronda R1.
 
 ---
 
