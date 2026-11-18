@@ -162,9 +162,9 @@ laboratorio para los detectados, y masa acumulada bajo el límite para los no de
 
 {ok.drop(columns=['run_id']).round(3).to_markdown(index=False) if len(ok) else 'sin resultados'}
 
-## Los $\hat{{k}}$ de Pareto — y salieron mejor de lo que esperaba
+## Los $\\hat{{k}}$ de Pareto — y salieron mejor de lo que esperaba
 
-**{bad} de {tot} observaciones** tienen $\hat{{k}} > 0.7$.
+**{bad} de {tot} observaciones** tienen $\\hat{{k}} > 0.7$.
 
 Escribí este apartado antes de ver el número, dando por hecho que serían muchos y que habría que
 justificarlo. **Salió al revés, y se cuenta así**: el diagnóstico está sano. La aproximación de
@@ -173,7 +173,7 @@ importancia es fiable en el 98 % de los puntos.
 Donde sí se concentra el problema es en el **cadmio**, y encaja con todo lo demás:
 
 * el `p_loo` más alto de los cinco, unos 31 parámetros efectivos frente a 16-21 en el resto;
-* el $\hat{{k}}$ máximo, y el único por encima de 1;
+* el $\\hat{{k}}$ máximo, y el único por encima de 1;
 * es el analito con **79.8 % de censura**.
 
 Las tres cosas son el mismo hecho. Con cuatro de cada cinco observaciones reducidas a «menor que el
@@ -182,7 +182,7 @@ pesa más y quitarlo desplaza más el posterior. Es la misma señal que dieron l
 (el cadmio se mueve un 39 % contra 9-18 % de los demás) y la validación cruzada (el cadmio pierde el
 score conjunto).
 
-**Nota metodológica que conviene mantener.** Aun con los $\hat{{k}}$ sanos, la validación principal
+**Nota metodológica que conviene mantener.** Aun con los $\\hat{{k}}$ sanos, la validación principal
 sigue siendo **por bloques espaciales**, no dejar-uno-fuera. Con dependencia espacial, quitar un
 punto deja a sus vecinos informando casi lo mismo, así que LOO mide una capacidad de predicción más
 fácil que la que interesa: predecir donde no se ha medido. LOO entra como comparación estándar del

@@ -116,6 +116,11 @@ def main():
         D[(d["metal"], d["level"], d["replicate"], d["block"])] = D.get(
             (d["metal"], d["level"], d["replicate"], d["block"]), {})
         D[(d["metal"], d["level"], d["replicate"], d["block"])][d["model"]] = d["picp95"]
+    if not D:
+        # Sin los checkpoints de outputs/h6_deep (no se versionan) la misma informacion esta en la tabla fuente.
+        for r in full.itertuples():
+            D.setdefault((r.metal, r.level, r.replicate, r.block), {})[r.model] = r.picp95
+    assert D, "no hay datos por ajuste para el Wilcoxon"
 
     wilcox_rows = []
     for lvl in LEVELS:
