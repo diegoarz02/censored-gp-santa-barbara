@@ -353,7 +353,7 @@ en `outputs/c2_recovery_BUGGY_sin_censura_2026-10-23/`, no borradas).
 **Más grave**: el mismo bug está en las **200 réplicas de SBC ya publicadas en el artículo**
 (`FIG35_sbc_ranks`, citadas en `main.tex` línea ~375) — verificado corriendo `simulate_one`
 directamente: produce 0 puntos censurados en 20/20 pruebas. El SBC publicado nunca puso a prueba
-el mecanismo de censura del modelo, solo el régimen sin censura. Diego decidió corregir y
+el mecanismo de censura del modelo, solo el régimen sin censura. Decidí corregir y
 re-correr también el SBC (ver informe separado si esta corrida se hizo junto con esa).
 
 **Corrección aplicada** (en ambos scripts, documentada en el código): el límite se fija por
@@ -404,7 +404,7 @@ sustitución L/2 en los parámetros de escala/ruido (ℓ₂, σₙ), y cobertura
 
 {chr(10).join('- ' + l for l in lectura_sostiene)}
 
-## Barrido amplio de otros bugs (pedido explícito de Diego: "revisa que no haya más bugs antes de enviar a una revista")
+## Barrido amplio de otros bugs (pedido explícito mío: "revisa que no haya más bugs antes de enviar a una revista")
 
 Mientras esta corrida avanzaba se lanzó un barrido adicional (revisión adicional + verificación
 propia, recalculando cada cifra desde el CSV fuente, nunca aceptando lo que reportó esa revisión sin

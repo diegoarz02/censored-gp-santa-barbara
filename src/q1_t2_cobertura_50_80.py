@@ -5,7 +5,7 @@ Costo medido ANTES de lanzar nada (regla 3 del proyecto): la corrida original de
 profundas del experimento de enmascaramiento (outputs/OBSERVACIONES.md, 09:42) tardo 6610.8
 minutos (~110h) con 10 procesos en paralelo para 167 de 240 celdas. Repetir las 240 con 10
 replicas completas hoy costaria ~150-160h de reloj -- no viable en una sesion. Decision tomada
-con Diego (pregunta explicita, respuesta "la que sea mas viable y sirva"): primero se lanzo con
+conmigo (pregunta explicita, respuesta "la que sea mas viable y sirva"): primero se lanzo con
 **1 replica** por celda. Al revisar el plan se sugirio **3 replicas** como "punto dulce" (reparte
 el tiempo entre 3 en vez de 10, pero conserva algo de la dispersion entre replicas que pedia
 originalmente) -- ajuste fino aplicado aqui: se extiende a replicas 0,1,2 (24 celdas x 3 = 72

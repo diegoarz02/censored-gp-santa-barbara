@@ -110,7 +110,7 @@ apply_style()
 # Was a bare Okabe-Ito palette, disconnected from `estilo_figuras.py` ("the single place where
 # figure style lives"): the model-comparison figures in this notebook (MODEL_COL below) ended up a
 # different blue/orange/green than every figure built through `estilo_figuras`, e.g. FIG28's
-# coverage comparison. Diego flagged the mismatch on review (2026-09-24). Fixed at the one
+# coverage comparison. I flagged the mismatch on review (2026-09-24). Fixed at the one
 # definition site rather than at each of the ~30 call sites: OI[0:5] now IS the metal palette in
 # MAIN_METALS order (Hg, Pb, As, Ba, Cd), and because Hg/Pb/As happen to occupy OI[0:3], MODEL_COL
 # below (built from OI[0:3]) comes out identical to ef_theme.MODEL_COLOR for free.
@@ -716,7 +716,7 @@ print("\nThe calibrated prior covers the observed range at its 99th percentile, 
       "that the check does its job.")
 
 # %%
-# Diego caught this as too dense at half a W2 panel each: one line plus two reference lines is
+# I caught this as too dense at half a W2 panel each: one line plus two reference lines is
 # fine at that width, but five metal histograms plus a physical-bound line plus the rug plot plus
 # its own explanatory note need more room than 95 mm gives them. Split into two independent
 # figures instead of guessing at a tighter layout inside the same panel.
@@ -1895,7 +1895,7 @@ for metal in MAIN_METALS:
             loo_rows.append({"metal": metal, "elpd_loo": float(l.elpd_loo),
                              "se": float(l.se), "p_loo": float(l.p_loo)})
         else:
-            # `idata_main` is saved without a `log_likelihood` group (Diego confirmed on
+            # `idata_main` is saved without a `log_likelihood` group (I confirmed on
             # 2026-09-24 by inspecting outputs/idata/main_*.nc directly), so this table is NaN by
             # construction, not by failure. Recomputing pointwise log-likelihood for the censored
             # model is real additional work and this table is explicitly not load-bearing (see the
@@ -2891,8 +2891,8 @@ try:
     ax.set_ylabel("Northing UTM 18S (km)")
     ef_theme.utm_km_ticks(ax)
     ax.set_aspect("equal")
-    # -0.09 was not enough margin (the audit and Diego both caught the row still crowding the map);
-    # no Peru inset here either — Diego removed it from the manuscript's site map on review and an
+    # -0.09 was not enough margin (the audit and I both caught the row still crowding the map);
+    # no Peru inset here either — I removed it from the manuscript's site map on review and an
     # exploratory version (not in figuras/_INDICE_F3.md's candidate list) should not disagree.
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.14), frameon=False, ncol=2, fontsize=8)
     save_fig(fig, "FIG16_site_map_versionC_osm")

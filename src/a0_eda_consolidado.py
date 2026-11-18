@@ -1,7 +1,7 @@
 """A0 (corrida 3) — EDA consolidado, corre antes que cualquier modelo.
 
-La auditoria externa confirmo que el EDA existe disperso (TABLE1, FIG2-FIG4, FIG7, Moran's I,
-criterio ECA/LD) pero pidio un bloque propio porque la rubrica evalua "Datos" como seccion
+Comprobe que el EDA existe disperso (TABLE1, FIG2-FIG4, FIG7, Moran's I,
+criterio ECA/LD) pero lo reuni en un bloque propio porque la rubrica evalua "Datos" como seccion
 explicita. Cuatro piezas, todas leidas de data/final/ (solo lectura, nunca se escribe en data/):
 
 1. patron espacial de censura (Cd, Sb, Ag) -- se muestra, no se afirma
@@ -161,7 +161,7 @@ def main():
 
 # A0 (corrida 3) — EDA consolidado
 
-Cuatro piezas que la auditoría externa pidió reunir en un bloque propio de "Datos", porque la
+Cuatro piezas que reuní en un bloque propio de "Datos", porque la
 rúbrica lo evalúa como sección explícita. Ninguna cambia una conclusión: los problemas del proyecto
 (el cadmio pierde, el contraste fondo-minería no se identifica) son estructurales y ya estaban
 diagnosticados — este bloque es de presentación y de descarte de un problema de datos escondido.

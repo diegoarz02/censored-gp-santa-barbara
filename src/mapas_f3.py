@@ -155,7 +155,7 @@ def _north(ax):
                 arrowprops=dict(arrowstyle="-|>", color="k", lw=0.9))
 
 
-# INEI 2023 administrative boundaries, supplied by Diego in `ANALISIS BAYESIANO/GEOREFERENCIAS/`
+# INEI 2023 administrative boundaries, supplied by me in `ANALISIS BAYESIANO/GEOREFERENCIAS/`
 # as zipped shapefiles. geopandas reads them straight out of the archive, so nothing is unpacked
 # into the project. Read once and cached: the district layer is 1 891 polygons.
 GEO_DIR = PROJ.parent / "GEOREFERENCIAS"
@@ -260,7 +260,7 @@ def site_map_offline(D):
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.045), frameon=False, ncol=2,
               fontsize=ef.FS_MIN, columnspacing=1.0)
     # No message_title: body-of-article figure, message goes in the LaTeX caption.
-    # Diego removed the Peru locator from this figure on review (2026-09-24): it does not belong
+    # I removed the Peru locator from this figure on review (2026-09-24): it does not belong
     # on the manuscript's main site map. `peru_inset_drawer` stays in the module in case a
     # different figure wants a country locator later; it is simply not called here any more.
     info = ef.save_fig(fig, "FIG16_site_map_versionB_offline")
@@ -312,7 +312,7 @@ def site_map_basemap(D, provider="OpenTopoMap"):
                     if len(s):
                         ax.scatter(s.easting, s.northing, marker=mk, s=11, facecolor=col,
                                    edgecolor="k", linewidth=0.25, zorder=7, label=lab)
-                # Below the map, not "upper right": Diego caught the legend sitting on top of the
+                # Below the map, not "upper right": I caught the legend sitting on top of the
                 # Santa Barbara point cluster in the north end of the valley (same fix as version
                 # B). The attribution line goes below that, not fighting it for the same corner.
                 ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.045), frameon=False, ncol=2,
@@ -438,10 +438,10 @@ def exceedance(D, analyte, land_use="agricultural"):
 
 
 # =============================================================================================
-# Rejilla 2x2 de excedencia — idea de Diego, y el argumento es bueno: cuatro PDF separados
+# Rejilla 2x2 de excedencia — idea mia, y el argumento es bueno: cuatro PDF separados
 # obligan al lector a recordar; una rejilla con los mismos limites geograficos deja ver de un
 # vistazo si los focos de As, Hg, Pb, Cd y Ba comparten la misma huella espacial desde la mina.
-# 2026-09-25, pedido de Diego: se agrega As (antes solo Hg/Pb/Cd/Ba) y la 6a celda del grid 2x3
+# 2026-09-25, pedido mio: se agrega As (antes solo Hg/Pb/Cd/Ba) y la 6a celda del grid 2x3
 # se usa para Cd residencial en vez de quedar vacia -- aporta el contraste agricola/residencial
 # de cadmio (la tesis del articulo) sin gastar una figura aparte.
 # =============================================================================================
@@ -452,12 +452,12 @@ def exceedance_grid(D, analytes=("As", "Hg", "Pb", "Cd", "Ba"), land_use="agricu
     mismo limite de deteccion, bajo el otro umbral regulatorio -- el contraste que sostiene el
     argumento del articulo sobre por que el criterio ECA/LD importa.
 
-    Los puntos de muestreo van encima como cruces negras, tambien por sugerencia de Diego: sin
+    Los puntos de muestreo van encima como cruces negras, tambien por sugerencia mia: sin
     ellos no se distingue donde el modelo tiene soporte de datos duros y donde esta interpolando
     por pura covarianza. Es la diferencia entre un mapa que informa y uno que solo decora.
 
     Sin `message_title`: esta figura lleva su mensaje en el caption de LaTeX, no impreso encima
-    del contenido -- pedido explicito de Diego para esta figura en particular.
+    del contenido -- pedido explicito mio para esta figura en particular.
     """
     ef.apply_style()
     key_agri = "p_agri"

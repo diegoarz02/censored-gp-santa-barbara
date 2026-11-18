@@ -571,7 +571,7 @@ A("| D.S. N.° 011-2017-MINAM | The soil environmental quality standards used th
 A("")
 
 # ---------------------------------------------------------------------------------------------
-A("## 16. Open questions for Diego")
+A("## 16. Open questions")
 A("")
 A("| # | Question | Why it needs a decision |")
 A("|---|---|---|")

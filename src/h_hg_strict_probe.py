@@ -2,7 +2,7 @@
 para ver si pasa el criterio estricto de convergencia (R-hat<1.01, ESS>400, 0 divergencias) que hoy
 falla por poco (R-hat=1.0104, ESS bulk=331, Cuadro IV).
 
-Pedido explicito de Diego (2026-10-26), alcance acotado: correr y reportar, nada mas. No toca
+Pedido mio (2026-10-26), alcance acotado: correr y reportar, nada mas. No toca
 main.tex, no toca el PDF, no toca ningun otro analito ni figura. La redaccion se hace
 despues de validar estos numeros.
 
@@ -125,7 +125,7 @@ def main():
 
 # Sonda: Hg con protocolo de muestreo reforzado
 
-Pedido de Diego (2026-10-26): ver si el modelo censurado de Hg pasa el criterio estricto de
+Pedido mio (2026-10-26): ver si el modelo censurado de Hg pasa el criterio estricto de
 convergencia (R-hat<1.01, ESS bulk y tail >400, 0 divergencias) con mas presupuesto de computo.
 Hoy (Cuadro IV, corrida oficial F4-20260923, protocolo draws=1000/tune=1500/chains=4/
 target_accept=0.99): **R-hat=1.0104, ESS bulk=331, ESS tail=460, 0 divergencias, NO pasa** (falla
@@ -142,13 +142,13 @@ linea por linea desde el CSV. Unico cambio: el protocolo de NUTS.
 Checkpoints: {", ".join(r["checkpoint"] for r in results)}.
 
 **No se tocó** `main.tex`, el PDF del artículo, la Tabla IV, ni ningún otro analito/figura/cifra del
-proyecto -- alcance acotado al pedido explícito de Diego. Estos números los valida la revision externa antes de
+proyecto -- alcance acotado a mi pedido explícito. Estos números se validan antes de
 decidir si reemplazan a los de la corrida oficial en la redacción final.
 """
     (OUT / "H_Hg_strict_probe.md").write_text(report, encoding="utf-8")
 
     final = results[-1]
-    observe(f"Sonda Hg con protocolo reforzado (pedido puntual de Diego, no parte de la corrida "
+    observe(f"Sonda Hg con protocolo reforzado (pedido puntual mio, no parte de la corrida "
             f"oficial F4): probados target_accept {[r['protocol']['target_accept'] for r in results]}, "
             f"draws=2000/tune=3000/chains=4. Mejor resultado: R-hat={final['rhat_max']:.4f}, "
             f"ESS bulk={final['ess_bulk_min']:.0f}, ESS tail={final['ess_tail_min']:.0f}, "

@@ -151,7 +151,7 @@ def main():
     ctx = mw._context()
 
     # --------------------------------------------------------------------------- regla 3: medir
-    # Continuacion (2026-09-23, a peticion explicita de Diego: "ejecuta todo lo pendiente, no
+    # Continuacion (2026-09-23, a peticion mia explicita: "ejecuta todo lo pendiente, no
     # dejes nada en stand by"). La primera pasada corrio 73/200 bajo un techo de tiempo de 90 min;
     # esta corrida completa las 200 sin techo -- ya no es una estimacion, es lo que falta medido
     # directamente: 127 replicas nuevas x el costo ya medido por replica en la primera pasada.

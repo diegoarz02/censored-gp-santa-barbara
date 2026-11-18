@@ -197,7 +197,7 @@ def main():
 
     txt = f"""# Sensibilidad del prior propagada a la decisión de excedencia de Cd (2026-10-26)
 
-Pedido de Diego: ver si el 57.4 % agrícola / 6.3 % residencial de `main.tex` (línea 538) es robusto
+Pedido mio: ver si el 57.4 % agrícola / 6.3 % residencial de `main.tex` (línea 538) es robusto
 al prior, no solo los parámetros del kernel (`TABLE31_prior_sensitivity.csv`, ya publicado). Tres
 ajustes nuevos de Cd (default/PC/vago), posterior completo, mismo grid de 50 m / {len(ctx['grid_e'])}
 celdas que el mapa oficial, N={N_MAP_SAMPLES} muestras por celda.

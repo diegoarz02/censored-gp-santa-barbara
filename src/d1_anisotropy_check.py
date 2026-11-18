@@ -1,6 +1,6 @@
 """Item 4 (cierre corrida 3, opcional) -- chequeo de anisotropia, alcance ajustado y declarado.
 
-Lo que pidio Diego literalmente: ajustar un Matern anisotropico geometrico (con rotacion) para
+Lo que pedi literalmente: ajustar un Matern anisotropico geometrico (con rotacion) para
 "blindar la eleccion isotropica". **Alcance ajustado, declarado aqui**: el modelo principal YA es
 anisotropico -- ARD, un ell por eje (`anisotropic=True` en build_censored_gp), no isotropico. No
 hay una eleccion isotropica que blindar; la eleccion real a defender es la ANISOTROPIA ARD frente a
